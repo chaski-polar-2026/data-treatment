@@ -93,6 +93,14 @@ Las fuentes se descargan mediante:
 Las credenciales no se guardan en el proyecto:
 
 - CMEMS usa la configuración del cliente `copernicusmarine`.
+
+El descargador también obtiene zooplancton para el Experimento C mediante dos
+productos de Copernicus: el hindcast LMTL
+(`cmems_mod_glo_bgc_my_0.083deg-lmtl_P1D-i`, desde 1998) y el producto mensual
+operativo (`cmems_mod_glo_bgc-plankton_anfc_0.25deg_P1M-m`, desde diciembre de
+2023). Se guardan en NetCDF separados porque tienen distinta resolución y
+definición vertical; el solapamiento se conserva para compararlos antes de
+formar una serie mensual única.
 - NASA usa la sesión de Earthdata gestionada por `earthaccess`.
 - ERA5 usa `/home/aroon/.cdsapirc` para `cdsapi`.
 
@@ -131,6 +139,24 @@ Antes de unir fuentes se normalizan:
 - clorofila a mg m⁻³;
 - carbono fitoplanctónico a mg C m⁻³ cuando corresponda;
 - capturas y biomasa a toneladas.
+
+### 6.5 Grilla para el mapa web
+
+`scripts/04_build_real_panel.py` genera, además de la serie mensual agregada,
+`data/processed/tables/monitoring_grid_chlorophyll.json`. Esta salida conserva
+la dimensión espacial de `chl` del NetCDF de CMEMS:
+
+- promedio vertical de 0–5 m;
+- una matriz por mes, latitud y longitud;
+- valores positivos cuantizados en escala logarítmica para colorear el mapa;
+- `0` reservado para celdas sin dato;
+- datos comprimidos con gzip y codificados en Base64 para una página estática;
+- `regional_median` para comprobar que la grilla reproduce el valor agregado
+  de la serie de monitoreo.
+
+El JSON no convierte la salida en observaciones satelitales: `chl` sigue siendo
+un producto de reanálisis CMEMS. La interpolación de biomasa no participa en
+esta grilla y continúa siendo exclusiva de la visualización de la serie.
 
 ### 6.5 Anomalías y rezagos
 
@@ -244,7 +270,7 @@ El sistema estima los cambios de cada estado mediante consumo, crecimiento y mor
 \frac{dF}{dt},\quad \frac{dZ}{dt},\quad \frac{dA}{dt}
 \]
 
-Su principal dificultad es que el zooplancton no cuenta actualmente con una serie histórica mensual homogénea. Por ello C se considera una fase exploratoria y no debe presentarse como calibrado hasta disponer de observaciones o de un modelo de observación explícito.
+El pipeline ya puede generar un panel exploratorio con `scripts/04_build_real_panel.py --experiment-c`. Resume el zooplancton CMEMS espacialmente por mes, une el hindcast LMTL con el producto operativo mediante la mediana de su solapamiento y conserva la biomasa de anchoveta interpolada con una marca explícita. El resultado se escribe en `experiment_c_panel.csv` y `experiment_c_panel.json`. La unidad de F es mg C m-3 y la de Z es mg C m-2; por tanto, este panel sirve para monitor y simulación, pero todavía no debe presentarse como una calibración científica validada.
 
 También es necesario adaptar las ecuaciones, que están expresadas a escala diaria, a la resolución mensual de la mayoría de los datos disponibles.
 
