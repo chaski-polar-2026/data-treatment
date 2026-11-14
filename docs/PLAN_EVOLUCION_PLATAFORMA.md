@@ -1,223 +1,161 @@
-# Evolución de Chaski Polar hacia una plataforma para pesca artesanal
+# Evolución de Chaski Polar: paquete 1 para pesca artesanal
 
-Fecha: 14 de noviembre de 2026. Guía panorámica de ejecución para el equipo.
+Fecha: 14 de noviembre de 2026. Alcance corregido según la decisión del equipo.
 
-Leer primero: [Propuesta de valor y paquetes](REPORTE_VISION_PESCA_ARTESANAL.md).
+Leer también: [Visión y necesidad del producto](REPORTE_VISION_PESCA_ARTESANAL.md). Para el alcance de esta entrega prevalece este plan: el reporte de visión conserva antecedentes de la propuesta completa.
 
-Este documento propone la evolución; no describe funcionalidades ya implementadas. Las referencias al código se comprobaron en la copia local. Las etapas son entregas con dependencias, no promesas de calendario.
+## 1. Tres productos separados
 
-## 1. Visión compartida
+| Paquete | Qué incluye | Estado |
+| --- | --- | --- |
+| **1. Monitor y aprendizaje** | Monitor mejorado, parámetros explicados, consulta histórica y videojuego/simulador para aprender a usar la página | **Única entrega activa** |
+| **2. Predicción ambiental** | Pronóstico de variables abióticas con un mínimo de siete días, mediante ecuaciones diferenciales y/o aprendizaje automático | Producto posterior, fuera de esta implementación |
+| **3. Cuentas y reportes** | Usuarios, embarcaciones, expediciones y posibles mapas colectivos | **No se lanzará en esta entrega** |
 
-Chaski Polar combinará tres actividades: **consultar el mar, aprender a interpretar sus cambios y registrar lo que ocurrió en una faena**. El público inicial será la pesca artesanal peruana.
+El paquete 1 debe tener valor completo por sí mismo. No depende de cuentas, registros de pesca ni predicciones. La pantalla principal no tendrá accesos vacíos a esos productos ni presentará escenarios como pronósticos.
 
-La experiencia cotidiana empieza por una zona y una pregunta. El pescador puede consultar información sin crear una cuenta ni jugar. Las cuentas aparecen cuando quiere guardar su embarcación y expediciones. El pronóstico agrega el futuro previsto; las bitácoras agregan observaciones locales autorizadas.
+## 2. Qué queremos resolver ahora
+
+Un pescador artesanal debe poder elegir su zona, consultar una fecha, entender los parámetros disponibles y comparar cómo se comportó el mar. El videojuego/simulador debe enseñarle a usar esas mismas herramientas y a interpretar sus límites.
+
+Promesa del paquete 1: **«Conoce el mar de tu zona y aprende a leer sus cambios»**.
+
+La consulta rápida está disponible sin jugar. El simulador es una forma opcional de aprender; no es un modelo validado de captura, profundidad de pesca o rentabilidad.
+
+## 3. Copias de trabajo
+
+- `chaski-polar-webpage-old/`: referencia de la página anterior; no editar.
+- `chaski-polar-webpage/`: copia activa para todos los cambios nuevos.
+- `data_treatment/`: análisis y documentación; este informe vive en `docs/`.
+
+Los cambios de interfaz reutilizarán los datos existentes. No se modificarán los archivos científicos para acomodarlos al diseño. Las fuentes, las fechas y la cobertura deben conservarse.
+
+## 4. Experiencia del paquete 1
 
 ```mermaid
 flowchart LR
-    A[Fuentes ambientales y NASA] --> B[Procesamiento y API]
-    P[Pronósticos operativos y modelos evaluados] --> B
-    B --> M[Monitor: condiciones, historia y tendencias]
-    B --> F[Pronóstico de siete días]
-    M --> J[Aprendizaje y Cardumen]
-    U[Usuarios y embarcaciones] --> R[Bitácora privada de expediciones]
-    R --> Q[Validación y agregación autorizada]
-    Q --> H[Mapas de reportes y rendimiento]
-    H --> M
-    R --> E[Evaluación posterior de ambiente y faenas]
-    F --> E
+    A[Elegir zona de la costa peruana] --> B[Consultar un mes disponible]
+    B --> C[Ver parámetros y significado]
+    C --> D[Comparar con el mismo mes de otros años]
+    C --> E[Aprender a usar el monitor]
+    E --> F[Videojuego o simulador de uso]
+    F --> B
+    D --> G[Explorar tendencias y evidencia]
 ```
 
-La flecha entre módulos indica circulación de información, no causalidad científica ni permiso automático para publicar datos privados.
+### Pantalla principal del monitor
 
-## 2. Punto de partida comprobado
+1. **Mi zona:** cinco áreas costeras disponibles, identificadas por nombre y región. La posición de referencia no representa un punto recomendado de pesca.
+2. **Fecha de consulta:** mes y año visibles. Usar «último dato disponible» en lugar de «hoy» cuando la información sea histórica.
+3. **Parámetros:** nombre sencillo, valor, unidad, fuente, alcance espacial y disponibilidad para la fecha elegida.
+4. **Qué significa:** explicación corta, relación con el ecosistema y lo que el dato permite interpretar.
+5. **Historia:** gráfico legible, comparación con el comportamiento habitual de ese mes y periodos de consulta.
+6. **Aprender:** tutorial de la interfaz y acceso al videojuego, sin bloquear la consulta.
 
-| Elemento actual | Ubicación | Evolución propuesta |
-| --- | --- | --- |
-| Portada 3D | `src/pages/PortadaPage.tsx`, `src/features/portada/` | Entrada institucional y acceso inmediato al servicio |
-| Explorador | `src/pages/HomePage.tsx`, `src/features/explorer/` | Conservar investigación; añadir una consulta práctica por zona |
-| Tendencias | `src/features/tendencias/` | Mantener como núcleo científico y del desafío |
-| Cardumen | `src/pages/JuegoPage.tsx`, `src/features/juego/` | Aprendizaje opcional y misiones conectadas con el monitor |
-| Datos actuales | `src/data/loaders/runtime.ts`, `src/contexts/DataContext.tsx` | Pasar gradualmente de scripts globales a contratos de datos versionados |
-| Fuentes y hallazgos | `src/features/fuentes/`, `src/features/insights/` | Mostrar procedencia, vigencia y resultados consolidados |
-| Procesamiento científico | Repositorio hermano `data_treatment` | Mantener adquisición y evaluación fuera del navegador |
+El monitor es la entrada práctica. El globo y los análisis extensos quedan disponibles en la exploración científica; no deben ser requisitos para consultar un parámetro en el celular.
 
-Las rutas comprobadas en `src/App.tsx` son `/`, `/explorer` y `/juego`. Los archivos ambientales se cargan actualmente desde `public/assets/data/`; ese mecanismo no constituye una API operativa ni acredita actualización diaria. El cargador de escenarios existentes tampoco constituye un pronóstico semanal validado.
+### Parámetros y cobertura
 
-El texto actual de `HomePage.tsx` aún abre con la pregunta Antártida–Perú. La nueva entrada práctica debe centrarse en la costa y el usuario artesanal. La comparación antártica puede mantenerse en investigación y aprendizaje, con sus resultados negativos y locales.
-
-## 3. Qué verá el usuario
-
-| Área propuesta | Pregunta que resuelve | Contenido |
-| --- | --- | --- |
-| Mi zona / monitor | ¿Qué información hay del mar aquí? | Fecha, variables disponibles, explicación y mapa regional |
-| Próximos siete días | ¿Cómo se prevé que cambien las condiciones? | Pronóstico por variable y día, profundidad cuando exista, error histórico y vigencia |
-| Mi bitácora | ¿Qué ocurrió en mis faenas? | Embarcaciones, expediciones, capturas, esfuerzo y notas |
-| Reportes compartidos | ¿Qué se ha reportado en esta zona? | Capas agregadas con cobertura y antigüedad |
-| Aprende | ¿Cómo leo esto y qué puedo concluir? | Tutorial de la app y Cardumen |
-| Explora tendencias | ¿Está cambiando a largo plazo? | Series, pendiente, significancia y sensibilidad |
-
-Los nombres y las nuevas rutas son propuesta de diseño. Conservar `/explorer` y `/juego` durante la transición evita romper enlaces. La portada ofrecerá «Consultar mi zona» antes de cargar la escena 3D; el globo será una vista complementaria al mapa regional móvil.
-
-## 4. Evolución del monitor y experiencia de usuario
-
-### Primera pantalla
-
-Priorizar selector de zona, fecha de los datos y tres variables iniciales elegidas en el piloto. Como propuesta de partida: temperatura, corrientes y clorofila, distinguiendo esta última como indicador biológico. Oxígeno y salinidad se incorporan según cobertura y comprensión. Viento y oleaje deben provenir de productos adecuados, no inferirse desde temperatura o nivel del mar.
-
-Cada tarjeta responderá qué mide, qué valor tiene, cómo se compara con lo habitual y de cuándo es. «No hay datos» y «sin reportes» son estados visibles. No se asignará un semáforo de buena pesca o seguridad a partir de umbrales arbitrarios.
-
-El panel de profundidad mostrará niveles reales o bandas identificadas. Una media de 100–200 m no será presentada como perfil continuo ni como profundidad recomendada de captura. El mapa no aparentará más resolución que su fuente.
-
-### Uso móvil y acceso
-
-- Diseñar primero para teléfono, con lectura exterior, contraste alto, botones amplios y unidades explicadas.
-- Proponer español como idioma principal del servicio artesanal y conservar inglés para difusión del proyecto. Esto modifica la pauta histórica de interfaz solo en inglés y deberá coordinarse al implementar los textos.
-- Permitir guardar zona y preferencias localmente; pedir cuenta solo cuando se necesiten datos privados sincronizados.
-- Descargar resúmenes pequeños, conservar la última consulta y mostrar su antigüedad. La caché no convierte un dato antiguo en información actual.
-- Separar el dato, su interpretación y la evidencia. Una consulta rápida puede abrir el detalle científico a voluntad.
-
-Las guías actuales de paleta y tipografía pueden reutilizarse. El primer ciclo de diseño debe verificar legibilidad en móvil y exposición al sol con usuarios, sin asumir que una estética atractiva garantiza facilidad de uso.
-
-## 5. Cardumen, tutorial y simulador
-
-Se propone conservar Cardumen como experiencia educativa y añadir un tutorial corto de uso real de la aplicación. No es necesario reconstruir todo el juego para lanzar el primer paquete.
-
-| Modalidad | Función | Primera entrega |
-| --- | --- | --- |
-| Tutorial del monitor | Enseñar zona, fecha, variable y fuente | Tres pasos dentro de la interfaz real; omisible y reabrible |
-| Cardumen | Comprender ecosistema, variabilidad y límites de interpretación | Una misión costera que termine consultando evidencia |
-| Simulador de planificación | Practicar lectura de pronósticos y balance de opciones | Escenario histórico con supuestos explícitos y resultado revelado al final |
-
-Misiones sugeridas:
-
-1. **El año cálido:** comparar un episodio de El Niño con años vecinos, y distinguir un evento de una tendencia.
-2. **Oxígeno en dos profundidades:** observar que superficie y subsuperficie pueden responder de forma diferente.
-3. **Verde no significa captura garantizada:** distinguir pigmento satelital, carbono modelado y resultado de una faena.
-4. **La bitácora incompleta:** descubrir por qué registrar duración, especie y captura cero mejora la comparación.
-
-Usar la misma zona, fecha y variable al saltar entre misión y monitor. Las cifras de supervivencia, consumo de combustible o ingresos del simulador serán ilustrativas salvo que exista un modelo específico validado. Los reportes de práctica nunca entrarán en los mapas de pesca reales.
-
-El prólogo antártico puede conservarse como contexto ecológico. La narrativa no afirmará transporte demostrado de fitoplancton hacia Perú. Los últimos resultados se consultan en el [consolidado científico](../../data_treatment/docs/pruebas_pendientes/REPORTE_CONSOLIDADO_RESULTADOS.md).
-
-## 6. Datos y API: un contrato para web y otros consumidores
-
-El primer trabajo de datos será inventariar por variable: producto, unidad, resolución, cobertura, frecuencia, fecha de actualización, licencia y origen. Una lista extensa de variables no sustituye esa auditoría.
-
-Separar los productos:
-
-| Producto | Información mínima |
+| Grupo | Presentación |
 | --- | --- |
-| Serie observada o reanálisis | Variable, lugar, profundidad/banda, fecha válida, valor, unidad, fuente y calidad |
-| Pronóstico | Lo anterior más emisión, horizonte, modelo y versión; incertidumbre cuando esté evaluada |
-| Reporte de pesca | Autor autorizado, embarcación, expedición/evento, método, resultado y estado de revisión |
-| Simulación | Escenario, parámetros y marca explícita de dato ilustrativo |
+| Temperatura superficial | Calor del agua en superficie; °C; explicar la comparación estacional |
+| Clorofila-a | Pigmento que sirve como indicador de fitoplancton; mg/m³; no equivale a captura |
+| Viento y corrientes | Identificar origen, periodo y que sus promedios mensuales no describen una faena puntual |
+| Salinidad y transparencia | Explicar sal y atenuación de luz con lenguaje cotidiano |
+| Oxígeno y nutrientes regionales | Identificar expresamente que representan el dominio peruano, sin atribuirlos a una caleta |
+| Otros indicadores disponibles | Ofrecerlos mediante consulta progresiva con sus límites y unidades |
 
-API propuesta, aún no implementada: `GET /v1/regions`, `GET /v1/environment/series`, `GET /v1/forecasts`, `GET /v1/trends`. La bitácora tendrá operaciones autenticadas para embarcaciones, expediciones y eventos; la API ambiental pública nunca expondrá posiciones privadas por defecto.
+La consulta no debe reemplazar un dato local faltante por uno regional sin identificar el cambio. Cero es un valor válido y no equivale a ausencia. No trasladar el último valor antiguo al mes seleccionado. Si una corriente termina en 2018, una consulta en 2026 mostrará falta de dato y su última fecha disponible.
 
-La web consumirá los mismos contratos que la API. Para empezar pueden generarse JSON versionados y documentados; se llamarán exportaciones estáticas hasta contar con un servicio. Fechas de emisión y de validez se mantendrán separadas. Unidades, profundidad y valores faltantes serán explícitos en todas las salidas.
+Comparar con el mismo mes calendario evita confundir el verano con el invierno. El periodo de referencia y el número de observaciones utilizadas deben estar visibles. Una diferencia con la media mensual no constituye una prueba de tendencia ni de significancia.
 
-La adquisición y credenciales de proveedores se gestionarán en el servidor. El proceso de actualización registrará éxito, fallos y vigencia; conservará la última versión válida si una descarga falla. Validar atribución y condiciones de redistribución antes de servir datos de terceros por API.
+### Celular y accesibilidad
 
-## 7. Pronóstico semanal: ruta técnica y validación
+- Español como idioma principal del nuevo monitor para el público artesanal. La exploración científica existente puede conservar su idioma.
+- Controles táctiles amplios, tipografía legible, contraste alto y diseño desde 320 px.
+- Selector de zona y fecha accesibles sin navegar el globo.
+- Gráficos que se adapten al ancho y alternativa tabular para consultar cifras.
+- Explicaciones desplegables y tutorial omisible/reabrible.
+- Mostrar carga, error, falta de datos y fechas antiguas con mensajes claros.
+- Guardar preferencias solo en el dispositivo si resulta útil; no crear cuentas.
+- Respetar reducción de movimiento y navegación por teclado.
 
-### Primera versión
+## 5. Videojuego/simulador de uso
 
-Comenzar con temperatura superficial en la zona piloto e integrar un modelo físico operativo. El [producto físico de Copernicus Marine](https://data.marine.copernicus.eu/product/GLOBAL_ANALYSISFORECAST_PHY_001_024/description) ofrece diez días y actualización diaria. Su existencia hace viable explorar un servicio de siete días; no acredita precisión a escala de una caleta.
+La meta del paquete 1 es aprender a utilizar la página. Cardumen puede conservar su experiencia ecológica, pero su evolución debe vincular acciones con controles reales del monitor.
 
-Los históricos mensuales actuales sirven para tendencias y contexto. El pronóstico requiere nuevas series diarias/horarias y emisiones archivadas. No generar siete valores diarios a partir de una regresión mensual ni usar los escenarios de El Niño como si fueran predicción operativa.
-
-### Orden de comparación
-
-1. Persistencia y climatología como referencias.
-2. Pronóstico físico externo, claramente atribuido.
-3. Ecuaciones estadísticas propias: autorregresión, regresión con retardos o espacio de estados; si procede, corrección del sesgo del producto externo.
-4. Aprendizaje automático cuando haya muestra y una mejora demostrable sobre las alternativas.
-
-Un modelo de corrección puede formularse como `pronóstico ajustado = pronóstico físico + corrección local estimada`. La corrección se ajusta con errores de emisiones pasadas y datos disponibles entonces. No se fijan coeficientes antes de entrenar y validar.
-
-### Evaluación necesaria
-
-Guardar cada emisión para comparar predicciones con observaciones posteriores en posiciones y profundidades compatibles. Una serie de análisis o reanálisis posterior no reproduce lo que el sistema habría sabido al emitir un pronóstico. Si no hay archivo de pronósticos históricos, iniciar evaluación prospectiva y declarar esa limitación.
-
-Medir MAE, RMSE y sesgo por zona, variable y horizonte +1…+7; comparar con las referencias sobre los mismos casos. Revisar periodos cálidos y fríos, cobertura y cambios de fuente. Evaluar intervalos con cobertura empírica cuando se publiquen. Un error estimado contra un análisis del mismo sistema no equivale a validación observacional independiente.
-
-Criterio de lanzamiento: fuente con horizonte suficiente, operación repetible y evidencia de calidad publicada. Para una corrección propia, exigir mejora estable y ausencia de degradación material en los casos acordados. Si no mejora, mantener el producto externo atribuido. No prometer una precisión universal para todas las variables.
-
-## 8. Cuentas y bitácora: registrar antes de dibujar mapas
-
-### Modelo conceptual
-
-| Entidad | Función |
-| --- | --- |
-| Usuario y membresía | Identidad y permisos individuales u organizacionales |
-| Embarcación | Identificación, capacidades relevantes y personas autorizadas |
-| Expedición | Una salida y regreso; no equivale a un único punto de captura |
-| Evento o lance | Fecha, zona/posición, arte, profundidad de operación cuando se conozca y esfuerzo |
-| Captura | Especie, cantidad, unidad y asociación con el evento o nivel de precisión declarado |
-| Costos y notas | Datos opcionales para aprendizaje individual |
-| Revisión | Correcciones, procedencia y calidad del reporte |
-
-Registrar explícitamente «captura cero», «no se pescó» y «resultado desconocido». Si solo se conoce captura total por expedición, no repartirla automáticamente entre posiciones o lances. Separar cantidad capturada y desembarcada cuando se recopilen ambas.
-
-### Experiencia de registro
-
-Formulario corto: seleccionar bote, abrir expedición, añadir evento y cerrar con resultado. Guardar borradores sin conexión y sincronizar al recuperar acceso. Cada registro tendrá un identificador estable para evitar duplicados y un mecanismo visible para resolver conflictos de edición. Registrar una faena fallida también debe aportar valor al usuario.
-
-Usar un servicio de autenticación y una base con acceso controlado; Supabase/PostgreSQL es una opción de diseño, no una dependencia instalada. Cualquier tecnología elegida debe impedir que un usuario consulte embarcaciones o coordenadas ajenas sin permiso. Probar esa separación antes del piloto.
-
-## 9. Mapas propios y reglas de interpretación
-
-Orden de entrega: mapa privado del usuario; resumen de la organización con permisos; agregados comunitarios cuando exista cobertura suficiente.
-
-Las primeras capas serán conteo de reportes, participantes distintos, antigüedad y captura declarada. Añadir CPUE únicamente con esfuerzo comparable por pesquería, arte y unidad. Mostrar periodo y cobertura junto al color del mapa. Diferenciar ausencia de datos de cero captura.
-
-El mapa representa **actividad o rendimiento reportado**, no abundancia total ni una garantía de pesca. La participación voluntaria produce sesgos: se registran ciertas embarcaciones, lugares y resultados, y los pescadores pueden acudir donde ya esperan encontrar peces.
-
-La ubicación precisa será privada por defecto. Los agregados requerirán autorización, resolución y retraso adecuados, además de un mínimo de embarcaciones distintas y supresión de grupos escasos. Estos parámetros son trabajo del piloto, no garantías matemáticas de anonimato. Evitar que filtros combinados permitan reconstruir recorridos individuales.
-
-Objetivo de independencia: generar datos propios de faenas sin esperar un reporte del IMARPE. Seguir contrastando con observaciones, fuentes públicas y conocimiento local; la independencia operativa no elimina la necesidad de validación.
-
-## 10. Reparto de trabajo y entregables
-
-Los roles son responsabilidades propuestas para compañeros, no agentes automáticos ni personas ya asignadas.
-
-| Frente | Primer entregable | Dependencia y aceptación |
+| Momento | Acción que aprende el usuario | Relación con la página |
 | --- | --- | --- |
-| Producto y campo | Caleta/pesquería piloto, entrevistas y tres decisiones prioritarias | Evidencia de tareas reales; identificar usuario y posible pagador |
-| Diseño y textos | Prototipo móvil del monitor, pronóstico y registro | Usuarios pueden distinguir histórico, pronóstico y simulación |
-| Datos y ciencia | Inventario, exportación ambiental y ficha por variable | Fuente, unidad, fecha, resolución y límites verificables |
-| Predicción | Emisión de siete días para una variable y plan de evaluación | Fuente operativa; archivo de emisiones; comparación por horizonte |
-| Frontend | Consulta por zona, gráficos y estados de carga/error/antigüedad | Usa el contrato acordado; consulta principal independiente del globo |
-| Backend | API y, después, cuentas/embarcaciones/expediciones | Permisos comprobados; sin acceso cruzado a datos privados |
-| Juego y aprendizaje | Tutorial omisible y una misión conectada con el monitor | Misma zona/fecha; resultados simulados identificados |
-| Validación e integración | Revisión de móvil, datos, permisos y fallos de proveedor | Un recorrido completo documentado y reproducible |
+| Elegir una zona | Diferenciar costa y ámbito regional | Mismo selector o nombres |
+| Consultar un mes | Leer fecha y distinguir histórico de presente | Mismo calendario |
+| Elegir un parámetro | Reconocer unidad y significado | Misma ficha explicativa |
+| Comparar valores | Contrastar el mismo mes entre años | Mismo gráfico y referencia |
+| Interpretar | Reconocer ausencia de datos y límites | Mismos estados y mensajes |
 
-Antes de trabajar en paralelo, acordar contratos de datos y responsables de archivos compartidos. Empezar con entregas pequeñas que cada frente pueda demostrar; evitar rediseñar simultáneamente toda la portada, el explorador y el motor del juego.
+Primera entrega de aprendizaje: una guía corta dentro del monitor para practicar estas acciones. La adaptación completa del videojuego/simulador es una tarea identificada para los compañeros; no se considerará terminada por añadir un enlace al juego anterior.
 
-## 11. Etapas y prioridad
+No introducir en esta versión ejercicios de pronóstico semanal, registro de barcos o bitácoras. Las consecuencias ecológicas ilustrativas del juego deben conservar su rótulo. La narrativa antártica no debe presentar una conexión directa con Perú como demostrada.
 
-| Etapa | Alcance | Evidencia para avanzar |
+Fuente científica principal: [Reporte consolidado de resultados](pruebas_pendientes/REPORTE_CONSOLIDADO_RESULTADOS.md). Las asociaciones El Niño–ambiente/pigmento no permiten recomendar cantidades de embarcaciones ni garantizar capturas.
+
+## 6. Cambios por componente
+
+| Componente | Trabajo del paquete 1 | Entregable |
 | --- | --- | --- |
-| A. Definir piloto | Una pesquería, usuarios, tareas y fuente diaria inicial | Problema y cobertura concretos |
-| B. Paquete 1 | Monitor móvil, tendencias, fuentes y tutorial; exportación/API básica | Consulta real comprensible, datos trazables y fallos visibles |
-| C. Paquete 2 inicial | Pronóstico externo de temperatura a siete días, con archivo de emisiones | Siete días válidos disponibles y evaluación iniciada |
-| D. Paquete 3 individual | Cuentas, bote, expediciones y eventos privados | Registros completos y permisos comprobados |
-| E. Aprendizaje colectivo | Agregados, cobertura y CPUE donde proceda | Participación y esfuerzo suficientes, reglas de privacidad acordadas |
-| F. Modelos propios | Corrección local y comparaciones; después recomendaciones pesqueras investigadas | Mejora fuera de muestra y utilidad para el usuario |
+| Monitor | Consulta costera prioritaria, valores, fechas y explicaciones | Pantalla usable en escritorio y teléfono |
+| Navegación | Entrada directa al monitor y acceso claro a aprendizaje/investigación | Recorrido comprensible sin portada 3D obligatoria |
+| Datos | Leer series existentes y conservar fuente/alcance | Adaptador de consulta sin editar datos originales |
+| Comparación histórica | Referencia por mes, periodos y tabla accesible | Interpretación reproducible, sin rellenar huecos |
+| Tutorial | Enseñar zona, fecha, parámetro y comparación | Guía omisible que utilice los controles reales |
+| Videojuego | Diseñar e integrar el simulador de uso | Misión conectada; trabajo independiente del rediseño del monitor |
+| Exploración científica | Conservar tendencias y fuentes | Acceso al material que responde al desafío |
 
-La captura temprana de bitácoras puede avanzar junto a la integración del pronóstico una vez fijados contratos y permisos. La numeración de paquetes no impone esperar a terminar toda la predicción para empezar a reunir datos propios.
+Una API pública es una posible forma posterior de distribuir la información del paquete 1, no un requisito para mejorar la consulta actual. No crear backend, autenticación ni base de expediciones como dependencia de esta entrega.
 
-**Demostración de hackathon propuesta:** una zona con datos reales, consulta de tendencias NASA, una misión de aprendizaje y una emisión semanal atribuida si está disponible. Una bitácora de demostración debe señalar sus registros ficticios y permanecer separada de la base real. Mostrar explícitamente qué está operativo, qué es prototipo y qué pertenece a la hoja de ruta.
+## 7. Responsabilidades para el equipo
 
-Para el piloto posterior, priorizar actualización, móviles y registro fiable. El entrenamiento de modelos nuevos, mapas públicos de pesca y optimización del número de barcos no deben desplazar esas dependencias.
+| Frente | Trabajo inmediato | Criterio de aceptación |
+| --- | --- | --- |
+| Diseño y textos | Prioridad de parámetros, español y composición móvil | Usuario identifica valor, fecha y significado |
+| Datos y ciencia | Revisar unidades, referencia histórica, cobertura y procedencia | Ningún dato regional se confunde con uno local |
+| Frontend | Monitor, selectores, gráficos, tabla y estados | Cambios de zona/fecha consistentes y sin desbordamiento móvil |
+| Juego y aprendizaje | Simulador de uso y vínculo con monitor | Aprendizaje demostrable, no solo acceso al juego |
+| Validación e integración | Revisar dispositivos y recorrido completo | Controles táctiles, teclado, errores y datos faltantes funcionan |
 
-## 12. Decisiones que deberá cerrar el equipo
+El frente de backend/cuentas queda fuera. No asignar tareas del paquete 2 o 3 dentro del tablero de implementación del paquete 1.
 
-1. Caleta, especie/arte y participantes del piloto; no generalizar a toda la pesca artesanal desde el inicio.
-2. Tres variables de consulta y primera variable de pronóstico, con fuentes y resolución aceptables.
-3. Idioma de servicio, navegación móvil y lugar de la portada 3D.
-4. Campos mínimos de bitácora, quién accede a ellos y qué se comparte.
-5. Responsable de actualización y respuesta ante datos vencidos.
-6. Modelo comercial de los paquetes, después de validar uso y disposición a pagar.
+## 8. Orden de entrega
 
-La revisión final de cada etapa debe comprobar coherencia científica, lectura móvil y recorrido completo. Para futuros cambios de código se aplicarán las verificaciones de compilación y lint del repositorio, además de pruebas pertinentes de permisos, calendario de pronósticos y sincronización. Este trabajo crea documentación; no implementa ni despliega la evolución propuesta.
+1. Reordenar este informe y acordar el alcance.
+2. Construir la nueva entrada del monitor con los datos existentes.
+3. Añadir fichas de significado, fechas, origen y comparación histórica.
+4. Revisar escritorio, celular y accesibilidad.
+5. Diseñar/integrar con los compañeros el videojuego como simulador de uso.
+6. Validar con pescadores artesanales de una zona concreta.
+
+Demostración: elegir zona, consultar mes, entender parámetros, comparar una serie y practicar el uso. Mantener acceso a tendencias, magnitud de cambio, significancia y fuentes NASA para responder al desafío.
+
+## 9. Criterios para dar por listo el monitor
+
+- La consulta principal se entiende en español y funciona a 320–390 px sin desplazamiento horizontal.
+- Zona, fecha, parámetro y periodo cambian los resultados correctos.
+- Las variables muestran su unidad, significado y procedencia.
+- Los datos de distinta cobertura no aparecen como si todos fueran de la caleta.
+- Las ausencias no se interpolan ni se sustituyen por cero.
+- Se distingue el periodo histórico del estado actual del mar.
+- El tutorial puede completarse, omitirse y abrirse otra vez.
+- La exploración anterior y el juego siguen siendo accesibles.
+- Compilación y lint no introducen errores; se revisan las interacciones en navegador.
+- La copia `chaski-polar-webpage-old/` y los datos científicos permanecen sin cambios.
+
+## 10. Paquetes futuros: fuera del trabajo activo
+
+### Paquete 2 — predicción de al menos siete días
+
+Investigar y validar predicción de variables abióticas mediante ecuaciones diferenciales y/o aprendizaje automático. Necesita entradas con resolución temporal adecuada, condiciones iniciales y forzamientos cuando proceda, separación temporal de entrenamiento/prueba y comparación frente a persistencia y modelos operativos externos. Una regresión mensual o un escenario ilustrativo no cumplen este objetivo. El método y las métricas se desarrollarán en un plan separado cuando se active este paquete.
+
+### Paquete 3 — cuentas y reportes
+
+Incluye potencialmente cuentas, permisos, embarcaciones, expediciones y agregados de reportes. **No se lanzará en esta entrega.** No crear pantallas, formularios ficticios, base de datos ni navegación anticipada para este paquete.
+
+Los planes anteriores que intercalaban estos módulos o proponían implementarlos en paralelo quedan sustituidos por esta separación de alcance.

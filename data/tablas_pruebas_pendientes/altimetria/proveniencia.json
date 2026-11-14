@@ -1,0 +1,73 @@
+{
+  "product": "SEALEVEL_GLO_PHY_CLIMATE_L4_MY_008_057",
+  "dataset_id": "c3s_obs-sl_glo_phy-ssh_my_twosat-l4-duacs-0.25deg_P1M-m",
+  "version": "vNov2024",
+  "downloaded_utc": "2026-11-14T18:32:57.112496+00:00",
+  "bbox": [
+    -85,
+    -18.35,
+    -70,
+    -3.38
+  ],
+  "period": [
+    "1993-01-01",
+    "2025-12-31"
+  ],
+  "variable": "sla",
+  "file": "/tmp/anchoveta_altimetria/sla_peru_1993_2025.nc",
+  "sha256": "ae9d95773de49064e23bdb8728fdf4bb8209486ab3346919fce8e6e1a1499a93",
+  "metadata": {
+    "global": {
+      "Conventions": "CF-1.6",
+      "Metadata_Conventions": "Unidata Dataset Discovery v1.0",
+      "cdm_data_type": "Grid",
+      "comment": "Monthly Mean of Sea Level Anomalies referenced to the [1993, 2012] period",
+      "contact": "http://climate.copernicus.eu/c3s-user-service-desk",
+      "creator_email": "http://climate.copernicus.eu/c3s-user-service-desk",
+      "creator_name": "Copernicus Climate Change Service (C3S)",
+      "creator_url": "http://climate.copernicus.eu",
+      "date_created": "2024-11-05T23:40:10Z",
+      "geospatial_lat_max": "89.875",
+      "geospatial_lat_min": "-89.875",
+      "geospatial_lat_resolution": "0.25",
+      "geospatial_lat_units": "degrees_north",
+      "geospatial_lon_max": "179.875",
+      "geospatial_lon_min": "-179.875",
+      "geospatial_lon_resolution": "0.25",
+      "geospatial_lon_units": "degrees_east",
+      "geospatial_vertical_max": "0.0",
+      "geospatial_vertical_min": "0.0",
+      "geospatial_vertical_positive": "down",
+      "geospatial_vertical_resolution": "point",
+      "geospatial_vertical_units": "m",
+      "history": "2024-11-05T23:40:10Z: Creation",
+      "institution": "CLS, CNES",
+      "keywords": "Oceans > Ocean Topography > Sea Surface Height",
+      "keywords_vocabulary": "NetCDF COARDS Climate and Forecast Standard Names",
+      "license": "http://climate.copernicus.eu/c3s-user-service-desk",
+      "processing_level": "L4",
+      "product_version": "vNov2024",
+      "project": "Copernicus Climate Change Service (C3S)",
+      "references": "http://climate.copernicus.eu",
+      "software_version": "8.0_DUACS_DT2024_baseline",
+      "source": "Altimetry measurements",
+      "ssalto_duacs_comment": "The reference mission used for the altimeter inter-calibration processing is Topex/Poseidon between 1993-01-01 and 2002-04-23, Jason-1 between 2002-04-24 and 2008-10-18, OSTM/Jason-2 between 2008-10-19 and 2016-06-25, Jason-3 since 2016-06-25.",
+      "standard_name_vocabulary": "NetCDF Climate and Forecast (CF) Metadata Convention Standard Name Table v37",
+      "summary": "Delayed Time Level-4 monthly means of Sea Level Anomalies and derived Eddy Kinetic Energy from two-satellite altimetry observations over the Global Ocean.",
+      "time_coverage_duration": "P1M",
+      "time_coverage_end": "2023-12-31T00:00:00Z",
+      "time_coverage_resolution": "P1M",
+      "time_coverage_start": "2023-12-01T00:00:00Z",
+      "title": "DT merged two-satellite Global Ocean L4 Monthly Means of Sea Level Anomalies and Derived Eddy Kinetic Energy",
+      "copernicusmarine_version": "2.5.0"
+    },
+    "sla": {
+      "cell_methods": "time: mean within years",
+      "grid_mapping": "crs",
+      "long_name": "Averaged Sea Level Anomalies 2023/12",
+      "standard_name": "sea_surface_height_above_sea_level",
+      "units": "m"
+    }
+  },
+  "documentation": "https://documentation.marine.copernicus.eu/PUM/CMEMS-SL-PUM-008-057.pdf"
+}
