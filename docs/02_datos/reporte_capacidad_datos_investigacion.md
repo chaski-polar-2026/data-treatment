@@ -3,6 +3,8 @@
 **Fecha:** 6 de noviembre de 2026  
 **Proyecto:** ANCHOVETA 360
 
+> **Nota de corrección (8 de noviembre de 2026):** el valor `p = 0.114958` citado en este reporte comparaba M0 con CAR(1) contra M1 sin correlación, por lo que el contraste no era válido. Con la misma estructura en ambos modelos el resultado es `p = 0.289` (IID); la conclusión (no rechazar H0) no cambia. Ver `analysis_r/README.md` y `docs/informe_analisis_exploratorio_h1_h0.md`.
+
 ## 1. Propósito
 
 Este reporte resume qué puede estudiarse actualmente con los datos disponibles y qué significan para la investigación sobre la conectividad entre el océano Austral, el Pacífico Sur, el sistema de Humboldt y la anchoveta peruana (*Engraulis ringens*).
@@ -52,7 +54,7 @@ Esta serie permite estudiar variabilidad histórica y cambios de régimen, pero 
 
 ### 2.4 Cruceros hidroacústicos
 
-El nuevo archivo [Cruceros_hidroacusticos_1985_2017.csv](../analysis_r/data/raw/Cruceros_hidroacusticos_1985_2017.csv), obtenido de *El libro de la anchoveta*, contiene aproximadamente 70 cruceros hidroacústicos únicos entre 1985 y 2017, con unos 50 cruceros entre 1998 y 2017.
+El nuevo archivo [Cruceros_hidroacusticos_1985_2017.csv](../../analysis_r/data/raw/Cruceros_hidroacusticos_1985_2017.csv), obtenido de *El libro de la anchoveta*, contiene aproximadamente 70 cruceros hidroacústicos únicos entre 1985 y 2017, con unos 50 cruceros entre 1998 y 2017.
 
 Incluye biomasa, área de distribución y área evaluada. Esto mejora sustancialmente la información biológica disponible frente al panel anterior, que solo utilizaba 9 cruceros con fechas de inicio y fin completas.
 
