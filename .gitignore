@@ -16,4 +16,8 @@ fao_data/
 .obsidian/
 out/
 *.pdf
+graphify-out/cache/
 
+# R statistical pipeline local packages and downloaded raw/cache data
+analysis_r/Rlib/
+analysis_r/data/raw/
