@@ -95,7 +95,7 @@ Componentes de la corriente en la transición de Humboldt y el Pacífico Sur int
 
 ## B5. Otras especies de la FAO
 
-Pota, jurel, sardina, concha, anchoveta de Chile y krill frente a hielo marino y SAM, con la tendencia lineal quitada y de 0 a 3 años de adelanto. Ninguna es robusta (p_fdr ≥ 0,39). Los coeficientes más altos son los que ya conocíamos (jurel del Perú y hielo r ≈ −0,65 a 2 años; pota y SAM r ≈ −0,55), pero con 24 a 26 años de datos y n efectivo de 15 a 23 no resisten la corrección por pruebas múltiples. No se pudo comprobar la consistencia por mitades porque cada mitad tiene muy pocos años.
+Pota, jurel, sardina, concha, anchoveta de Chile y krill frente a hielo marino y SAM, con la tendencia lineal quitada y de 0 a 3 años de adelanto. Ninguna es robusta (p_fdr ≥ 0,39). Los coeficientes más altos son los que ya conocíamos (jurel del Perú y hielo r ≈ −0,65 a 2 años; pota y SAM r ≈ −0,55), pero con 24 a 26 años de datos y n efectivo de 15 a 23 no resisten la corrección por pruebas múltiples. No se pudo comprobar la consistencia por mitades porque cada mitad tiene muy pocos años. **Revisado el 14/11/2026** con un método más estricto (se quita la tendencia a ambas series, se usa la autocorrelación y se corrige por pruebas múltiples): estas pistas **no se sostienen** (ver `RESULTADOS_ANTARTIDA_VECINOS.md`).
 
 ## Balance de las pruebas
 

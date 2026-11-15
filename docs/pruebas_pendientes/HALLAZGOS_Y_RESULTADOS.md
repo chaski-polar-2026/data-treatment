@@ -68,7 +68,7 @@ Promedios anuales, Mann-Kendall y pendiente de Sen. Cálculo mensual con n efect
 ## 5. Pistas sin confirmar
 
 - **Rebote tardío en Paita–Sechura:** la clorofila sube entre 2 y 8 meses después de un calentamiento de Niño 1+2 (máximo a 5 meses, r = +0,36 con OC-CCI). No depende de 1998 ni de la lluvia. Con MODIS-Aqua (NASA, Giovanni) mantiene el signo, pero no es significativa (r = +0,16 a +0,22, p_fdr 0,05 a 0,13). Presentar solo como pista.
-- Hielo marino frente al jurel de Chile (r ≈ −0,55), clorofila de Rey Jorge frente al calamar argentino del año siguiente (r = +0,60), SAM frente a clorofila de Rey Jorge (r = +0,50): no resisten FDR con n efectivo bajo.
+- Hielo marino frente al jurel de Chile (r ≈ −0,55), clorofila de Rey Jorge frente al calamar argentino del año siguiente (r = +0,60), SAM frente a clorofila de Rey Jorge (r = +0,50): no resisten FDR con n efectivo bajo. **Revisado el 14/11/2026** con un método más estricto (se quita la tendencia a ambas series, se usa la autocorrelación y se corrige por pruebas múltiples): estas pistas **no se sostienen** (ver `RESULTADOS_ANTARTIDA_VECINOS.md`).
 
 ## 6. Lo que no se encontró
 

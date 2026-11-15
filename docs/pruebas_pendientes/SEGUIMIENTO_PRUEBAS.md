@@ -154,3 +154,20 @@ Script: `prediccion_validacion.py`. Tablas: `tablas/nuevos_E8_*.csv`. Para cada 
 - Usar OISST (NOAA, 1981-2026, 0,25 grados) como comparación de la temperatura antártica.
 - Implementar en la web el panel de tendencias (Mann-Kendall y pendiente de Sen, con la sensibilidad al periodo).
 - Pruebas aún sin hacer: predicción en tiempo real de El Niño 2026 y mapa de vulnerabilidad.
+
+## 14/11/2026 (tarde): bloques de teleconexion, perspectiva y desembarques
+- Bloque 1 (teleconexion Antartida a Peru, 896 pruebas): ninguna supera el FDR, ni cruda ni parcial. Ver RESULTADOS_TELECONEXION_Y_PERSPECTIVA.md.
+- Bloque 2 (indices PSA y Amundsen): sin datos en disco; script listo y probado con datos sinteticos.
+- Bloque 3 (perspectiva mensual 2010-2025): la TSM mejora a la climatologia a 1 a 3 meses en las 5 zonas; la clorofila solo a 1 mes. Acierto en data/perspectiva_acierto.json.
+- Bloque 4 (desembarques de anchoveta): el Nino no mejora la prediccion mensual frente a la climatologia.
+
+
+## 15/11/2026: bloque 5, nutrientes y propiedades profundas a largo plazo
+
+- Preregistro 7a64339 y enmienda de selftest db6c14f, ambos anteriores a pruebas reales. Solo datos locales de reanálisis; código reutiliza bloque1 y utils sin modificarlos.
+- 1200/1200 pruebas calculables: 123 con p parcial <0,05, ninguna con q FDR <0,05. Menor q=0,053137. No se detecta vínculo con estos datos bajo el diseño preregistrado; no se interpreta como prueba de ausencia de vínculo lento.
+- 20 pares calibrados × 2000 desplazamientos = 40000 sustitutos; 16 con p empírico <0,05. Ninguno cumple el criterio compuesto porque ninguno supera FDR. Cero casos elegibles para repetir con ONI; tabla con cabecera y cero filas. Mitades y exclusión de extremos están calculadas para toda la familia.
+- Selftest: señal construida a 24 meses detectada; ruido AR(1) independiente .98 no pasa sustitutos (p=0,548226). Primer ejemplo de ondas deterministas dio un falso positivo y falló la aserción; diagnóstico y enmienda documentados, sin cambiar la calibración real.
+- Repetición con misma semilla: siete CSV y metadatos idénticos byte a byte. Una correlación aleatoria coincide con cálculo independiente de SciPy a 1e-10. Informe y tablas coinciden.
+- Potencia Fisher-z/Bonferroni es exploratoria, no potencia del criterio compuesto. Faltan registros más largos, afloramiento calculado, trazadores, Argo/BGC-Argo y biomasa acústica para una prueba mecanística más fuerte.
+- Script: bloque5_nutrientes_largo_plazo.py. Informe: RESULTADOS_NUTRIENTES_LARGO_PLAZO.md. Tablas nuevas: data/tablas_pruebas_pendientes/bloque5_nutrientes_*.csv. Ejecutado sin -I y con PYTHONIOENCODING=utf-8. Sin descargas.

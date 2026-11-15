@@ -59,3 +59,16 @@ No informar un “porcentaje de nutrientes antárticos” como resultado peruano
 - Argo GDAC, acceso a perfiles: <https://argo.ucsd.edu/data/data-from-gdacs/>
 - Variables aprobadas de BGC-Argo: <https://argo.ucsd.edu/about/framework-for-entering-argo/guidelines-for-argo-floats/>
 - IMARPE, colección de campañas hidroacústicas y recursos pelágicos: <https://repositorio.imarpe.gob.pe/>
+
+## Pruebas ya realizadas con los datos locales (15/11/2026)
+
+Con el panel de conectividad que ya existe (reanálisis Copernicus, 1998-2025) se corrieron pruebas preregistradas, con tamaño efectivo por autocorrelación, corrección FDR, control de El Niño y comprobación sin años extremos y por mitades. Los resultados completos están en `docs/pruebas_pendientes/`:
+
+1. **Señales antárticas y del Pacífico sur frente a la costa peruana** (896 pruebas, retrasos de 0 a 12 meses): ninguna supera el FDR, ni en correlación cruda ni controlando El Niño. Ver `RESULTADOS_TELECONEXION_Y_PERSPECTIVA.md`, bloque 1.
+2. **Nutrientes, oxígeno y masas de agua a 200-500 m con retrasos de hasta 5 años** (1200 pruebas): ninguna supera el FDR (menor q = 0,053); tamaño efectivo mediano de unos 14 datos, con baja potencia. No se detecta vínculo con estos datos, lo que no prueba que no exista un vínculo lento. Ver `RESULTADOS_NUTRIENTES_LARGO_PLAZO.md` y su preregistro.
+3. **Antártida y capturas de Chile y Argentina** (48 pruebas): las pistas anteriores de jurel y calamar no se sostienen con el método estricto. Ver `RESULTADOS_ANTARTIDA_VECINOS.md`.
+4. **Perspectiva retrospectiva a 1 a 3 meses**: la temperatura del mar mejora a la climatología en las cinco zonas; la clorofila solo a 1 mes. El Niño no mejora la predicción mensual de los desembarques de anchoveta. Ver el mismo informe del punto 1 y `data/perspectiva_acierto.json`.
+5. **Índices PSA y del Mar de Amundsen**: no existen en disco; el script `prueba_indices_externos.py` queda listo para cuando se consigan.
+
+Lo que sigue faltando para una prueba más fuerte es lo que enumera este documento: trazadores de masas de agua, afloramiento calculado de forma explícita, perfiles Argo y BGC-Argo y biomasa acústica con soporte espacial.
+

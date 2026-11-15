@@ -1,0 +1,1446 @@
+{
+ "source": "Retrospective monthly hindcast 2010-2025, local data (OC-CCI chlorophyll, NOAA CRW SST, Niño 1+2 NOAA PSL).",
+ "warning": "Monthly data only. Skill is measured on past months; it does not guarantee future accuracy. Not a forecast of fish.",
+ "results": [
+  {
+   "variable": "SST",
+   "zone": "paita",
+   "horizon_months": 1,
+   "model": "pers",
+   "mae_improvement": 0.3143,
+   "ci95": [
+    0.1597,
+    0.4391
+   ],
+   "mae_improvement_without_1998": 0.3277,
+   "sign_hit_rate": 0.786,
+   "base_rate_positive": 0.495,
+   "n": 192,
+   "status": "clear improvement over climatology"
+  },
+  {
+   "variable": "SST",
+   "zone": "paita",
+   "horizon_months": 1,
+   "model": "amort",
+   "mae_improvement": 0.3548,
+   "ci95": [
+    0.2396,
+    0.4462
+   ],
+   "mae_improvement_without_1998": 0.358,
+   "sign_hit_rate": 0.786,
+   "base_rate_positive": 0.495,
+   "n": 192,
+   "status": "clear improvement over climatology"
+  },
+  {
+   "variable": "SST",
+   "zone": "paita",
+   "horizon_months": 1,
+   "model": "nino",
+   "mae_improvement": 0.3696,
+   "ci95": [
+    0.253,
+    0.4614
+   ],
+   "mae_improvement_without_1998": 0.3721,
+   "sign_hit_rate": 0.786,
+   "base_rate_positive": 0.495,
+   "n": 192,
+   "status": "clear improvement over climatology"
+  },
+  {
+   "variable": "SST",
+   "zone": "paita",
+   "horizon_months": 2,
+   "model": "pers",
+   "mae_improvement": 0.081,
+   "ci95": [
+    -0.1396,
+    0.2494
+   ],
+   "mae_improvement_without_1998": 0.0938,
+   "sign_hit_rate": 0.677,
+   "base_rate_positive": 0.495,
+   "n": 192,
+   "status": "no clear improvement over climatology"
+  },
+  {
+   "variable": "SST",
+   "zone": "paita",
+   "horizon_months": 2,
+   "model": "amort",
+   "mae_improvement": 0.1806,
+   "ci95": [
+    0.0632,
+    0.2793
+   ],
+   "mae_improvement_without_1998": 0.1753,
+   "sign_hit_rate": 0.677,
+   "base_rate_positive": 0.495,
+   "n": 192,
+   "status": "clear improvement over climatology"
+  },
+  {
+   "variable": "SST",
+   "zone": "paita",
+   "horizon_months": 2,
+   "model": "nino",
+   "mae_improvement": 0.2069,
+   "ci95": [
+    0.1047,
+    0.2912
+   ],
+   "mae_improvement_without_1998": 0.1826,
+   "sign_hit_rate": 0.682,
+   "base_rate_positive": 0.495,
+   "n": 192,
+   "status": "clear improvement over climatology"
+  },
+  {
+   "variable": "SST",
+   "zone": "paita",
+   "horizon_months": 3,
+   "model": "pers",
+   "mae_improvement": -0.0601,
+   "ci95": [
+    -0.2946,
+    0.1183
+   ],
+   "mae_improvement_without_1998": -0.0435,
+   "sign_hit_rate": 0.604,
+   "base_rate_positive": 0.495,
+   "n": 192,
+   "status": "no clear improvement over climatology"
+  },
+  {
+   "variable": "SST",
+   "zone": "paita",
+   "horizon_months": 3,
+   "model": "amort",
+   "mae_improvement": 0.0933,
+   "ci95": [
+    0.0149,
+    0.1641
+   ],
+   "mae_improvement_without_1998": 0.0871,
+   "sign_hit_rate": 0.604,
+   "base_rate_positive": 0.495,
+   "n": 192,
+   "status": "clear improvement over climatology"
+  },
+  {
+   "variable": "SST",
+   "zone": "paita",
+   "horizon_months": 3,
+   "model": "nino",
+   "mae_improvement": 0.1176,
+   "ci95": [
+    0.0555,
+    0.1708
+   ],
+   "mae_improvement_without_1998": 0.0919,
+   "sign_hit_rate": 0.646,
+   "base_rate_positive": 0.495,
+   "n": 192,
+   "status": "clear improvement over climatology"
+  },
+  {
+   "variable": "Chlorophyll (log)",
+   "zone": "paita",
+   "horizon_months": 1,
+   "model": "pers",
+   "mae_improvement": -0.0201,
+   "ci95": [
+    -0.1608,
+    0.1095
+   ],
+   "mae_improvement_without_1998": -0.0147,
+   "sign_hit_rate": 0.693,
+   "base_rate_positive": 0.495,
+   "n": 192,
+   "status": "no clear improvement over climatology"
+  },
+  {
+   "variable": "Chlorophyll (log)",
+   "zone": "paita",
+   "horizon_months": 1,
+   "model": "amort",
+   "mae_improvement": 0.1088,
+   "ci95": [
+    0.0414,
+    0.1716
+   ],
+   "mae_improvement_without_1998": 0.105,
+   "sign_hit_rate": 0.693,
+   "base_rate_positive": 0.495,
+   "n": 192,
+   "status": "clear improvement over climatology"
+  },
+  {
+   "variable": "Chlorophyll (log)",
+   "zone": "paita",
+   "horizon_months": 1,
+   "model": "nino",
+   "mae_improvement": 0.1154,
+   "ci95": [
+    0.0419,
+    0.1839
+   ],
+   "mae_improvement_without_1998": 0.1036,
+   "sign_hit_rate": 0.708,
+   "base_rate_positive": 0.495,
+   "n": 192,
+   "status": "clear improvement over climatology"
+  },
+  {
+   "variable": "Chlorophyll (log)",
+   "zone": "paita",
+   "horizon_months": 2,
+   "model": "pers",
+   "mae_improvement": -0.2995,
+   "ci95": [
+    -0.4334,
+    -0.1585
+   ],
+   "mae_improvement_without_1998": -0.2877,
+   "sign_hit_rate": 0.589,
+   "base_rate_positive": 0.495,
+   "n": 192,
+   "status": "no clear improvement over climatology"
+  },
+  {
+   "variable": "Chlorophyll (log)",
+   "zone": "paita",
+   "horizon_months": 2,
+   "model": "amort",
+   "mae_improvement": 0.0107,
+   "ci95": [
+    -0.0173,
+    0.0417
+   ],
+   "mae_improvement_without_1998": 0.0081,
+   "sign_hit_rate": 0.589,
+   "base_rate_positive": 0.495,
+   "n": 192,
+   "status": "no clear improvement over climatology"
+  },
+  {
+   "variable": "Chlorophyll (log)",
+   "zone": "paita",
+   "horizon_months": 2,
+   "model": "nino",
+   "mae_improvement": 0.0296,
+   "ci95": [
+    -0.0132,
+    0.0724
+   ],
+   "mae_improvement_without_1998": 0.0164,
+   "sign_hit_rate": 0.62,
+   "base_rate_positive": 0.495,
+   "n": 192,
+   "status": "no clear improvement over climatology"
+  },
+  {
+   "variable": "Chlorophyll (log)",
+   "zone": "paita",
+   "horizon_months": 3,
+   "model": "pers",
+   "mae_improvement": -0.4401,
+   "ci95": [
+    -0.5815,
+    -0.3021
+   ],
+   "mae_improvement_without_1998": -0.4306,
+   "sign_hit_rate": 0.505,
+   "base_rate_positive": 0.495,
+   "n": 192,
+   "status": "no clear improvement over climatology"
+  },
+  {
+   "variable": "Chlorophyll (log)",
+   "zone": "paita",
+   "horizon_months": 3,
+   "model": "amort",
+   "mae_improvement": -0.0021,
+   "ci95": [
+    -0.0122,
+    0.0083
+   ],
+   "mae_improvement_without_1998": -0.0016,
+   "sign_hit_rate": 0.495,
+   "base_rate_positive": 0.495,
+   "n": 192,
+   "status": "no clear improvement over climatology"
+  },
+  {
+   "variable": "Chlorophyll (log)",
+   "zone": "paita",
+   "horizon_months": 3,
+   "model": "nino",
+   "mae_improvement": 0.0366,
+   "ci95": [
+    0.0026,
+    0.066
+   ],
+   "mae_improvement_without_1998": 0.0213,
+   "sign_hit_rate": 0.625,
+   "base_rate_positive": 0.495,
+   "n": 192,
+   "status": "no clear improvement over climatology"
+  },
+  {
+   "variable": "SST",
+   "zone": "chimbote",
+   "horizon_months": 1,
+   "model": "pers",
+   "mae_improvement": 0.4363,
+   "ci95": [
+    0.3075,
+    0.5366
+   ],
+   "mae_improvement_without_1998": 0.4445,
+   "sign_hit_rate": 0.828,
+   "base_rate_positive": 0.531,
+   "n": 192,
+   "status": "clear improvement over climatology"
+  },
+  {
+   "variable": "SST",
+   "zone": "chimbote",
+   "horizon_months": 1,
+   "model": "amort",
+   "mae_improvement": 0.4501,
+   "ci95": [
+    0.3401,
+    0.5354
+   ],
+   "mae_improvement_without_1998": 0.4487,
+   "sign_hit_rate": 0.828,
+   "base_rate_positive": 0.531,
+   "n": 192,
+   "status": "clear improvement over climatology"
+  },
+  {
+   "variable": "SST",
+   "zone": "chimbote",
+   "horizon_months": 1,
+   "model": "nino",
+   "mae_improvement": 0.4646,
+   "ci95": [
+    0.3618,
+    0.5451
+   ],
+   "mae_improvement_without_1998": 0.4642,
+   "sign_hit_rate": 0.833,
+   "base_rate_positive": 0.531,
+   "n": 192,
+   "status": "clear improvement over climatology"
+  },
+  {
+   "variable": "SST",
+   "zone": "chimbote",
+   "horizon_months": 2,
+   "model": "pers",
+   "mae_improvement": 0.1764,
+   "ci95": [
+    -0.0039,
+    0.3157
+   ],
+   "mae_improvement_without_1998": 0.1849,
+   "sign_hit_rate": 0.734,
+   "base_rate_positive": 0.531,
+   "n": 192,
+   "status": "no clear improvement over climatology"
+  },
+  {
+   "variable": "SST",
+   "zone": "chimbote",
+   "horizon_months": 2,
+   "model": "amort",
+   "mae_improvement": 0.247,
+   "ci95": [
+    0.1396,
+    0.3311
+   ],
+   "mae_improvement_without_1998": 0.2462,
+   "sign_hit_rate": 0.734,
+   "base_rate_positive": 0.531,
+   "n": 192,
+   "status": "clear improvement over climatology"
+  },
+  {
+   "variable": "SST",
+   "zone": "chimbote",
+   "horizon_months": 2,
+   "model": "nino",
+   "mae_improvement": 0.2847,
+   "ci95": [
+    0.1949,
+    0.3585
+   ],
+   "mae_improvement_without_1998": 0.2761,
+   "sign_hit_rate": 0.74,
+   "base_rate_positive": 0.531,
+   "n": 192,
+   "status": "clear improvement over climatology"
+  },
+  {
+   "variable": "SST",
+   "zone": "chimbote",
+   "horizon_months": 3,
+   "model": "pers",
+   "mae_improvement": 0.0143,
+   "ci95": [
+    -0.1938,
+    0.1809
+   ],
+   "mae_improvement_without_1998": 0.0349,
+   "sign_hit_rate": 0.672,
+   "base_rate_positive": 0.531,
+   "n": 192,
+   "status": "no clear improvement over climatology"
+  },
+  {
+   "variable": "SST",
+   "zone": "chimbote",
+   "horizon_months": 3,
+   "model": "amort",
+   "mae_improvement": 0.1668,
+   "ci95": [
+    0.0844,
+    0.2342
+   ],
+   "mae_improvement_without_1998": 0.1595,
+   "sign_hit_rate": 0.672,
+   "base_rate_positive": 0.531,
+   "n": 192,
+   "status": "clear improvement over climatology"
+  },
+  {
+   "variable": "SST",
+   "zone": "chimbote",
+   "horizon_months": 3,
+   "model": "nino",
+   "mae_improvement": 0.1978,
+   "ci95": [
+    0.1376,
+    0.2548
+   ],
+   "mae_improvement_without_1998": 0.1843,
+   "sign_hit_rate": 0.724,
+   "base_rate_positive": 0.531,
+   "n": 192,
+   "status": "clear improvement over climatology"
+  },
+  {
+   "variable": "Chlorophyll (log)",
+   "zone": "chimbote",
+   "horizon_months": 1,
+   "model": "pers",
+   "mae_improvement": 0.1021,
+   "ci95": [
+    -0.0027,
+    0.1923
+   ],
+   "mae_improvement_without_1998": 0.0849,
+   "sign_hit_rate": 0.734,
+   "base_rate_positive": 0.51,
+   "n": 192,
+   "status": "no clear improvement over climatology"
+  },
+  {
+   "variable": "Chlorophyll (log)",
+   "zone": "chimbote",
+   "horizon_months": 1,
+   "model": "amort",
+   "mae_improvement": 0.1732,
+   "ci95": [
+    0.0946,
+    0.2467
+   ],
+   "mae_improvement_without_1998": 0.1443,
+   "sign_hit_rate": 0.734,
+   "base_rate_positive": 0.51,
+   "n": 192,
+   "status": "clear improvement over climatology"
+  },
+  {
+   "variable": "Chlorophyll (log)",
+   "zone": "chimbote",
+   "horizon_months": 1,
+   "model": "nino",
+   "mae_improvement": 0.2085,
+   "ci95": [
+    0.1141,
+    0.3022
+   ],
+   "mae_improvement_without_1998": 0.189,
+   "sign_hit_rate": 0.729,
+   "base_rate_positive": 0.51,
+   "n": 192,
+   "status": "clear improvement over climatology"
+  },
+  {
+   "variable": "Chlorophyll (log)",
+   "zone": "chimbote",
+   "horizon_months": 2,
+   "model": "pers",
+   "mae_improvement": -0.0894,
+   "ci95": [
+    -0.2517,
+    0.0622
+   ],
+   "mae_improvement_without_1998": -0.1067,
+   "sign_hit_rate": 0.646,
+   "base_rate_positive": 0.51,
+   "n": 192,
+   "status": "no clear improvement over climatology"
+  },
+  {
+   "variable": "Chlorophyll (log)",
+   "zone": "chimbote",
+   "horizon_months": 2,
+   "model": "amort",
+   "mae_improvement": 0.0732,
+   "ci95": [
+    0.0091,
+    0.1334
+   ],
+   "mae_improvement_without_1998": 0.0668,
+   "sign_hit_rate": 0.646,
+   "base_rate_positive": 0.51,
+   "n": 192,
+   "status": "clear improvement over climatology"
+  },
+  {
+   "variable": "Chlorophyll (log)",
+   "zone": "chimbote",
+   "horizon_months": 2,
+   "model": "nino",
+   "mae_improvement": 0.1448,
+   "ci95": [
+    0.0524,
+    0.2301
+   ],
+   "mae_improvement_without_1998": 0.131,
+   "sign_hit_rate": 0.677,
+   "base_rate_positive": 0.51,
+   "n": 192,
+   "status": "clear improvement over climatology"
+  },
+  {
+   "variable": "Chlorophyll (log)",
+   "zone": "chimbote",
+   "horizon_months": 3,
+   "model": "pers",
+   "mae_improvement": -0.221,
+   "ci95": [
+    -0.3663,
+    -0.0857
+   ],
+   "mae_improvement_without_1998": -0.2216,
+   "sign_hit_rate": 0.568,
+   "base_rate_positive": 0.51,
+   "n": 192,
+   "status": "no clear improvement over climatology"
+  },
+  {
+   "variable": "Chlorophyll (log)",
+   "zone": "chimbote",
+   "horizon_months": 3,
+   "model": "amort",
+   "mae_improvement": 0.0248,
+   "ci95": [
+    -0.015,
+    0.0634
+   ],
+   "mae_improvement_without_1998": 0.0184,
+   "sign_hit_rate": 0.568,
+   "base_rate_positive": 0.51,
+   "n": 192,
+   "status": "no clear improvement over climatology"
+  },
+  {
+   "variable": "Chlorophyll (log)",
+   "zone": "chimbote",
+   "horizon_months": 3,
+   "model": "nino",
+   "mae_improvement": 0.1166,
+   "ci95": [
+    0.0501,
+    0.1853
+   ],
+   "mae_improvement_without_1998": 0.0995,
+   "sign_hit_rate": 0.703,
+   "base_rate_positive": 0.51,
+   "n": 192,
+   "status": "clear improvement over climatology"
+  },
+  {
+   "variable": "SST",
+   "zone": "callao",
+   "horizon_months": 1,
+   "model": "pers",
+   "mae_improvement": 0.4546,
+   "ci95": [
+    0.301,
+    0.5625
+   ],
+   "mae_improvement_without_1998": 0.4672,
+   "sign_hit_rate": 0.818,
+   "base_rate_positive": 0.552,
+   "n": 192,
+   "status": "clear improvement over climatology"
+  },
+  {
+   "variable": "SST",
+   "zone": "callao",
+   "horizon_months": 1,
+   "model": "amort",
+   "mae_improvement": 0.4597,
+   "ci95": [
+    0.334,
+    0.5515
+   ],
+   "mae_improvement_without_1998": 0.4604,
+   "sign_hit_rate": 0.818,
+   "base_rate_positive": 0.552,
+   "n": 192,
+   "status": "clear improvement over climatology"
+  },
+  {
+   "variable": "SST",
+   "zone": "callao",
+   "horizon_months": 1,
+   "model": "nino",
+   "mae_improvement": 0.4638,
+   "ci95": [
+    0.3417,
+    0.5498
+   ],
+   "mae_improvement_without_1998": 0.4639,
+   "sign_hit_rate": 0.823,
+   "base_rate_positive": 0.552,
+   "n": 192,
+   "status": "clear improvement over climatology"
+  },
+  {
+   "variable": "SST",
+   "zone": "callao",
+   "horizon_months": 2,
+   "model": "pers",
+   "mae_improvement": 0.1806,
+   "ci95": [
+    -0.0221,
+    0.3295
+   ],
+   "mae_improvement_without_1998": 0.1952,
+   "sign_hit_rate": 0.719,
+   "base_rate_positive": 0.552,
+   "n": 192,
+   "status": "no clear improvement over climatology"
+  },
+  {
+   "variable": "SST",
+   "zone": "callao",
+   "horizon_months": 2,
+   "model": "amort",
+   "mae_improvement": 0.2517,
+   "ci95": [
+    0.1266,
+    0.3454
+   ],
+   "mae_improvement_without_1998": 0.2445,
+   "sign_hit_rate": 0.719,
+   "base_rate_positive": 0.552,
+   "n": 192,
+   "status": "clear improvement over climatology"
+  },
+  {
+   "variable": "SST",
+   "zone": "callao",
+   "horizon_months": 2,
+   "model": "nino",
+   "mae_improvement": 0.2779,
+   "ci95": [
+    0.1783,
+    0.3536
+   ],
+   "mae_improvement_without_1998": 0.2652,
+   "sign_hit_rate": 0.755,
+   "base_rate_positive": 0.552,
+   "n": 192,
+   "status": "clear improvement over climatology"
+  },
+  {
+   "variable": "SST",
+   "zone": "callao",
+   "horizon_months": 3,
+   "model": "pers",
+   "mae_improvement": 0.0421,
+   "ci95": [
+    -0.1598,
+    0.1981
+   ],
+   "mae_improvement_without_1998": 0.0639,
+   "sign_hit_rate": 0.656,
+   "base_rate_positive": 0.552,
+   "n": 192,
+   "status": "no clear improvement over climatology"
+  },
+  {
+   "variable": "SST",
+   "zone": "callao",
+   "horizon_months": 3,
+   "model": "amort",
+   "mae_improvement": 0.1454,
+   "ci95": [
+    0.0504,
+    0.2201
+   ],
+   "mae_improvement_without_1998": 0.1303,
+   "sign_hit_rate": 0.656,
+   "base_rate_positive": 0.552,
+   "n": 192,
+   "status": "clear improvement over climatology"
+  },
+  {
+   "variable": "SST",
+   "zone": "callao",
+   "horizon_months": 3,
+   "model": "nino",
+   "mae_improvement": 0.1843,
+   "ci95": [
+    0.1246,
+    0.2352
+   ],
+   "mae_improvement_without_1998": 0.1607,
+   "sign_hit_rate": 0.672,
+   "base_rate_positive": 0.552,
+   "n": 192,
+   "status": "clear improvement over climatology"
+  },
+  {
+   "variable": "Chlorophyll (log)",
+   "zone": "callao",
+   "horizon_months": 1,
+   "model": "pers",
+   "mae_improvement": -0.04,
+   "ci95": [
+    -0.2322,
+    0.1145
+   ],
+   "mae_improvement_without_1998": -0.0518,
+   "sign_hit_rate": 0.625,
+   "base_rate_positive": 0.5,
+   "n": 192,
+   "status": "no clear improvement over climatology"
+  },
+  {
+   "variable": "Chlorophyll (log)",
+   "zone": "callao",
+   "horizon_months": 1,
+   "model": "amort",
+   "mae_improvement": 0.1054,
+   "ci95": [
+    0.0035,
+    0.1878
+   ],
+   "mae_improvement_without_1998": 0.0813,
+   "sign_hit_rate": 0.625,
+   "base_rate_positive": 0.5,
+   "n": 192,
+   "status": "no clear improvement over climatology"
+  },
+  {
+   "variable": "Chlorophyll (log)",
+   "zone": "callao",
+   "horizon_months": 1,
+   "model": "nino",
+   "mae_improvement": 0.1513,
+   "ci95": [
+    0.056,
+    0.2282
+   ],
+   "mae_improvement_without_1998": 0.1142,
+   "sign_hit_rate": 0.677,
+   "base_rate_positive": 0.5,
+   "n": 192,
+   "status": "clear improvement over climatology"
+  },
+  {
+   "variable": "Chlorophyll (log)",
+   "zone": "callao",
+   "horizon_months": 2,
+   "model": "pers",
+   "mae_improvement": -0.3061,
+   "ci95": [
+    -0.4474,
+    -0.1678
+   ],
+   "mae_improvement_without_1998": -0.3105,
+   "sign_hit_rate": 0.547,
+   "base_rate_positive": 0.5,
+   "n": 192,
+   "status": "no clear improvement over climatology"
+  },
+  {
+   "variable": "Chlorophyll (log)",
+   "zone": "callao",
+   "horizon_months": 2,
+   "model": "amort",
+   "mae_improvement": 0.0213,
+   "ci95": [
+    -0.0169,
+    0.0557
+   ],
+   "mae_improvement_without_1998": 0.006,
+   "sign_hit_rate": 0.547,
+   "base_rate_positive": 0.5,
+   "n": 192,
+   "status": "no clear improvement over climatology"
+  },
+  {
+   "variable": "Chlorophyll (log)",
+   "zone": "callao",
+   "horizon_months": 2,
+   "model": "nino",
+   "mae_improvement": 0.0804,
+   "ci95": [
+    0.0292,
+    0.1329
+   ],
+   "mae_improvement_without_1998": 0.046,
+   "sign_hit_rate": 0.661,
+   "base_rate_positive": 0.5,
+   "n": 192,
+   "status": "no clear improvement over climatology"
+  },
+  {
+   "variable": "Chlorophyll (log)",
+   "zone": "callao",
+   "horizon_months": 3,
+   "model": "pers",
+   "mae_improvement": -0.3654,
+   "ci95": [
+    -0.4924,
+    -0.2346
+   ],
+   "mae_improvement_without_1998": -0.3682,
+   "sign_hit_rate": 0.5,
+   "base_rate_positive": 0.5,
+   "n": 192,
+   "status": "no clear improvement over climatology"
+  },
+  {
+   "variable": "Chlorophyll (log)",
+   "zone": "callao",
+   "horizon_months": 3,
+   "model": "amort",
+   "mae_improvement": -0.0038,
+   "ci95": [
+    -0.0229,
+    0.0144
+   ],
+   "mae_improvement_without_1998": -0.0095,
+   "sign_hit_rate": 0.5,
+   "base_rate_positive": 0.5,
+   "n": 192,
+   "status": "no clear improvement over climatology"
+  },
+  {
+   "variable": "Chlorophyll (log)",
+   "zone": "callao",
+   "horizon_months": 3,
+   "model": "nino",
+   "mae_improvement": 0.0674,
+   "ci95": [
+    0.0426,
+    0.0931
+   ],
+   "mae_improvement_without_1998": 0.0276,
+   "sign_hit_rate": 0.661,
+   "base_rate_positive": 0.5,
+   "n": 192,
+   "status": "clear improvement over climatology"
+  },
+  {
+   "variable": "SST",
+   "zone": "pisco",
+   "horizon_months": 1,
+   "model": "pers",
+   "mae_improvement": 0.4474,
+   "ci95": [
+    0.2984,
+    0.5573
+   ],
+   "mae_improvement_without_1998": 0.4595,
+   "sign_hit_rate": 0.818,
+   "base_rate_positive": 0.557,
+   "n": 192,
+   "status": "clear improvement over climatology"
+  },
+  {
+   "variable": "SST",
+   "zone": "pisco",
+   "horizon_months": 1,
+   "model": "amort",
+   "mae_improvement": 0.4382,
+   "ci95": [
+    0.3157,
+    0.528
+   ],
+   "mae_improvement_without_1998": 0.4314,
+   "sign_hit_rate": 0.818,
+   "base_rate_positive": 0.557,
+   "n": 192,
+   "status": "clear improvement over climatology"
+  },
+  {
+   "variable": "SST",
+   "zone": "pisco",
+   "horizon_months": 1,
+   "model": "nino",
+   "mae_improvement": 0.441,
+   "ci95": [
+    0.3308,
+    0.5228
+   ],
+   "mae_improvement_without_1998": 0.435,
+   "sign_hit_rate": 0.828,
+   "base_rate_positive": 0.557,
+   "n": 192,
+   "status": "clear improvement over climatology"
+  },
+  {
+   "variable": "SST",
+   "zone": "pisco",
+   "horizon_months": 2,
+   "model": "pers",
+   "mae_improvement": 0.1963,
+   "ci95": [
+    0.0159,
+    0.3391
+   ],
+   "mae_improvement_without_1998": 0.206,
+   "sign_hit_rate": 0.729,
+   "base_rate_positive": 0.557,
+   "n": 192,
+   "status": "clear improvement over climatology"
+  },
+  {
+   "variable": "SST",
+   "zone": "pisco",
+   "horizon_months": 2,
+   "model": "amort",
+   "mae_improvement": 0.2518,
+   "ci95": [
+    0.142,
+    0.3335
+   ],
+   "mae_improvement_without_1998": 0.2436,
+   "sign_hit_rate": 0.729,
+   "base_rate_positive": 0.557,
+   "n": 192,
+   "status": "clear improvement over climatology"
+  },
+  {
+   "variable": "SST",
+   "zone": "pisco",
+   "horizon_months": 2,
+   "model": "nino",
+   "mae_improvement": 0.2821,
+   "ci95": [
+    0.1955,
+    0.3527
+   ],
+   "mae_improvement_without_1998": 0.2728,
+   "sign_hit_rate": 0.745,
+   "base_rate_positive": 0.557,
+   "n": 192,
+   "status": "clear improvement over climatology"
+  },
+  {
+   "variable": "SST",
+   "zone": "pisco",
+   "horizon_months": 3,
+   "model": "pers",
+   "mae_improvement": 0.0389,
+   "ci95": [
+    -0.1568,
+    0.2009
+   ],
+   "mae_improvement_without_1998": 0.0611,
+   "sign_hit_rate": 0.646,
+   "base_rate_positive": 0.557,
+   "n": 192,
+   "status": "no clear improvement over climatology"
+  },
+  {
+   "variable": "SST",
+   "zone": "pisco",
+   "horizon_months": 3,
+   "model": "amort",
+   "mae_improvement": 0.1466,
+   "ci95": [
+    0.0643,
+    0.2171
+   ],
+   "mae_improvement_without_1998": 0.137,
+   "sign_hit_rate": 0.646,
+   "base_rate_positive": 0.557,
+   "n": 192,
+   "status": "clear improvement over climatology"
+  },
+  {
+   "variable": "SST",
+   "zone": "pisco",
+   "horizon_months": 3,
+   "model": "nino",
+   "mae_improvement": 0.1896,
+   "ci95": [
+    0.1342,
+    0.2368
+   ],
+   "mae_improvement_without_1998": 0.1768,
+   "sign_hit_rate": 0.651,
+   "base_rate_positive": 0.557,
+   "n": 192,
+   "status": "clear improvement over climatology"
+  },
+  {
+   "variable": "Chlorophyll (log)",
+   "zone": "pisco",
+   "horizon_months": 1,
+   "model": "pers",
+   "mae_improvement": -0.0872,
+   "ci95": [
+    -0.2705,
+    0.0793
+   ],
+   "mae_improvement_without_1998": -0.0847,
+   "sign_hit_rate": 0.651,
+   "base_rate_positive": 0.469,
+   "n": 192,
+   "status": "no clear improvement over climatology"
+  },
+  {
+   "variable": "Chlorophyll (log)",
+   "zone": "pisco",
+   "horizon_months": 1,
+   "model": "amort",
+   "mae_improvement": 0.0697,
+   "ci95": [
+    -0.0089,
+    0.1428
+   ],
+   "mae_improvement_without_1998": 0.0673,
+   "sign_hit_rate": 0.651,
+   "base_rate_positive": 0.469,
+   "n": 192,
+   "status": "no clear improvement over climatology"
+  },
+  {
+   "variable": "Chlorophyll (log)",
+   "zone": "pisco",
+   "horizon_months": 1,
+   "model": "nino",
+   "mae_improvement": 0.0697,
+   "ci95": [
+    -0.0114,
+    0.1434
+   ],
+   "mae_improvement_without_1998": 0.0677,
+   "sign_hit_rate": 0.641,
+   "base_rate_positive": 0.469,
+   "n": 192,
+   "status": "no clear improvement over climatology"
+  },
+  {
+   "variable": "Chlorophyll (log)",
+   "zone": "pisco",
+   "horizon_months": 2,
+   "model": "pers",
+   "mae_improvement": -0.2015,
+   "ci95": [
+    -0.3774,
+    -0.0281
+   ],
+   "mae_improvement_without_1998": -0.1939,
+   "sign_hit_rate": 0.583,
+   "base_rate_positive": 0.469,
+   "n": 192,
+   "status": "no clear improvement over climatology"
+  },
+  {
+   "variable": "Chlorophyll (log)",
+   "zone": "pisco",
+   "horizon_months": 2,
+   "model": "amort",
+   "mae_improvement": 0.0472,
+   "ci95": [
+    -0.0147,
+    0.1012
+   ],
+   "mae_improvement_without_1998": 0.0458,
+   "sign_hit_rate": 0.583,
+   "base_rate_positive": 0.469,
+   "n": 192,
+   "status": "no clear improvement over climatology"
+  },
+  {
+   "variable": "Chlorophyll (log)",
+   "zone": "pisco",
+   "horizon_months": 2,
+   "model": "nino",
+   "mae_improvement": 0.04,
+   "ci95": [
+    -0.019,
+    0.0919
+   ],
+   "mae_improvement_without_1998": 0.0404,
+   "sign_hit_rate": 0.552,
+   "base_rate_positive": 0.469,
+   "n": 192,
+   "status": "no clear improvement over climatology"
+  },
+  {
+   "variable": "Chlorophyll (log)",
+   "zone": "pisco",
+   "horizon_months": 3,
+   "model": "pers",
+   "mae_improvement": -0.3469,
+   "ci95": [
+    -0.5144,
+    -0.1964
+   ],
+   "mae_improvement_without_1998": -0.327,
+   "sign_hit_rate": 0.464,
+   "base_rate_positive": 0.469,
+   "n": 192,
+   "status": "no clear improvement over climatology"
+  },
+  {
+   "variable": "Chlorophyll (log)",
+   "zone": "pisco",
+   "horizon_months": 3,
+   "model": "amort",
+   "mae_improvement": -0.0043,
+   "ci95": [
+    -0.0177,
+    0.0083
+   ],
+   "mae_improvement_without_1998": -0.0064,
+   "sign_hit_rate": 0.464,
+   "base_rate_positive": 0.469,
+   "n": 192,
+   "status": "no clear improvement over climatology"
+  },
+  {
+   "variable": "Chlorophyll (log)",
+   "zone": "pisco",
+   "horizon_months": 3,
+   "model": "nino",
+   "mae_improvement": -0.0175,
+   "ci95": [
+    -0.0349,
+    -0.0006
+   ],
+   "mae_improvement_without_1998": -0.0229,
+   "sign_hit_rate": 0.469,
+   "base_rate_positive": 0.469,
+   "n": 192,
+   "status": "no clear improvement over climatology"
+  },
+  {
+   "variable": "SST",
+   "zone": "ilo",
+   "horizon_months": 1,
+   "model": "pers",
+   "mae_improvement": 0.2255,
+   "ci95": [
+    0.0882,
+    0.3415
+   ],
+   "mae_improvement_without_1998": 0.2357,
+   "sign_hit_rate": 0.755,
+   "base_rate_positive": 0.495,
+   "n": 192,
+   "status": "clear improvement over climatology"
+  },
+  {
+   "variable": "SST",
+   "zone": "ilo",
+   "horizon_months": 1,
+   "model": "amort",
+   "mae_improvement": 0.2614,
+   "ci95": [
+    0.1554,
+    0.351
+   ],
+   "mae_improvement_without_1998": 0.2593,
+   "sign_hit_rate": 0.755,
+   "base_rate_positive": 0.495,
+   "n": 192,
+   "status": "clear improvement over climatology"
+  },
+  {
+   "variable": "SST",
+   "zone": "ilo",
+   "horizon_months": 1,
+   "model": "nino",
+   "mae_improvement": 0.2915,
+   "ci95": [
+    0.1793,
+    0.3818
+   ],
+   "mae_improvement_without_1998": 0.2888,
+   "sign_hit_rate": 0.76,
+   "base_rate_positive": 0.495,
+   "n": 192,
+   "status": "clear improvement over climatology"
+  },
+  {
+   "variable": "SST",
+   "zone": "ilo",
+   "horizon_months": 2,
+   "model": "pers",
+   "mae_improvement": -0.0836,
+   "ci95": [
+    -0.2536,
+    0.0752
+   ],
+   "mae_improvement_without_1998": -0.0665,
+   "sign_hit_rate": 0.646,
+   "base_rate_positive": 0.495,
+   "n": 192,
+   "status": "no clear improvement over climatology"
+  },
+  {
+   "variable": "SST",
+   "zone": "ilo",
+   "horizon_months": 2,
+   "model": "amort",
+   "mae_improvement": 0.0796,
+   "ci95": [
+    -0.0242,
+    0.1723
+   ],
+   "mae_improvement_without_1998": 0.0857,
+   "sign_hit_rate": 0.646,
+   "base_rate_positive": 0.495,
+   "n": 192,
+   "status": "no clear improvement over climatology"
+  },
+  {
+   "variable": "SST",
+   "zone": "ilo",
+   "horizon_months": 2,
+   "model": "nino",
+   "mae_improvement": 0.1513,
+   "ci95": [
+    0.0541,
+    0.2306
+   ],
+   "mae_improvement_without_1998": 0.126,
+   "sign_hit_rate": 0.708,
+   "base_rate_positive": 0.495,
+   "n": 192,
+   "status": "clear improvement over climatology"
+  },
+  {
+   "variable": "SST",
+   "zone": "ilo",
+   "horizon_months": 3,
+   "model": "pers",
+   "mae_improvement": -0.1781,
+   "ci95": [
+    -0.3688,
+    -0.0023
+   ],
+   "mae_improvement_without_1998": -0.153,
+   "sign_hit_rate": 0.594,
+   "base_rate_positive": 0.495,
+   "n": 192,
+   "status": "no clear improvement over climatology"
+  },
+  {
+   "variable": "SST",
+   "zone": "ilo",
+   "horizon_months": 3,
+   "model": "amort",
+   "mae_improvement": 0.0416,
+   "ci95": [
+    -0.0423,
+    0.1245
+   ],
+   "mae_improvement_without_1998": 0.0463,
+   "sign_hit_rate": 0.594,
+   "base_rate_positive": 0.495,
+   "n": 192,
+   "status": "no clear improvement over climatology"
+  },
+  {
+   "variable": "SST",
+   "zone": "ilo",
+   "horizon_months": 3,
+   "model": "nino",
+   "mae_improvement": 0.108,
+   "ci95": [
+    0.0382,
+    0.1745
+   ],
+   "mae_improvement_without_1998": 0.0773,
+   "sign_hit_rate": 0.661,
+   "base_rate_positive": 0.495,
+   "n": 192,
+   "status": "clear improvement over climatology"
+  },
+  {
+   "variable": "Chlorophyll (log)",
+   "zone": "ilo",
+   "horizon_months": 1,
+   "model": "pers",
+   "mae_improvement": 0.1145,
+   "ci95": [
+    -0.061,
+    0.2787
+   ],
+   "mae_improvement_without_1998": 0.1122,
+   "sign_hit_rate": 0.703,
+   "base_rate_positive": 0.562,
+   "n": 192,
+   "status": "no clear improvement over climatology"
+  },
+  {
+   "variable": "Chlorophyll (log)",
+   "zone": "ilo",
+   "horizon_months": 1,
+   "model": "amort",
+   "mae_improvement": 0.1802,
+   "ci95": [
+    0.068,
+    0.2844
+   ],
+   "mae_improvement_without_1998": 0.1756,
+   "sign_hit_rate": 0.703,
+   "base_rate_positive": 0.562,
+   "n": 192,
+   "status": "clear improvement over climatology"
+  },
+  {
+   "variable": "Chlorophyll (log)",
+   "zone": "ilo",
+   "horizon_months": 1,
+   "model": "nino",
+   "mae_improvement": 0.1793,
+   "ci95": [
+    0.0644,
+    0.2834
+   ],
+   "mae_improvement_without_1998": 0.1724,
+   "sign_hit_rate": 0.703,
+   "base_rate_positive": 0.562,
+   "n": 192,
+   "status": "clear improvement over climatology"
+  },
+  {
+   "variable": "Chlorophyll (log)",
+   "zone": "ilo",
+   "horizon_months": 2,
+   "model": "pers",
+   "mae_improvement": -0.0464,
+   "ci95": [
+    -0.2581,
+    0.1451
+   ],
+   "mae_improvement_without_1998": -0.049,
+   "sign_hit_rate": 0.63,
+   "base_rate_positive": 0.562,
+   "n": 192,
+   "status": "no clear improvement over climatology"
+  },
+  {
+   "variable": "Chlorophyll (log)",
+   "zone": "ilo",
+   "horizon_months": 2,
+   "model": "amort",
+   "mae_improvement": 0.0674,
+   "ci95": [
+    -0.0316,
+    0.1525
+   ],
+   "mae_improvement_without_1998": 0.0679,
+   "sign_hit_rate": 0.63,
+   "base_rate_positive": 0.562,
+   "n": 192,
+   "status": "no clear improvement over climatology"
+  },
+  {
+   "variable": "Chlorophyll (log)",
+   "zone": "ilo",
+   "horizon_months": 2,
+   "model": "nino",
+   "mae_improvement": 0.0675,
+   "ci95": [
+    -0.0338,
+    0.1512
+   ],
+   "mae_improvement_without_1998": 0.0602,
+   "sign_hit_rate": 0.635,
+   "base_rate_positive": 0.562,
+   "n": 192,
+   "status": "no clear improvement over climatology"
+  },
+  {
+   "variable": "Chlorophyll (log)",
+   "zone": "ilo",
+   "horizon_months": 3,
+   "model": "pers",
+   "mae_improvement": -0.1405,
+   "ci95": [
+    -0.3586,
+    0.0555
+   ],
+   "mae_improvement_without_1998": -0.14,
+   "sign_hit_rate": 0.615,
+   "base_rate_positive": 0.562,
+   "n": 192,
+   "status": "no clear improvement over climatology"
+  },
+  {
+   "variable": "Chlorophyll (log)",
+   "zone": "ilo",
+   "horizon_months": 3,
+   "model": "amort",
+   "mae_improvement": 0.0419,
+   "ci95": [
+    -0.0283,
+    0.1
+   ],
+   "mae_improvement_without_1998": 0.0414,
+   "sign_hit_rate": 0.615,
+   "base_rate_positive": 0.562,
+   "n": 192,
+   "status": "no clear improvement over climatology"
+  },
+  {
+   "variable": "Chlorophyll (log)",
+   "zone": "ilo",
+   "horizon_months": 3,
+   "model": "nino",
+   "mae_improvement": 0.0433,
+   "ci95": [
+    -0.0239,
+    0.0987
+   ],
+   "mae_improvement_without_1998": 0.027,
+   "sign_hit_rate": 0.625,
+   "base_rate_positive": 0.562,
+   "n": 192,
+   "status": "no clear improvement over climatology"
+  }
+ ]
+}

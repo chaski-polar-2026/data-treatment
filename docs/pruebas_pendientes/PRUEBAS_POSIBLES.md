@@ -33,7 +33,7 @@ Observaciones:
 
 Contexto: entre la Antártida y la costa peruana no salió nada que resistiera la corrección (H1a, H1b y H1e, más de 900 pruebas). El desfase de 3 a 4 años desapareció al quitar El Niño. Lo que sigue busca relaciones de la Antártida con otras variables, no un vínculo directo con la costa.
 
-Pistas previas, sin control completo (pueden caer): SAM frente a clorofila de Rey Jorge (r = +0,50); hielo marino frente a jurel de Chile (r ≈ −0,55); clorofila de Rey Jorge frente a calamar argentino del año siguiente (r = +0,60).
+Pistas previas, sin control completo (pueden caer): SAM frente a clorofila de Rey Jorge (r = +0,50); hielo marino frente a jurel de Chile (r ≈ −0,55); clorofila de Rey Jorge frente a calamar argentino del año siguiente (r = +0,60). **Revisado el 14/11/2026** con un método más estricto (se quita la tendencia a ambas series, se usa la autocorrelación y se corrige por pruebas múltiples): estas pistas **no se sostienen** (ver `RESULTADOS_ANTARTIDA_VECINOS.md`).
 
 | # | Prueba | Relación esperada | Datos | Estado de los datos |
 |---|---|---|---|---|
@@ -41,7 +41,7 @@ Pistas previas, sin control completo (pueden caer): SAM frente a clorofila de Re
 | B2 | SAM × El Niño: si el efecto del SAM sobre la clorofila cambia según la fase de El Niño | Interacción | Los mismos | Listos |
 | B3 | Cadena con puente: hielo o SAM → temperatura o nutrientes del Pacífico Sur (40 a 45° S) → clorofila peruana, cada eslabón con su desfase | Positiva o negativa por eslabón | Variables satelitales del Pacífico Sur; nutrientes de CMEMS | Parcial |
 | B4 | Corrientes de la zona de origen de Humboldt frente a temperatura y nutrientes del norte (no frente a clorofila) | A definir | Corrientes (hasta 2018) | Limitado |
-| B5 | Hielo marino y SAM frente a otras especies de la FAO (jurel, calamar, merluza), con control de El Niño | A definir | FAO GlobalProduction 1950-2024, NSIDC | Listos |
+| B5 | Hielo marino y SAM frente a otras especies de la FAO (jurel, calamar, merluza), con control de El Niño | Hecho el 14/11 (ver RESULTADOS_ANTARTIDA_VECINOS.md) | FAO GlobalProduction 1950-2024, NSIDC | Listos |
 
 Observaciones:
 - B5: las capturas no son abundancia (las afectan cuotas y esfuerzo) y la serie anual tiene pocos puntos, de modo que la potencia estadística es baja.

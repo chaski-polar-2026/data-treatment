@@ -1,0 +1,17 @@
+{
+  "seed": 20261115,
+  "B": 2000,
+  "missing": [],
+  "hashes": {
+    "D:\\hackathon\\NASA\\drive_aaron\\connectivity_panel_monthly.csv": "ad7ac9119d2cd326595fa32758a3e5a88044c9c600bc476b2920221cd4b705a9",
+    "D:\\hackathon\\NASA\\pruebas\\json_pagina\\monitor_data.json": "ca2a888e326a0f87cae10c94ae37f0fd75835d4a43aed95f3712efc102d248c5"
+  },
+  "versions": {
+    "python": "3.12.10",
+    "numpy": "2.5.2",
+    "pandas": "3.1.0",
+    "scipy": "1.18.1"
+  },
+  "nino_available": 336,
+  "oni_available": 336
+}
