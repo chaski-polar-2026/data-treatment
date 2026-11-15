@@ -81,7 +81,8 @@ Seed 20261115; population: five newly cited species-field values, in appended CS
 - Cachema temperature: ambiguous species attribution in extracted text; verify the original page visually. Existing season/El Nino notes need renewed access to F17.
 - Hake upper depth: open-ended in the verified guide; inspect the inaccessible 2025 candidate before resolving any discrepancy. Season is now sourced.
 - All six experimental thermal optima: pending explicit, accessible study results with life stage, location and method. Do not fill from treatment temperatures or inferred habitat ranges.
-- Scallop and pulpo machine-readable landings: pending endpoint verification. Report charts are available, not a verified raw dataset.
+- Scallop and pulpo landings: a regional machine-readable CSV exists (GORE Piura / DIREPRO, species "Concha de abanico" and "Pulpo" seen in a partial read, 2026-11-15; Piura only). National species-level machine-readable data remain pending; the IMARPE report charts (F26) are not a raw dataset.
+- Cachema temperature: FishBase species page 403 (F27, read 2026-11-15) has no temperature line, so the field stays empty. Do not use a model-based estimate without a verified source page.
 - Optional OBIS/GBIF presence counts were not collected; no environmental conditions were extracted.
 
 Existing differing source descriptions for squid depth wording and scallop depth coverage are now flagged `sources_disagree`; their original notes and references are retained. No new endpoint was chosen to resolve those differences.

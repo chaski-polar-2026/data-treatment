@@ -886,8 +886,9 @@
     "landing_data_frequency": "Monthly",
     "landing_data_years": "2024-06 to 2026-07",
     "evidence_level": "sourced",
-    "flags": "temperature_evidence_pending;thermal_optimum_pending",
+    "flags": "temperature_evidence_pending;thermal_optimum_pending;sources_disagree",
     "notes": "No unambiguous min/max/optimum source found; temperature fields remain blank. Review status: No thermal optimum reported in reviewed sources. Temperature pending: no unambiguous species-attributed passage verified. Existing season and El Nino source F17: no accesible (502).",
+    "depth_note": "IMARPE gives 0-50 m. FishBase lists a depth range of 10 m to an unknown limit (Ref. 9118).",
     "recorded_temperature": {
       "min": null,
       "max": null,
@@ -1014,6 +1015,13 @@
           "source_id": "F24",
           "page_or_table": "Section Cynoscion analis; Figure 6",
           "short_quote": "de 0 a 50 metros"
+        }
+      ],
+      "depth_note": [
+        {
+          "source_id": "F27",
+          "page_or_table": "species summary, Environment line",
+          "short_quote": "depth range 10 - ? m"
         }
       ]
     }
