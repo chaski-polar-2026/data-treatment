@@ -16,7 +16,8 @@
     "landing_data_frequency": "Quarterly updates; individual records",
     "landing_data_years": "2023-2026 Q2",
     "evidence_level": "sourced",
-    "notes": "No thermal optimum reported.",
+    "flags": "thermal_optimum_pending",
+    "notes": "No thermal optimum reported. Review status: No thermal optimum reported in reviewed sources. Existing season and El Nino references are present; remote recheck: no accesible (timeout or 502).",
     "recorded_temperature": {
       "min": 14.0,
       "max": 23.0,
@@ -203,8 +204,8 @@
     "landing_data_frequency": "Monthly",
     "landing_data_years": "2024-06 to 2026-07",
     "evidence_level": "sourced",
-    "flags": "source_wording_difference",
-    "notes": "Two tagged squid reached 1200 m (2017, p. 174); this is not a population limit.",
+    "flags": "source_wording_difference;thermal_optimum_pending;sources_disagree",
+    "notes": "Two tagged squid reached 1200 m (2017, p. 174); this is not a population limit. Review status: No thermal optimum reported in reviewed sources. Existing season and El Nino references are present; remote recheck: no accesible (timeout or 502).",
     "recorded_temperature": {
       "min": 14.0,
       "max": 27.5,
@@ -387,8 +388,8 @@
     "el_nino_response_note": "An IMARPE 2024 assessment reports poor population condition after the 2023-24 warm event despite expected density increase.",
     "fishery_note": "Artisanal fishery, including diving harvest.",
     "evidence_level": "sourced",
-    "flags": "landings_pending",
-    "notes": "Section 2.7.2 reports typical 5-40 m; IMARPE species record gives a broader intertidal-to-95 m distribution.",
+    "flags": "landings_pending;thermal_optimum_pending;sources_disagree",
+    "notes": "Section 2.7.2 reports typical 5-40 m; IMARPE species record gives a broader intertidal-to-95 m distribution. Review status: No thermal optimum reported in reviewed sources. Machine-readable species landings pending: public monthly charts verified in F26; data endpoint not verified.",
     "recorded_temperature": {
       "min": 17.0,
       "max": 22.0,
@@ -544,8 +545,8 @@
     "peru_coast_range_note": "Tumbes to central Chile.",
     "fishery_note": "Artisanal fishery; diving is reported.",
     "evidence_level": "sourced",
-    "flags": "landings_pending",
-    "notes": "Species record gives intertidal to 30 m.",
+    "flags": "landings_pending;thermal_optimum_pending",
+    "notes": "Species record gives intertidal to 30 m. Review status: No thermal optimum reported in reviewed sources. Machine-readable species landings pending: public monthly charts verified in F26; data endpoint not verified.",
     "recorded_temperature": {
       "min": 18.5,
       "max": 21.7,
@@ -703,14 +704,16 @@
     "group": "demersal fish",
     "habitat_summary": "Benthodemersal; IMARPE assessment reports concentrations at 100-200 m.",
     "temperature_note": "Peru field bottom temperatures: 10-16 C on normal cruise and 14.5-22.3 C during El Nino; not limits or optimum.",
+    "season_note": "Main spawning in winter-spring; secondary spawning in summer-autumn.",
     "el_nino_response_note": "IMARPE reports inverted distribution and 14.5-22.3 C bottom temperatures in the 1983 El Nino cruise.",
     "peru_coast_range_note": "Peruvian and adjacent Ecuadorian waters.",
     "landing_data_source": "GORE Piura monthly species-by-port landings",
     "landing_data_frequency": "Monthly",
     "landing_data_years": "2024-06 to 2026-07",
     "evidence_level": "sourced",
-    "flags": "name_corrected;depth_pending;season_pending",
-    "notes": "WoRMS accepts Merluccius peruanus; Merluccius gayi peruanus is retained as historical synonym.",
+    "flags": "name_corrected;depth_max_pending;thermal_optimum_pending",
+    "notes": "WoRMS accepts Merluccius peruanus; Merluccius gayi peruanus is retained as historical synonym. Review status: No thermal optimum reported in reviewed sources. Maximum depth pending: guide is open-ended; candidate 2025 report: no accesible (418).",
+    "depth_note": "The guide records depths from 50 m to more than 600 m; no closed maximum is given.",
     "recorded_temperature": {
       "min": 10.0,
       "max": 22.3,
@@ -744,12 +747,18 @@
       "caveat": "Recorded observations, not tolerance limits. Compare only matching measurement depths and contexts."
     },
     "recorded_depth": {
-      "min": null,
+      "min": 50.0,
       "max": null,
-      "depth_basis": null,
+      "depth_basis": "distribution_range",
       "label": "Recorded depth (not a species limit)",
       "source": {
-        "depth_min_m": [],
+        "depth_min_m": [
+          {
+            "source_id": "F25",
+            "page_or_table": "p. 49; habitat",
+            "short_quote": "desde 50 m a más de 600 m de profundidad"
+          }
+        ],
         "depth_max_m": []
       }
     },
@@ -837,6 +846,27 @@
           "page_or_table": "taxon details",
           "short_quote": "Merluccius gayi peruanus"
         }
+      ],
+      "depth_min_m": [
+        {
+          "source_id": "F25",
+          "page_or_table": "p. 49; habitat",
+          "short_quote": "desde 50 m a más de 600 m de profundidad"
+        }
+      ],
+      "depth_note": [
+        {
+          "source_id": "F25",
+          "page_or_table": "p. 49; habitat",
+          "short_quote": "desde 50 m a más de 600 m de profundidad"
+        }
+      ],
+      "season_note": [
+        {
+          "source_id": "F25",
+          "page_or_table": "p. 49; spawning period",
+          "short_quote": "Invierno - primavera (periodo principal de desove) y verano - otoño (periodo secundario)"
+        }
       ]
     }
   },
@@ -856,8 +886,8 @@
     "landing_data_frequency": "Monthly",
     "landing_data_years": "2024-06 to 2026-07",
     "evidence_level": "sourced",
-    "flags": "temperature_evidence_pending;depth_pending",
-    "notes": "No unambiguous min/max/optimum source found; temperature fields remain blank.",
+    "flags": "temperature_evidence_pending;thermal_optimum_pending",
+    "notes": "No unambiguous min/max/optimum source found; temperature fields remain blank. Review status: No thermal optimum reported in reviewed sources. Temperature pending: no unambiguous species-attributed passage verified. Existing season and El Nino source F17: no accesible (502).",
     "recorded_temperature": {
       "min": null,
       "max": null,
@@ -873,13 +903,25 @@
       "caveat": "No sourced temperature range recorded"
     },
     "recorded_depth": {
-      "min": null,
-      "max": null,
-      "depth_basis": null,
+      "min": 0.0,
+      "max": 50.0,
+      "depth_basis": "distribution_range",
       "label": "Recorded depth (not a species limit)",
       "source": {
-        "depth_min_m": [],
-        "depth_max_m": []
+        "depth_min_m": [
+          {
+            "source_id": "F24",
+            "page_or_table": "Section Cynoscion analis; Figure 6",
+            "short_quote": "de 0 a 50 metros"
+          }
+        ],
+        "depth_max_m": [
+          {
+            "source_id": "F24",
+            "page_or_table": "Section Cynoscion analis; Figure 6",
+            "short_quote": "de 0 a 50 metros"
+          }
+        ]
       }
     },
     "sources": {
@@ -958,6 +1000,20 @@
           "source_id": "F17",
           "page_or_table": "IMARPE report",
           "short_quote": "temperature data not unambiguous"
+        }
+      ],
+      "depth_min_m": [
+        {
+          "source_id": "F24",
+          "page_or_table": "Section Cynoscion analis; Figure 6",
+          "short_quote": "de 0 a 50 metros"
+        }
+      ],
+      "depth_max_m": [
+        {
+          "source_id": "F24",
+          "page_or_table": "Section Cynoscion analis; Figure 6",
+          "short_quote": "de 0 a 50 metros"
         }
       ]
     }
