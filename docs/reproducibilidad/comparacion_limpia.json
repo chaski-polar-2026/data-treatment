@@ -1,0 +1,84 @@
+{
+  "quick": true,
+  "python": "3.12.10 (tags/v3.12.10:0cc8128, Apr  8 2025, 12:21:36) [MSC v.1943 64 bit (AMD64)]",
+  "jobs": [
+    {
+      "script": "bloque1_teleconexion.py",
+      "returncode": 0
+    },
+    {
+      "script": "bloque3_perspectiva.py",
+      "returncode": 0
+    },
+    {
+      "script": "bloque4_desembarques.py",
+      "returncode": 0
+    },
+    {
+      "script": "bloque5_nutrientes_largo_plazo.py",
+      "returncode": 0
+    },
+    {
+      "script": "antartida_vecinos.py",
+      "returncode": 0
+    }
+  ],
+  "comparisons": [
+    {
+      "file": "data/perspectiva_acierto.json",
+      "status": "IDENTICAL"
+    },
+    {
+      "file": "data/tablas_pruebas_pendientes/antartida_vecinos.csv",
+      "status": "IDENTICAL"
+    },
+    {
+      "file": "data/tablas_pruebas_pendientes/bloque1_teleconexion.csv",
+      "status": "IDENTICAL"
+    },
+    {
+      "file": "data/tablas_pruebas_pendientes/bloque1_teleconexion_supervivientes.csv",
+      "status": "IDENTICAL"
+    },
+    {
+      "file": "data/tablas_pruebas_pendientes/bloque3_perspectiva.csv",
+      "status": "IDENTICAL"
+    },
+    {
+      "file": "data/tablas_pruebas_pendientes/bloque4_desembarques.csv",
+      "status": "IDENTICAL"
+    },
+    {
+      "file": "data/tablas_pruebas_pendientes/bloque5_nutrientes_calibracion.csv",
+      "status": "RAPIDO_NOT_EQUIVALENT"
+    },
+    {
+      "file": "data/tablas_pruebas_pendientes/bloque5_nutrientes_metadatos.json",
+      "status": "RAPIDO_NOT_EQUIVALENT"
+    },
+    {
+      "file": "data/tablas_pruebas_pendientes/bloque5_nutrientes_oni.csv",
+      "status": "LINE_ENDINGS_ONLY"
+    },
+    {
+      "file": "data/tablas_pruebas_pendientes/bloque5_nutrientes_potencia_exploratoria.csv",
+      "status": "LINE_ENDINGS_ONLY"
+    },
+    {
+      "file": "data/tablas_pruebas_pendientes/bloque5_nutrientes_supervivientes.csv",
+      "status": "LINE_ENDINGS_ONLY"
+    },
+    {
+      "file": "data/tablas_pruebas_pendientes/bloque5_nutrientes_sustitutos.csv",
+      "status": "RAPIDO_NOT_EQUIVALENT"
+    },
+    {
+      "file": "data/tablas_pruebas_pendientes/bloque5_nutrientes_todas.csv",
+      "status": "RAPIDO_NOT_EQUIVALENT"
+    },
+    {
+      "file": "data/tablas_pruebas_pendientes/bloque5_nutrientes_verificacion.csv",
+      "status": "LINE_ENDINGS_ONLY"
+    }
+  ]
+}

@@ -34,4 +34,9 @@ Metadatos globales: `{"Conventions": "CF-1.6", "Metadata_Conventions": "Unidata 
 
 Fuentes: https://data.marine.copernicus.eu/product/SEALEVEL_GLO_PHY_CLIMATE_L4_MY_008_057/description ; https://documentation.marine.copernicus.eu/PUM/CMEMS-SL-PUM-008-057.pdf ; https://documentation.marine.copernicus.eu/QUID/CMEMS-GLO-QUID-001-030.pdf
 
-Salidas: `/home/aroon/Projects/nasahackathon/data_treatment/data/tablas_pruebas_pendientes/altimetria`.
+Salidas: `./data/tablas_pruebas_pendientes/altimetria`.
+
+
+## Nota de comparabilidad (documentación de reproducción)
+
+Sin sustituir la conclusión del autor: altimetría +3,0 cm/década (IC 95 %: 2,2 a 3,7), GLORYS +2,6 (2,0 a 3,3). Los intervalos individuales se solapan; esto no es una prueba formal de igualdad. GLORYS asimila altimetría, por lo que las fuentes no son plenamente independientes. No está confirmado el tratamiento de mareas, ajuste isostático ni corrección de deriva TOPEX-A del producto usado. Estos puntos quedan como límites de la comparación, sin añadir correcciones ni recalcular resultados.

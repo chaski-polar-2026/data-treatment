@@ -102,7 +102,7 @@ operativo (`cmems_mod_glo_bgc-plankton_anfc_0.25deg_P1M-m`, desde diciembre de
 definición vertical; el solapamiento se conserva para compararlos antes de
 formar una serie mensual única.
 - NASA usa la sesión de Earthdata gestionada por `earthaccess`.
-- ERA5 usa `/home/aroon/.cdsapirc` para `cdsapi`.
+- ERA5 usa `~/.cdsapirc` para `cdsapi`.
 
 Cada descarga debe producir un manifiesto con fuente, dataset, variables, periodo, ruta y error, si lo hubiera.
 
