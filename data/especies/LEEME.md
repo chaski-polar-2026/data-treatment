@@ -36,3 +36,52 @@ The new columns classify existing notes and quotes. They do not add new measurem
 - Continue to additional demersal and coastal species only after this pull request is accepted.
 
 No bulk landing data were downloaded.
+
+## Priority-1 completion review (2026-11-15)
+
+Five new cited field values were added: cachema depth endpoints (0 and 50 m; F24, section Cynoscion analis / Figure 6), hake minimum depth (50 m), an open-ended depth note, and spawning season (F25, printed p. 49). All prior nonempty ecological values, source rows, quotes and consultation dates are retained. Administrative review status is appended after ` Review status:` in notes; only the original sourced prefix is checked as a quoted ecological value. New fields `depth_note` and `temperature_optimum_note` require citations when populated. Basis columns classify the cited text, not new measurements.
+
+The hake guide states more than 600 m. `depth_max_m` stays empty; 600 must not become a closed endpoint. Its basis is distribution_range, not survey_stratum: the added evidence describes habitat rather than survey sampling bands. The pre-existing 100–200 m concentration statement remains in habitat_summary and is not used as distribution endpoints. The 2022 IMARPE assessment introduction also describes 50 to more than 600 m: https://cdn.www.gob.pe/uploads/document/file/3497401/Informe%20Cuota%20merluza%20julio%202022%20-%20junio%202023.pdf . A search candidate for the 2025 assessment describes 50–500 m, but opening it returned 418: **no accesible**. This is a pending possible discrepancy, not a verified correction. No confirmed contradictory new values were selected; mark sources_disagree if the candidate is verified later. The older scallop depth discrepancy (5–40 m versus a broader record) remains documented above; neither value was changed.
+
+### Thermal optimum search and pending work
+
+Every optimum stays empty. Notes record "No thermal optimum reported in reviewed sources"; this describes this review, not proof that none exists. Experimental treatment temperatures, model outputs and study-specific intervals were not converted into a species-wide optimum.
+
+| Species | Review outcome / next source to inspect |
+|---|---|
+| Anchoveta | No explicit numerical experimental optimum verified. FishBase candidate https://www.fishbase.se/Country/CountrySpeciesSummary.php?c_code=604&id=4 appeared in search only; thermal-preference provenance remains pending. |
+| Pota | Review DOI 10.3989/scimar.04497.25B describes regional feeding/spawning intervals, not a single experimental optimum. Chesney et al. (2013), discussion, https://calcofi.org/downloads/publications/calcofireports/v54/Vol_54_Chesney.pdf cites a daytime preference range outside Peru; no point optimum was inferred. Follow the primary experiment before adding a study-scoped preference. |
+| Pulpo | Thermoregulatory behavior and oxygen consumption of Octopus mimus paralarvae: The effect of age, https://www.sciencedirect.com/science/article/abs/pii/S0306456512001520 : **no accesible**, HTTP 403. Search snippets alone were not accepted. A paralarval result cannot be generalized to adults. |
+| Scallop | DOI 10.3390/fishes9010009 accessed: Chilean broodstock conditioning treatments, not a stated species-wide optimum. DOI 10.1016/S0044-8486(03)00321-1 and https://www.sciencedirect.com/science/article/abs/pii/S0044848699002914 : **no accesible**, HTTP 403. |
+| Hake | IMARPE guide verified for depth and season, not an optimum. FAO catalogue front matter https://www.fao.org/4/y4876e/y4876e.pdf opened, but no species-specific optimum verified in it. |
+| Cachema | No explicit optimum verified. The mixed-column PDF https://repositorio.imarpe.gob.pe/bitstream/20.500.12958/2166/1/INF%2038%283%29-10.pdf needs visual checking: search/extracted text interleaves species. Temperature endpoints stay pending, not assigned from adjacent text. |
+
+The validator now requires both an optimum study note and matching sourced quotes for a populated optimum. An independent experimental optimum is not required to lie inside recorded field endpoints: observations are not tolerance limits. The JSON export retains the prior rule excluding optimum/preferred/suitability fields; publishing a future experimental optimum needs a separate, study-scoped export design.
+
+### Source access and existing notes
+
+- Cachema F17: **no accesible**, HTTP 502; its existing season and El Nino notes and citations are retained, not marked newly verified.
+- Anchoveta F11 and F2: **no accesible**, timeout. Pota F12: **no accesible**, timeout; F22: **no accesible**, HTTP 502. Both existing season and El Nino fields already have citations; none was filled from memory.
+- Pulpo F15 opened: diet section pp. 2–3 distinguishes Pisco 1982–83 and Pucusana 1997–98; the existing response note is retained. The same sheet reports site-specific spawning peaks. F13 for the existing Ancash season: **no accesible**, HTTP 502; no replacement with a different location was made.
+- Scallop F14: **no accesible**, timeout; F23: **no accesible**, HTTP 502. Existing season and response are retained with their sources, pending a new full-text check.
+- Direct Python PDF requests failed certificate verification; verification was not disabled. Web text access worked for F24/F25/F26; screenshot attempts for the cachema cruise and hake guide timed out. No local PDF was accepted or executed.
+
+### Landings catalogue
+
+The public IMARPE April 2023 report (F26), Figure 51(c)/(d), opens without a session and contains monthly pulpo/scallop charts for January 2022–April 2023, grouped by landing ports. Those catalogue rows now identify this report and its preliminary artisanal-monitoring context. They do not assert a downloadable dataset or fleet class for individual records. Species landing_data_* fields remain empty and landings_pending remains set because a machine-readable species-level endpoint was not verified. No totals were digitized from figures, and no bulk landing data were downloaded.
+
+The Piura open-data endpoint already recorded as F19 returned HTTP 403 (**no accesible**). The public IMARPE service landing page https://www.gob.pe/12280-consultar-el-reporte-de-la-actividad-pesquera returned HTTP 418 (**no accesible**). Registration was not attempted. Denis should verify an open species-level dataset, its years, geographic coverage and fleet definition before replacing the report-only catalogue entries.
+
+### New random spot check
+
+Seed 20261115; population: five newly cited species-field values, in appended CSV order. Sample size: ceil(10% × 5) = 1 (20% after rounding). Selected: merluza.depth_min_m = 50; F25, printed p. 49, habitat. Reopening the web PDF text confirms the passage "desde 50 m a más de 600 m de profundidad". **1 confirmed, 0 unconfirmed.** This checks the lower endpoint only; no closed maximum is inferred. The earlier eight-value random check above is unchanged.
+
+### Remaining gaps after this review
+
+- Cachema temperature: ambiguous species attribution in extracted text; verify the original page visually. Existing season/El Nino notes need renewed access to F17.
+- Hake upper depth: open-ended in the verified guide; inspect the inaccessible 2025 candidate before resolving any discrepancy. Season is now sourced.
+- All six experimental thermal optima: pending explicit, accessible study results with life stage, location and method. Do not fill from treatment temperatures or inferred habitat ranges.
+- Scallop and pulpo machine-readable landings: pending endpoint verification. Report charts are available, not a verified raw dataset.
+- Optional OBIS/GBIF presence counts were not collected; no environmental conditions were extracted.
+
+Existing differing source descriptions for squid depth wording and scallop depth coverage are now flagged `sources_disagree`; their original notes and references are retained. No new endpoint was chosen to resolve those differences.
