@@ -110,3 +110,17 @@ No accesible: WoRMS individual HTML records (403); public REST API succeeded for
 
 ### Audit
 Seed 20261115; 61 distinct new sourced field values; sample ceil(10%) = 7. Sources were downloaded again after sampling. Confirmed 7/7; unconfirmed 0. Sample: caballa/common_name_es; jurel/common_name_es; bonito/fishery_note; lorna/depth_min_m, group, depth_max_m, common_name_es. See RESUMEN_CAMBIOS.md for validation and packaging results.
+
+## Second completion review (2026-11-15)
+
+This review covers jurel, perico, caballa, bonito, lorna, corvina and cachema, plus landing datasets for scallop and octopus. The CSV actually has 28 columns; its existing column names and order are preserved. Python `csv` writes text fields with LF line endings; no numeric conversion is used.
+
+### New observations and their scope
+
+- **Jurel, F43:** recorded schools span 0-75 m during strong upwelling, 100-200 m during strong El Nino, and 0-300 m with a stronger southern Cromwell extension (Dioses 2013, p. 67). The new depth endpoints describe the broadest reported distribution pattern, not species limits or the 0-180 m survey sampling grid. Catches below 100 m during El Nino were recorded at 15-20 C (p. 68); `field_depth_mixed_observation` is used because this summary spans depth levels rather than a seasonal surface series, and comparison is disabled. No optimum is inferred.
+- **Lorna and cachema, F42:** bottom-trawl cruise temperatures from northern Peru, 1981-1988, use `bottom_temperature_cruise` and `temperature_comparable=true`; comparison still requires matching bottom depth and setting. The scalar endpoints describe normal years only: lorna 14.1-16.7 C and cachema 14.2-17.2 C. The temperature notes separately give El Nino records of 14.8-21.2 C and 16.3-22.4 C. Methods are on p. 4, species text on p. 5, and Table 1 on p. 12; the scanned table was also inspected visually.
+- **Depth disagreements, F42 versus F37/F24/F27:** keep lorna's existing 5-50 m and cachema's existing 0-50 m unchanged. Add separate cited depth records: lorna 140 m in normal years and 222 m during El Nino; cachema 165 m and 154 m respectively. Both species retain `sources_disagree`; the new observations do not prove that the existing distribution sources are erroneous. Lorna's new depth note explains the different settings; cachema's existing depth note remains unchanged.
+- **Perico, F45:** spring/summer describes higher artisanal landings, not spawning. High historical landings in 1983, 1987 and 1998 are linked to El Nino in section 3.1 (PDF p. 6); this does not establish a change in stock size.
+- **Caballa, F44/F47:** the main reproductive period is November-March, with a January historical peak (F44, section 4.2). The new El Nino note describes local summer landings and equatorial surface waters in Lambayeque in 2015, not a stock-size response (F47, resource-environment section, caballa paragraph following Figure 28).
+
+Every existing nonempty scientific value, source, excerpt and consultation date is retained. The sole replaced scientific review text is cachema's obsolete `notes` prefix saying no temperature range was verified: F42 now supplies a clear species-attributed passage, so a newly cited note replaces that status; the old note and citation remain in Git and the original citation row is retained. New source IDs are F42-F47; F46 records the open landing workbook reviewed in this task. No new optimum is entered, and no tolerance or catch claim is inferred.
