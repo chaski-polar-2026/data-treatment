@@ -7,10 +7,6 @@
     "aphia_id": "272287",
     "group": "pelagic fish",
     "habitat_summary": "Pelagic fish in moderately cold coastal waters.",
-    "depth_min_m": "3",
-    "depth_max_m": "80",
-    "temperature_min_c": "14",
-    "temperature_max_c": "23",
     "temperature_note": "Peru field seasonal temperatures: 14-18 C in winter and 16-23 C in summer; observations, not thermal limits or optimum.",
     "season_note": "Spawning occurs nearly year-round, strongest in August-September and February-March.",
     "el_nino_response_note": "IMARPE reports distribution changes during warm 2023 conditions in the northern Humboldt Current region.",
@@ -21,6 +17,60 @@
     "landing_data_years": "2023-2026 Q2",
     "evidence_level": "sourced",
     "notes": "No thermal optimum reported.",
+    "recorded_temperature": {
+      "min": 14.0,
+      "max": 23.0,
+      "basis": "field_seasonal_observation",
+      "comparable": true,
+      "use_in_comparison": true,
+      "label": "Temperatures recorded in Peru (observations, not limits)",
+      "source": {
+        "temperature_min_c": [
+          {
+            "source_id": "F11",
+            "page_or_table": "p. 1",
+            "short_quote": "14-18 C in winter"
+          }
+        ],
+        "temperature_max_c": [
+          {
+            "source_id": "F11",
+            "page_or_table": "p. 1",
+            "short_quote": "16-23 C in summer"
+          }
+        ],
+        "temperature_note": [
+          {
+            "source_id": "F11",
+            "page_or_table": "p. 1",
+            "short_quote": "14-18 C in winter; 16-23 C in summer"
+          }
+        ]
+      },
+      "caveat": "Recorded observations, not tolerance limits. Compare only matching measurement depths and contexts."
+    },
+    "recorded_depth": {
+      "min": 3.0,
+      "max": 80.0,
+      "depth_basis": "distribution_range",
+      "label": "Recorded depth (not a species limit)",
+      "source": {
+        "depth_min_m": [
+          {
+            "source_id": "F11",
+            "page_or_table": "p. 1",
+            "short_quote": "distribution depth 3-80 m"
+          }
+        ],
+        "depth_max_m": [
+          {
+            "source_id": "F11",
+            "page_or_table": "p. 1",
+            "short_quote": "distribution depth 3-80 m"
+          }
+        ]
+      }
+    },
     "sources": {
       "scientific_name_accepted": [
         {
@@ -144,10 +194,6 @@
     "aphia_id": "342291",
     "group": "mollusc",
     "habitat_summary": "Neritic to oceanic; epipelagic to mesopelagic. Two tagged animals moved from near-surface to deep daytime waters.",
-    "depth_min_m": "0",
-    "depth_max_m": "1200",
-    "temperature_min_c": "14",
-    "temperature_max_c": "27.5",
     "temperature_note": "Peru observations span about 14 C at 50 m to 27.5 C at sea surface; different depths, not thermal limits.",
     "season_note": "IMARPE reports main spawning from October to January and secondary activity in August.",
     "el_nino_response_note": "IMARPE survey reports a negative El Nino effect; 2018 bilingual abstracts differ in depth wording.",
@@ -159,6 +205,60 @@
     "evidence_level": "sourced",
     "flags": "source_wording_difference",
     "notes": "Two tagged squid reached 1200 m (2017, p. 174); this is not a population limit.",
+    "recorded_temperature": {
+      "min": 14.0,
+      "max": 27.5,
+      "basis": "field_depth_mixed_observation",
+      "comparable": false,
+      "use_in_comparison": false,
+      "label": "Temperatures recorded in Peru (observations, not limits)",
+      "source": {
+        "temperature_min_c": [
+          {
+            "source_id": "F4",
+            "page_or_table": "section 3.3",
+            "short_quote": "captures at 14 C at 50 m"
+          }
+        ],
+        "temperature_max_c": [
+          {
+            "source_id": "F4",
+            "page_or_table": "section 3.3",
+            "short_quote": "sea-surface temperature 17.5-27.5 C"
+          }
+        ],
+        "temperature_note": [
+          {
+            "source_id": "F4",
+            "page_or_table": "section 3.3",
+            "short_quote": "captures at 14 C at 50 m"
+          }
+        ]
+      },
+      "caveat": "Temperatures recorded at different depths, not a single field range"
+    },
+    "recorded_depth": {
+      "min": 0.0,
+      "max": 1200.0,
+      "depth_basis": "dive_depth_observation",
+      "label": "Deepest recorded dive",
+      "source": {
+        "depth_min_m": [
+          {
+            "source_id": "F4",
+            "page_or_table": "section 3.3",
+            "short_quote": "surface waters"
+          }
+        ],
+        "depth_max_m": [
+          {
+            "source_id": "F10",
+            "page_or_table": "p. 174",
+            "short_quote": "both squid dived to a depth of 1200 m"
+          }
+        ]
+      }
+    },
     "sources": {
       "scientific_name_accepted": [
         {
@@ -282,10 +382,6 @@
     "aphia_id": "394269",
     "group": "mollusc",
     "habitat_summary": "Benthic in semi-protected bays on sedimentary bottoms; also sandy or muddy bottoms with shells and macroalgae.",
-    "depth_min_m": "5",
-    "depth_max_m": "40",
-    "temperature_min_c": "17",
-    "temperature_max_c": "22",
     "temperature_note": "Lab juveniles were tested at 17 and 22 C in Peru; treatment temperatures, not limits or optimum.",
     "season_note": "Spawning occurs year-round, stronger September to May.",
     "el_nino_response_note": "An IMARPE 2024 assessment reports poor population condition after the 2023-24 warm event despite expected density increase.",
@@ -293,6 +389,60 @@
     "evidence_level": "sourced",
     "flags": "landings_pending",
     "notes": "Section 2.7.2 reports typical 5-40 m; IMARPE species record gives a broader intertidal-to-95 m distribution.",
+    "recorded_temperature": {
+      "min": 17.0,
+      "max": 22.0,
+      "basis": "laboratory_treatment",
+      "comparable": false,
+      "use_in_comparison": false,
+      "label": "Temperatures recorded in Peru (observations, not limits)",
+      "source": {
+        "temperature_min_c": [
+          {
+            "source_id": "F7",
+            "page_or_table": "lab methods",
+            "short_quote": "experimental temperatures 17 and 22 C"
+          }
+        ],
+        "temperature_max_c": [
+          {
+            "source_id": "F7",
+            "page_or_table": "lab methods",
+            "short_quote": "experimental temperatures 17 and 22 C"
+          }
+        ],
+        "temperature_note": [
+          {
+            "source_id": "F7",
+            "page_or_table": "lab methods",
+            "short_quote": "experimental temperatures 17 and 22 C"
+          }
+        ]
+      },
+      "caveat": "Laboratory treatment temperatures, not a field range"
+    },
+    "recorded_depth": {
+      "min": 5.0,
+      "max": 40.0,
+      "depth_basis": "distribution_range",
+      "label": "Recorded depth (not a species limit)",
+      "source": {
+        "depth_min_m": [
+          {
+            "source_id": "F6",
+            "page_or_table": "section 2.7.2 p. 12",
+            "short_quote": "entre los 5 y 40 metros"
+          }
+        ],
+        "depth_max_m": [
+          {
+            "source_id": "F6",
+            "page_or_table": "section 2.7.2 p. 12",
+            "short_quote": "entre los 5 y 40 metros"
+          }
+        ]
+      }
+    },
     "sources": {
       "scientific_name_accepted": [
         {
@@ -388,10 +538,6 @@
     "aphia_id": "342001",
     "group": "mollusc",
     "habitat_summary": "Rocky intertidal and subtidal habitat; shelters in crevices and beneath rocks.",
-    "depth_min_m": "0",
-    "depth_max_m": "30",
-    "temperature_min_c": "18.5",
-    "temperature_max_c": "21.7",
     "temperature_note": "Field seasonal sea-surface averages in Ancash, Peru (2014-2023): 18.5-21.7 C; not thermal limits or optimum.",
     "season_note": "Spawning occurs year-round, with spring and summer peaks.",
     "el_nino_response_note": "IMARPE diet observations during 1982-83 and 1997-98 El Nino differed by site; no coast-wide response inferred.",
@@ -400,6 +546,60 @@
     "evidence_level": "sourced",
     "flags": "landings_pending",
     "notes": "Species record gives intertidal to 30 m.",
+    "recorded_temperature": {
+      "min": 18.5,
+      "max": 21.7,
+      "basis": "field_seasonal_observation",
+      "comparable": true,
+      "use_in_comparison": true,
+      "label": "Temperatures recorded in Peru (observations, not limits)",
+      "source": {
+        "temperature_min_c": [
+          {
+            "source_id": "F13",
+            "page_or_table": "abstract",
+            "short_quote": "18.5 C in winter"
+          }
+        ],
+        "temperature_max_c": [
+          {
+            "source_id": "F13",
+            "page_or_table": "abstract",
+            "short_quote": "21.7 C in summer"
+          }
+        ],
+        "temperature_note": [
+          {
+            "source_id": "F13",
+            "page_or_table": "abstract",
+            "short_quote": "seasonal sea temperatures from 18.5 to 21.7 C"
+          }
+        ]
+      },
+      "caveat": "Recorded observations, not tolerance limits. Compare only matching measurement depths and contexts."
+    },
+    "recorded_depth": {
+      "min": 0.0,
+      "max": 30.0,
+      "depth_basis": "distribution_range",
+      "label": "Recorded depth (not a species limit)",
+      "source": {
+        "depth_min_m": [
+          {
+            "source_id": "F15",
+            "page_or_table": "species sheet",
+            "short_quote": "intertidal to 30 m"
+          }
+        ],
+        "depth_max_m": [
+          {
+            "source_id": "F15",
+            "page_or_table": "species sheet",
+            "short_quote": "intertidal to 30 m"
+          }
+        ]
+      }
+    },
     "sources": {
       "scientific_name_accepted": [
         {
@@ -502,8 +702,6 @@
     "aphia_id": "1524920",
     "group": "demersal fish",
     "habitat_summary": "Benthodemersal; IMARPE assessment reports concentrations at 100-200 m.",
-    "temperature_min_c": "10",
-    "temperature_max_c": "22.3",
     "temperature_note": "Peru field bottom temperatures: 10-16 C on normal cruise and 14.5-22.3 C during El Nino; not limits or optimum.",
     "el_nino_response_note": "IMARPE reports inverted distribution and 14.5-22.3 C bottom temperatures in the 1983 El Nino cruise.",
     "peru_coast_range_note": "Peruvian and adjacent Ecuadorian waters.",
@@ -513,6 +711,48 @@
     "evidence_level": "sourced",
     "flags": "name_corrected;depth_pending;season_pending",
     "notes": "WoRMS accepts Merluccius peruanus; Merluccius gayi peruanus is retained as historical synonym.",
+    "recorded_temperature": {
+      "min": 10.0,
+      "max": 22.3,
+      "basis": "bottom_temperature_cruise",
+      "comparable": true,
+      "use_in_comparison": true,
+      "label": "Temperatures recorded in Peru (observations, not limits)",
+      "source": {
+        "temperature_min_c": [
+          {
+            "source_id": "F16",
+            "page_or_table": "IMARPE report",
+            "short_quote": "bottom temperature 10-16 C"
+          }
+        ],
+        "temperature_max_c": [
+          {
+            "source_id": "F16",
+            "page_or_table": "IMARPE report",
+            "short_quote": "bottom temperature 14.5-22.3 C"
+          }
+        ],
+        "temperature_note": [
+          {
+            "source_id": "F16",
+            "page_or_table": "IMARPE report",
+            "short_quote": "10-16 C normal; 14.5-22.3 C El Nino"
+          }
+        ]
+      },
+      "caveat": "Recorded observations, not tolerance limits. Compare only matching measurement depths and contexts."
+    },
+    "recorded_depth": {
+      "min": null,
+      "max": null,
+      "depth_basis": null,
+      "label": "Recorded depth (not a species limit)",
+      "source": {
+        "depth_min_m": [],
+        "depth_max_m": []
+      }
+    },
     "sources": {
       "scientific_name_accepted": [
         {
@@ -618,6 +858,30 @@
     "evidence_level": "sourced",
     "flags": "temperature_evidence_pending;depth_pending",
     "notes": "No unambiguous min/max/optimum source found; temperature fields remain blank.",
+    "recorded_temperature": {
+      "min": null,
+      "max": null,
+      "basis": null,
+      "comparable": false,
+      "use_in_comparison": false,
+      "label": "Temperatures recorded in Peru (observations, not limits)",
+      "source": {
+        "temperature_min_c": [],
+        "temperature_max_c": [],
+        "temperature_note": []
+      },
+      "caveat": "No sourced temperature range recorded"
+    },
+    "recorded_depth": {
+      "min": null,
+      "max": null,
+      "depth_basis": null,
+      "label": "Recorded depth (not a species limit)",
+      "source": {
+        "depth_min_m": [],
+        "depth_max_m": []
+      }
+    },
     "sources": {
       "scientific_name_accepted": [
         {
