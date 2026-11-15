@@ -5,6 +5,39 @@ from pathlib import Path
 DATA=Path(__file__).resolve().parents[1]/"data"/"especies"
 def load(n):
     with (DATA/n).open(encoding="utf-8-sig",newline="") as f:return list(csv.DictReader(f))
+TEMPERATURE_BASES = {"field_seasonal_observation", "field_depth_mixed_observation", "bottom_temperature_cruise", "laboratory_treatment"}
+DEPTH_BASES = {"distribution_range", "dive_depth_observation", "survey_stratum"}
+SCHEMA_FIELDS = {"temperature_basis", "temperature_comparable", "depth_basis"}
+
+def validate_schema(r):
+    errors = []
+    sid = r.get("id", "unknown")
+    basis = r.get("temperature_basis", "")
+    comparable = r.get("temperature_comparable", "")
+    has_temperature = bool(r.get("temperature_min_c") or r.get("temperature_max_c"))
+    if has_temperature and not basis:
+        errors.append(f"{sid}: temperature_basis required for recorded temperature")
+    if basis and basis not in TEMPERATURE_BASES:
+        errors.append(f"{sid}: invalid temperature_basis: {basis}")
+    if has_temperature and comparable not in {"true", "false"}:
+        errors.append(f"{sid}: temperature_comparable must be true or false")
+    if comparable == "true" and basis not in {"field_seasonal_observation", "bottom_temperature_cruise"}:
+        errors.append(f"{sid}: temperature_comparable cannot be true for {basis or 'missing basis'}")
+    if not has_temperature and (basis or comparable):
+        errors.append(f"{sid}: temperature metadata requires recorded temperature")
+    depth = r.get("depth_basis", "")
+    if (r.get("depth_min_m") or r.get("depth_max_m")) and not depth:
+        errors.append(f"{sid}: depth_basis required for recorded depth")
+    if depth and depth not in DEPTH_BASES:
+        errors.append(f"{sid}: invalid depth_basis: {depth}")
+    if has_temperature:
+        note = r.get("temperature_note", "").casefold()
+        recorded = any(word in note for word in ("observations", "field", "treatment temperatures"))
+        not_limits = bool(re.search(r"\bnot (?:thermal )?limits\b", note))
+        if not recorded or not not_limits:
+            errors.append(f"{sid}: temperature_note must describe observations or treatments, not limits")
+    return errors
+
 def main():
     errors=[]; species=load("especies.csv"); refs=load("especies_fuentes.csv"); sources=load("fuentes.csv")
     source={x["id_fuente"]:x for x in sources}; ids={x["id"] for x in species}; mapped={}
@@ -23,8 +56,9 @@ def main():
     structural={"id","common_name_en","common_name_es","scientific_name_accepted","aphia_id","group","evidence_level","flags"}
     for r in species:
         sid=r["id"]
+        errors.extend(validate_schema(r))
         for field,value in r.items():
-            if value and field not in structural and not any(a["valor"]==value and a.get("cita_corta","").strip() for a in mapped.get((sid,field),[])):
+            if value and field not in structural | SCHEMA_FIELDS and not any(a["valor"]==value and a.get("cita_corta","").strip() for a in mapped.get((sid,field),[])):
                 errors.append(f"{sid}.{field}: populated value lacks matching sourced quote")
         for lo,hi in (("depth_min_m","depth_max_m"),("temperature_min_c","temperature_max_c")):
             if r.get(lo) and r.get(hi) and float(r[lo])>float(r[hi]):errors.append(f"{sid}: {lo} exceeds {hi}")
