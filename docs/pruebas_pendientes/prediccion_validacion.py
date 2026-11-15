@@ -1,10 +1,11 @@
+from config_datos import DATA, OUTPUT, TABLES, require
 """E8: capacidad predictiva con validación honesta. Origen móvil (se ajusta solo con el pasado): predicción de la anomalía de clorofila
 (%) de cada zona con h meses de antelación a partir de Niño 1+2 y de la propia clorofila, comparada con la climatología (0) y con la
 persistencia. Luego, prueba con 2026 (observado) usando datos del servidor."""
 import json
 from pathlib import Path
 import numpy as np, pandas as pd
-RAIZ = Path(r"D:\hackathon\NASA"); SAL = RAIZ / "pruebas" / "fitoplancton" / "tablas"
+RAIZ = DATA; SAL = TABLES
 mon = pd.DataFrame(json.load(open(RAIZ / "pruebas" / "json_pagina" / "monitor_data.json", encoding="utf-8"))["records"])
 mon.index = pd.to_datetime(mon["date"]).dt.to_period("M").dt.to_timestamp(); nino = mon["nino12_psl_c"].astype(float)
 t = open(RAIZ / "repos" / "chaski-polar-webpage" / "public" / "assets" / "data" / "datos.js", encoding="utf-8").read()

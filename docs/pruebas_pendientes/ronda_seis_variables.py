@@ -1,3 +1,4 @@
+from config_datos import DATA, OUTPUT, TABLES, require
 """Ronda de tendencias en seis variables elegidas por criterio fisico (antes de mirar resultados).
 Metodo: anomalias mensuales sin ciclo estacional -> media anual (>=9 meses) -> Mann-Kendall + pendiente de Sen
 (IC 95 % de Sen por pares) en varios periodos, con y sin anios de El Nino extremo (1997-98, 2015-16, 2023-24);
@@ -8,7 +9,7 @@ import json, itertools
 import numpy as np, pandas as pd
 from scipy import stats
 
-R = 'D:/hackathon/NASA/'
+R = str(DATA) + '/'
 NINO_YEARS = {1998, 2016, 2023}  # anios de pico/cierre del evento extremo en el hemisferio sur (ver nota)
 
 
@@ -67,7 +68,7 @@ series['Hielo marino antartico (extension, NSIDC)'] = (pd.concat(fr).sort_index(
 
 # 3 TSM serie larga (ERSST v5) en cajas: Nino1+2 (0-10S, 90-80W) y costa sur (10-18S, 80-70W)
 import xarray as xr
-ds = xr.open_dataset(R + 'datos/tendencias_largas/ersstv5_sst_mnmean.nc')
+ds = xr.open_dataset(require('datos/tendencias_largas/ersstv5_sst_mnmean.nc'))
 sst = ds['sst']
 for nom, (la, lb, lo1, lo2) in {'Norte-centro (Nino 1+2)': (-10, 0, 270, 280), 'Costa sur': (-18, -10, 280, 290)}.items():
     b = sst.sel(lat=slice(lb, la), lon=slice(lo1, lo2)).mean(['lat', 'lon'])
@@ -122,7 +123,7 @@ q = np.empty(m); q[o] = np.minimum.accumulate((p[o] * m / (np.arange(m) + 1))[::
 df['q_fdr'] = np.minimum(q, 1)
 for c in ('sen', 'lo', 'hi'): df[c + '_decada'] = df[c] * 10
 df['signif_fdr'] = df.q_fdr < 0.05
-df.to_csv(R + 'pruebas/fitoplancton/tablas/ronda_seis_variables.csv', index=False, encoding='utf-8')
+df.to_csv(TABLES / 'ronda_seis_variables.csv', index=False, encoding='utf-8')
 pd.set_option('display.width', 250); pd.set_option('display.max_rows', 500)
 print('pruebas totales:', len(df), '| significativas FDR 5 %:', int(df.signif_fdr.sum()))
 c = df[(df.tipo.isin(['completo'])) | (df.tipo.str.startswith('desde'))]

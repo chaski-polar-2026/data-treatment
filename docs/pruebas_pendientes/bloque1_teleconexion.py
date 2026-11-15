@@ -1,3 +1,4 @@
+from config_datos import DATA, OUTPUT, TABLES, require
 """Bloque 1 (preregistro 14/11/2026): senales antarticas y del Pacifico sur frente a la costa peruana.
 Correr: PYTHONIOENCODING=utf-8 python bloque1_teleconexion.py   (sin -I). Ajustar R_DATA si cambia la ruta.
 Control de El Nino: correlacion parcial controlando el Nino 1+2 del instante del objetivo y del instante del predictor.
@@ -8,16 +9,16 @@ import numpy as np, pandas as pd
 sys.path.insert(0, str(Path(__file__).parent))
 from utils_pruebas import anomalia_mensual, corr_neff, parcial_multi, fdr, EXTREMOS
 
-R_DATA = 'D:/hackathon/NASA/'
-REPO = Path(__file__).resolve().parents[2]
+R_DATA = str(DATA) + '/'
+REPO = OUTPUT
 LAGS = (0, 1, 2, 3, 6, 9, 12)
 ZONAS = ['paita', 'chimbote', 'callao', 'pisco', 'ilo']
 
 
 def cargar():
-    mon = pd.DataFrame(json.load(open(R_DATA + 'pruebas/json_pagina/monitor_data.json', encoding='utf-8'))['records'])
+    mon = pd.DataFrame(json.load(open(require('pruebas/json_pagina/monitor_data.json'), encoding='utf-8'))['records'])
     mon['date'] = pd.to_datetime(mon['date']); mon = mon.set_index('date')
-    pan = pd.read_csv(R_DATA + 'drive_aaron/connectivity_panel_monthly.csv', parse_dates=['date'])
+    pan = pd.read_csv(require('drive_aaron/connectivity_panel_monthly.csv'), parse_dates=['date'])
     rng = pd.date_range('1998-01-01', '2025-12-01', freq='MS')
     return mon.reindex(rng), pan, rng
 

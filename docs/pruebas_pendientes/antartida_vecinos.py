@@ -1,3 +1,4 @@
+from config_datos import DATA, OUTPUT, TABLES, require
 """Antartida y paises vecinos (Chile, Argentina): capturas anuales FAO vs senales antarticas.
 Pares fijados de antemano; periodo 1998-2024 (n=27). Para cada par: r en niveles, r en primeras diferencias
 (quita tendencias compartidas), r tras quitar tendencia lineal, r parcial controlando Nino 1+2, p con n efectivo
@@ -8,7 +9,7 @@ import json, math
 import numpy as np, pandas as pd
 from scipy import stats
 
-R = 'D:/hackathon/NASA/'
+R = str(DATA) + '/'
 fao = pd.read_csv(R + 'datos/pesquerias/fao_series.csv', encoding='utf-8')
 fao.columns = [c.strip() for c in fao.columns]
 fao['especie'] = fao['especie'].str.replace('\ufffd', '?')
@@ -87,7 +88,7 @@ df = pd.DataFrame(filas)
 p = df.p_dif.values; o = np.argsort(p); m = len(p)
 q = np.empty(m); q[o] = np.minimum.accumulate((p[o] * m / (np.arange(m) + 1))[::-1])[::-1]
 df['q_fdr_dif'] = np.minimum(q, 1)
-df.round(4).to_csv(R + 'pruebas/fitoplancton/tablas/antartida_vecinos.csv', index=False, encoding='utf-8')
+df.round(4).to_csv(TABLES / 'antartida_vecinos.csv', index=False, encoding='utf-8')
 pd.set_option('display.width', 250); pd.set_option('display.max_rows', 200)
 print('pruebas:', len(df), '| p<0.05 en diferencias:', int((df.p_dif < .05).sum()), '| q<0.05:', int((df.q_fdr_dif < .05).sum()))
 print(df.sort_values('p_niveles').head(8)[['pais', 'especie', 'forzante', 'lag_anios', 'n', 'r_niveles', 'p_niveles', 'r_dif', 'p_dif', 'r_sin_tendencia', 'p_sin_tendencia', 'q_fdr_dif']].round(3).to_string(index=False))

@@ -1,3 +1,4 @@
+from config_datos import require
 """Bloque 4 (preregistro 14/11/2026): desembarques mensuales de anchoveta (BCRP 2003-2026) frente a climatologia y Nino 1+2.
 Objetivo: log(1 + total_t). Origen movil 2010-2025, horizontes 1 y 3 meses. Modelos: climatologia mensual frente a
 climatologia + Nino 1+2 con rezago fijo L (1, 2 o 3 meses; solo es utilizable si L >= horizonte).
@@ -11,7 +12,7 @@ sys.path.insert(0, str(Path(__file__).parent))
 from utils_pruebas import bootstrap_bloques
 from bloque1_teleconexion import cargar, REPO
 
-CSV = REPO / 'data/punto1_anchoveta/1a_desembarques_mensuales_bcrp/desembarques_anchoveta_mensual_2003_2026.csv'
+CSV = require('repo/data/punto1_anchoveta/1a_desembarques_mensuales_bcrp/desembarques_anchoveta_mensual_2003_2026.csv')
 INICIO = pd.Timestamp('2010-01-01')
 FIN = pd.Timestamp('2025-12-01')
 
