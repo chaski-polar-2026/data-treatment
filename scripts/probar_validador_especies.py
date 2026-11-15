@@ -1,7 +1,7 @@
 """Run offline schema and export regression tests."""
 import copy
 import unittest
-from validar_especies import load, validate_schema, main as validate_all
+from validar_especies import load, validate_schema, validate_optimum, main as validate_all
 from exportar_especies_web import export_species
 
 class SpeciesSchemaTests(unittest.TestCase):
@@ -54,6 +54,17 @@ class SpeciesSchemaTests(unittest.TestCase):
         self.fails(self.base, "invalid depth_basis")
         self.base["temperature_comparable"] = "yes"
         self.fails(self.base, "must be true or false")
+
+    def test_optimum_requires_note_and_both_citations(self):
+        r = {"id":"test", "temperature_optimum_c":"25", "temperature_optimum_note":""}
+        self.assertTrue(validate_optimum(r, {}))
+        r["temperature_optimum_note"] = "Laboratory study; stated optimum for a named life stage."
+        self.assertTrue(validate_optimum(r, {}))
+        mapped = {("test", field): [{"valor":r[field], "cita_corta":"explicit study result"}]
+                  for field in ("temperature_optimum_c", "temperature_optimum_note")}
+        self.assertEqual(validate_optimum(r, mapped), [])
+        mapped[("test", "temperature_optimum_note")][0]["valor"] = "different"
+        self.assertTrue(validate_optimum(r, mapped))
 
     def test_export(self):
         result = {r["id"]:r for r in export_species(self.species, load("especies_fuentes.csv"))}

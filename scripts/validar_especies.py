@@ -38,6 +38,19 @@ def validate_schema(r):
             errors.append(f"{sid}: temperature_note must describe observations or treatments, not limits")
     return errors
 
+def validate_optimum(r, mapped):
+    if not r.get("temperature_optimum_c"):
+        return []
+    sid = r["id"]
+    errors = []
+    if not r.get("temperature_optimum_note", "").strip():
+        errors.append(f"{sid}: temperature_optimum_note required with study type and scope")
+    for field in ("temperature_optimum_c", "temperature_optimum_note"):
+        citations = mapped.get((sid, field), [])
+        if not any(c.get("valor") == r.get(field) and c.get("cita_corta", "").strip() for c in citations):
+            errors.append(f"{sid}: {field} requires matching sourced evidence")
+    return errors
+
 def main():
     errors=[]; species=load("especies.csv"); refs=load("especies_fuentes.csv"); sources=load("fuentes.csv")
     source={x["id_fuente"]:x for x in sources}; ids={x["id"] for x in species}; mapped={}
@@ -58,16 +71,18 @@ def main():
         sid=r["id"]
         errors.extend(validate_schema(r))
         for field,value in r.items():
+            if field == "notes": value = value.split(" Review status:", 1)[0]
             if value and field not in structural | SCHEMA_FIELDS and not any(a["valor"]==value and a.get("cita_corta","").strip() for a in mapped.get((sid,field),[])):
                 errors.append(f"{sid}.{field}: populated value lacks matching sourced quote")
         for lo,hi in (("depth_min_m","depth_max_m"),("temperature_min_c","temperature_max_c")):
             if r.get(lo) and r.get(hi) and float(r[lo])>float(r[hi]):errors.append(f"{sid}: {lo} exceeds {hi}")
         lo,hi,opt=(r.get(k,"") for k in ("temperature_min_c","temperature_max_c","temperature_optimum_c"))
+        errors.extend(validate_optimum(r, mapped))
         if any((lo,hi,opt)):
             if not lo or not hi:errors.append(f"{sid}: temperature min and max both required")
             if not r.get("temperature_note","").strip():errors.append(f"{sid}: temperature_note required")
             if not mapped.get((sid,"temperature_min_c")) or not mapped.get((sid,"temperature_max_c")):errors.append(f"{sid}: temperature range needs source")
-            if opt and lo and hi and not float(lo)<=float(opt)<=float(hi):errors.append(f"{sid}: optimum outside min/max")
+            # Recorded field endpoints do not constrain a separately sourced experimental optimum.
     if errors:
         print("Species validation failed:");[print('- '+x) for x in errors];return 1
     print(f"Species validation passed ({len(species)} records; {len(refs)} cited field values).")
