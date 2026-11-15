@@ -1,3 +1,6 @@
 
 # Preserve scientific input snapshots byte for byte, including SHA256 checks.
 data/inputs/** -text
+
+# Species tables use text fields and LF line endings on every platform.
+data/especies/*.csv text eol=lf
