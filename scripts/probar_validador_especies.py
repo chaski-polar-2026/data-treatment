@@ -68,14 +68,27 @@ class SpeciesSchemaTests(unittest.TestCase):
 
     def test_export(self):
         result = {r["id"]:r for r in export_species(self.species, load("especies_fuentes.csv"))}
-        for sid in ("concha_abanico", "pota"):
+        for sid in ("concha_abanico", "pota", "jurel"):
             t = result[sid]["recorded_temperature"]
             self.assertIs(t["use_in_comparison"], False)
             self.assertIs(t["comparable"], False)
             self.assertTrue(t["caveat"])
-        for sid in ("anchoveta", "pulpo", "merluza"):
+        for sid in ("anchoveta", "pulpo", "merluza", "cachema", "lorna"):
             self.assertIs(result[sid]["recorded_temperature"]["comparable"], True)
-        self.assertIsNone(result["cachema"]["recorded_temperature"]["min"])
+        self.assertEqual(result["cachema"]["recorded_temperature"]["min"], 14.2)
+        self.assertEqual(result["cachema"]["recorded_temperature"]["basis"], "bottom_temperature_cruise")
+        # Missing temperatures are a separate export case, independent of live records.
+        missing = copy.deepcopy(self.base)
+        for field in ("temperature_min_c", "temperature_max_c", "temperature_note",
+                      "temperature_basis", "temperature_comparable"):
+            missing[field] = ""
+        empty = export_species([missing], [])[0]["recorded_temperature"]
+        self.assertIsNone(empty["min"])
+        self.assertIsNone(empty["max"])
+        for sid, alternatives in (("cachema", {"165", "154"}), ("lorna", {"140", "222"})):
+            self.assertEqual(result[sid]["recorded_depth"]["max"], 50)
+            self.assertEqual({r["short_quote"] for r in result[sid]["sources"]["depth_max_m_alternative"]}, alternatives)
+            self.assertNotIn("F42", {r["source_id"] for r in result[sid]["recorded_depth"]["source"]["depth_max_m"]})
         self.assertEqual(result["pota"]["recorded_depth"]["label"], "Deepest recorded dive")
         for sid, row in result.items():
             for kind, prefix in (("recorded_temperature", "temperature"), ("recorded_depth", "depth")):

@@ -134,3 +134,60 @@ Sheet `BD`, row 5, has year, month, use, region, landing point, environment, spe
 Cachema's existing Piura source is unchanged: the national workbook has AYANQUE, but its scientific-name mapping was not verified here. No CONCHA DE ABANICO label occurs in the full shared-string table (CONCHA NEGRA is a different label); no national scallop dataset is claimed. Existing Piura and IMARPE report entries for scallop and octopus remain intact. The new national octopus entry supplies the previously missing downloadable catalogue, with the scope limits above. Species CSV checkout line endings are fixed to LF in `.gitattributes`.
 
 The four alternate cruise depth maxima use `campo=depth_max_m_alternative` in the citation table. They therefore appear as separate evidence in JSON and do not attach a 165 m or 222 m excerpt as support for the unchanged 50 m endpoint. This does not add or replace a column in `especies.csv`.
+
+### Access log and remaining fields
+
+All new values come from opened passages, not search snippets. An access failure in one reader is distinguished from a later successful public read; no login, TLS bypass or block evasion was used.
+
+| Candidate | Access result | Data decision |
+| --- | --- | --- |
+| [Legacy jurel PDF](https://repositorio.imarpe.gob.pe/bitstream/20.500.12958/9698/1/Patrones%20de%20distribuci%C3%B3n%20y%20abundancia%20del%20jurel%20Trachurus%20murphyi%20en%20el%20Per%C3%BA.pdf) | Web 502: no accesible through that link; F43 public repository bitstream and SciELO full text opened. | Use the opened F43 PDF, not the failed link. |
+| [PRODUCE artisanal landing catalogue](https://www.producempresarial.pe/desembarque-pesquero-artesanal-2013-2023/) | Web 502 and Python requests certificate error; browser and Python urllib with system trust opened it and the workbook. | F46 is verified; no certificate check was disabled. |
+| [IMARPE activity report service](https://www.gob.pe/12280-consultar-el-reporte-de-la-actividad-pesquera) and [its linked report directory](https://www.imarpe.gob.pe/reportes-informes/?folder=6) | Service page opened with system trust after web 418; linked directory returned 403: no accesible. | No national raw scallop dataset verified. |
+| [Piura open-data catalogue](https://www.datosabiertos.gob.pe/dataset/volumen-de-desembarque-mensual-de-recursos-hidrobiol%C3%B3gicos-por-puerto-y-por-especie-en-la-2) | 403: no accesible. | Preserve existing regional records; do not claim they were reverified. |
+| [Perico September 2023 exploration report](https://cdn.www.gob.pe/uploads/document/file/5491899/4896931-anexo-of-1426-2023-imarpe-pcd-informe-de-la-pesca-exploratoria-de-perico-21-11-23-r.pdf) | Web reader: no accesible. | No temperature imported from that candidate. |
+| [Cachema F17](https://repositorio.imarpe.gob.pe/bitstream/20.500.12958/3652/1/Informe%2048-4%20articulo4.pdf) | Passage review: no accesible in web reader (timeout); direct request exposed an 8,186,307-byte PDF that was not downloaded under the per-document review cap. | Preserve existing season and El Nino values/citations; no new claim from F17. |
+| F44 caballa report; F29/F30/F39 species sheets | F44 web full text opened, local direct request 403; species-sheet web timeouts were followed by successful direct HTTPS reads with system trust. | Use F44 section 4.2 for season; the sheets do not supply new coast-specific observation ranges with a clear basis. |
+| [FAO capture collection](https://www.fao.org/fishery/en/collection/capture) | Public page opened, but only its shell was readable; no species-filtered downloadable endpoint was verified. | No FAO species dataset imported. |
+
+- **Perico temperature:** the February 2010 cruise reports water-column conditions, but this review did not establish a species-attributed min/max pair; the large report was not downloaded in full. F29 does not fill that gap. Keep the range empty and `temperature_evidence_pending`.
+- **Caballa temperature:** F30's general 14-23 C habitat statement lacks the observation context required for the existing basis values; its separate preference statement is not an experimental scalar optimum. Ambient Lambayeque station temperatures in F47 are not assigned to fish captures. Keep the range and optimum empty.
+- **Bonito temperature:** F32 and the opened 2022/2023 fishery reports did not establish a verified field min/max pair with a supported basis in this review. Existing season and El Nino notes are preserved; the temperature and optimum remain pending.
+- **Corvina temperature, season and El Nino:** F39 and the opened FishBase summary do not resolve these fields. A laboratory conditioning protocol and Chilean work are not evidence of a Peruvian field temperature range or a wild spawning season. Keep these fields empty; names shared with other corvinas must not be substituted.
+- **Thermal optima:** no new explicit optimum with a verified study context was found in the reviewed passages; all existing `thermal_optimum_pending` flags remain. This is not an exhaustive claim that no study exists.
+- **Landing follow-up:** verify a national downloadable scallop dataset, cachema/AYANQUE scientific-name mapping, all seven common-name mappings in F46, continuous years per species, and the fleet/estimation definition. Preserve `landings_pending` for scallop. No unverified national values are filled for scallop or cachema.
+
+### Second-review random check (20 percent)
+
+Seed `20261115`; population in append order: 22 new biological field values/alternative depth records followed by 70 landing field/metadata values. Administrative notes, flags, bibliography and derived basis labels are excluded. Sample `ceil(0.20 * 92) = 19` using Python `random.Random(seed).sample`; each selected value was reopened at its source after sampling. F42 was checked visually on the newly fetched scan, pp. 4 and 12; F43 p. 67 and F45 PDF p. 6 were reread from fresh PDFs; F46 headers, shared strings, maritime rows and footnote were reread with HTTP 206, and its catalogue reopened with HTTP 200. **19 confirmed, 0 unconfirmed.** This verifies the stated, qualified metadata, not continuous time coverage or scientific-name mappings.
+
+| Draw | Species and field | Value checked | Source / locator | Result |
+| --- | --- | --- | --- | --- |
+| 1 | jurel / landing catalogue years | 2013-2025 catalogue period only | F46, BD B2 and catalogue | Confirmed |
+| 2 | cachema / temperature_min_c | 14.2 C, normal years | F42, p. 12, Table 1 | Confirmed |
+| 3 | caballa / catalogue fleet | Artisanal catalogue; larger-vessel input caveat | F46, workbook title and footnote | Confirmed |
+| 4 | corvina / catalogue geography | Region and landing point; maritime rows only | F46, BD E5:G5 and row 361 | Confirmed |
+| 5 | corvina / catalogue notes | Maritime row 361; continental names must be excluded | F46, BD rows 361 and 120; headers | Confirmed |
+| 6 | corvina / landing_data_years | 2013-2025 catalogue period only | F46, BD B2 and catalogue | Confirmed |
+| 7 | lorna / catalogue frequency | Monthly | F46, BD B5:C5 and catalogue | Confirmed |
+| 8 | perico / season_note | Higher spring/summer artisanal landings, not spawning | F45, PDF p. 6, section 3.1 | Confirmed |
+| 9 | perico / catalogue institution | PRODUCE / Observatorio PRODUCEmpresarial | F46, catalogue branding | Confirmed |
+| 10 | pulpo / landing_data_source | Downloadable artisanal common-name workbook | F46, catalogue link and BD row 30 | Confirmed |
+| 11 | caballa / catalogue frequency | Monthly | F46, BD B5:C5 and catalogue | Confirmed |
+| 12 | lorna / catalogue fleet | Artisanal catalogue; larger-vessel input caveat | F46, workbook title and footnote | Confirmed |
+| 13 | pulpo / landing_data_years | 2013-2025 catalogue period only | F46, BD B2 and catalogue | Confirmed |
+| 14 | jurel / depth_max_m | 300 m, strengthened Cromwell-extension pattern | F43, p. 67, Resumen | Confirmed |
+| 15 | cachema / temperature_note | Normal 14.2-17.2 C; El Nino 16.3-22.4 C; bottom cruises 1981-1988 | F42, pp. 4 and 12 | Confirmed |
+| 16 | pulpo / catalogue fleet | Artisanal catalogue; larger-vessel input caveat | F46, workbook title and footnote | Confirmed |
+| 17 | bonito / catalogue link | Public XLSX link opens without login | F46, fresh HEAD 200 and partial read 206 | Confirmed |
+| 18 | corvina / catalogue frequency | Monthly | F46, BD B5:C5 and catalogue | Confirmed |
+| 19 | pulpo / landing_data_frequency | Monthly | F46, BD B5:C5 and catalogue | Confirmed |
+
+### Validation results
+
+- `python scripts/validar_especies.py`: `Species validation passed (12 records; 247 cited field values).`
+- First `python scripts/probar_validador_especies.py`: 9 tests, one failure in `test_export`: `AssertionError: 14.2 is not None`. The test still assumed cachema had no temperature. It now checks the sourced cachema range and bottom basis, retains a separate empty-temperature fixture, checks jurel comparison is disabled, and keeps alternate depth citations separate from the unchanged endpoints. Final run: `Ran 9 tests` / `OK`.
+- `python scripts/exportar_especies_web.py`: `Wrote data\especies\especies.json`. No exporter logic was changed; JSON was regenerated from the reviewed CSVs.
+- Comparison against starting commit `99bba21`: all 41 original source rows, 152 original citation rows and 11 original landing rows remain unchanged; 6, 95 and 7 rows were added respectively. Existing numeric/ecological fields were preserved; only the documented cachema review note and administrative flags/status text were updated. The 28-column schema and LF line endings were verified.
+
+An auxiliary header assertion first failed because PowerShell encoded an accented inline literal incorrectly; using an explicit Unicode character confirmed the original AÑO header. This did not change any source or CSV value. No analysis, licence, push or merge was added.
