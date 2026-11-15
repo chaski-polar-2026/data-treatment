@@ -1,0 +1,30 @@
+id_especie,campo,valor,id_fuente,pagina_o_tabla
+anchoveta,scientific_name_accepted,Engraulis ringens,F1,taxon details
+anchoveta,aphia_id,272287,F1,taxon details
+anchoveta,el_nino_response_note,"IMARPE reports north-central Peruvian anchoveta distribution changes during warm events.",F2,abstract
+anchoveta,peru_coast_range_note,Northern Humboldt Current region of Peru,F2,abstract
+pota,scientific_name_accepted,Dosidicus gigas,F3,taxon details
+pota,aphia_id,342291,F3,taxon details
+pota,habitat_summary,"Neritic to oceanic squid, from epipelagic to mesopelagic waters.",F3,habitat attribute
+pota,depth_min_m,0,F4,abstract
+pota,depth_max_m,1200,F4,abstract
+pota,peru_coast_range_note,"Along the Peruvian coast, from 10 to more than 500 nautical miles offshore.",F4,abstract
+pota,fishery_note,both,F4,abstract
+concha_abanico,scientific_name_accepted,Argopecten purpuratus,F5,taxon details
+concha_abanico,aphia_id,394269,F5,taxon details
+concha_abanico,habitat_summary,"Benthos of semi-protected bays, on sedimentary and mixed substrates.",F6,section 2.7.2
+concha_abanico,depth_min_m,5,F6,section 2.7.2
+concha_abanico,depth_max_m,40,F6,section 2.7.2
+pulpo,scientific_name_accepted,Octopus mimus,F8,taxon details
+pulpo,aphia_id,342001,F8,taxon details
+merluza,scientific_name_accepted,Merluccius peruanus,F9,taxon list
+merluza,notes,"WoRMS accepts Merluccius gayi peruanus as Merluccius peruanus.",F9,taxon list
+cachema,scientific_name_accepted,Cynoscion analis,F10,taxon list
+merluza,aphia_id,1524920,F11,taxon details
+merluza,notes,"The submitted Merluccius gayi peruanus is accepted by WoRMS as Merluccius peruanus.",F9,taxon list
+cachema,aphia_id,276076,F12,taxon details
+cachema,notes,"WoRMS accepts this name; ecology fields remain pending.",F12,taxon details
+anchoveta,notes,"Only sourced fields populated; other ecological and landing fields remain pending.",F2,abstract
+pota,notes,"Depth and range summarize a Peru-focused IMARPE article; avoid treating the wide depth range as current location.",F4,abstract
+concha_abanico,notes,"Depth range is reported in an IMARPE review citing regional studies; temperature and landings remain pending.",F6,section 2.7.2
+pulpo,notes,"WoRMS records the type locality within Peru's EEZ; ecological and fishery fields pending.",F8,taxon details

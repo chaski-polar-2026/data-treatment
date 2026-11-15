@@ -1,0 +1,262 @@
+[
+  {
+    "id": "anchoveta",
+    "common_name_en": "Peruvian anchoveta",
+    "common_name_es": "anchoveta",
+    "scientific_name_accepted": "Engraulis ringens",
+    "aphia_id": "272287",
+    "group": "pelagic fish",
+    "el_nino_response_note": "IMARPE reports north-central Peruvian anchoveta distribution changes during warm events.",
+    "peru_coast_range_note": "Northern Humboldt Current region of Peru",
+    "evidence_level": "pending",
+    "flags": "evidence_pending",
+    "notes": "Only sourced fields populated; other ecological and landing fields remain pending.",
+    "sources": {
+      "scientific_name_accepted": [
+        {
+          "source_id": "F1",
+          "page_or_table": "taxon details"
+        }
+      ],
+      "aphia_id": [
+        {
+          "source_id": "F1",
+          "page_or_table": "taxon details"
+        }
+      ],
+      "el_nino_response_note": [
+        {
+          "source_id": "F2",
+          "page_or_table": "abstract"
+        }
+      ],
+      "peru_coast_range_note": [
+        {
+          "source_id": "F2",
+          "page_or_table": "abstract"
+        }
+      ],
+      "notes": [
+        {
+          "source_id": "F2",
+          "page_or_table": "abstract"
+        }
+      ]
+    }
+  },
+  {
+    "id": "pota",
+    "common_name_en": "jumbo flying squid",
+    "common_name_es": "pota o calamar gigante",
+    "scientific_name_accepted": "Dosidicus gigas",
+    "aphia_id": "342291",
+    "group": "mollusc",
+    "habitat_summary": "Neritic to oceanic squid, from epipelagic to mesopelagic waters.",
+    "depth_min_m": "0",
+    "depth_max_m": "1200",
+    "peru_coast_range_note": "Along the Peruvian coast, from 10 to more than 500 nautical miles offshore.",
+    "fishery_note": "both",
+    "evidence_level": "limited",
+    "flags": "evidence_pending",
+    "notes": "Depth and range summarize a Peru-focused IMARPE article; avoid treating the wide depth range as current location.",
+    "sources": {
+      "scientific_name_accepted": [
+        {
+          "source_id": "F3",
+          "page_or_table": "taxon details"
+        }
+      ],
+      "aphia_id": [
+        {
+          "source_id": "F3",
+          "page_or_table": "taxon details"
+        }
+      ],
+      "habitat_summary": [
+        {
+          "source_id": "F3",
+          "page_or_table": "habitat attribute"
+        }
+      ],
+      "depth_min_m": [
+        {
+          "source_id": "F4",
+          "page_or_table": "abstract"
+        }
+      ],
+      "depth_max_m": [
+        {
+          "source_id": "F4",
+          "page_or_table": "abstract"
+        }
+      ],
+      "peru_coast_range_note": [
+        {
+          "source_id": "F4",
+          "page_or_table": "abstract"
+        }
+      ],
+      "fishery_note": [
+        {
+          "source_id": "F4",
+          "page_or_table": "abstract"
+        }
+      ],
+      "notes": [
+        {
+          "source_id": "F4",
+          "page_or_table": "abstract"
+        }
+      ]
+    }
+  },
+  {
+    "id": "concha_abanico",
+    "common_name_en": "Peruvian scallop",
+    "common_name_es": "concha de abanico",
+    "scientific_name_accepted": "Argopecten purpuratus",
+    "aphia_id": "394269",
+    "group": "mollusc",
+    "habitat_summary": "Benthos of semi-protected bays, on sedimentary and mixed substrates.",
+    "depth_min_m": "5",
+    "depth_max_m": "40",
+    "evidence_level": "limited",
+    "flags": "evidence_pending",
+    "notes": "Depth range is reported in an IMARPE review citing regional studies; temperature and landings remain pending.",
+    "sources": {
+      "scientific_name_accepted": [
+        {
+          "source_id": "F5",
+          "page_or_table": "taxon details"
+        }
+      ],
+      "aphia_id": [
+        {
+          "source_id": "F5",
+          "page_or_table": "taxon details"
+        }
+      ],
+      "habitat_summary": [
+        {
+          "source_id": "F6",
+          "page_or_table": "section 2.7.2"
+        }
+      ],
+      "depth_min_m": [
+        {
+          "source_id": "F6",
+          "page_or_table": "section 2.7.2"
+        }
+      ],
+      "depth_max_m": [
+        {
+          "source_id": "F6",
+          "page_or_table": "section 2.7.2"
+        }
+      ],
+      "notes": [
+        {
+          "source_id": "F6",
+          "page_or_table": "section 2.7.2"
+        }
+      ]
+    }
+  },
+  {
+    "id": "pulpo",
+    "common_name_en": "Peruvian octopus",
+    "common_name_es": "pulpo",
+    "scientific_name_accepted": "Octopus mimus",
+    "aphia_id": "342001",
+    "group": "mollusc",
+    "evidence_level": "pending",
+    "flags": "evidence_pending",
+    "notes": "WoRMS records the type locality within Peru's EEZ; ecological and fishery fields pending.",
+    "sources": {
+      "scientific_name_accepted": [
+        {
+          "source_id": "F8",
+          "page_or_table": "taxon details"
+        }
+      ],
+      "aphia_id": [
+        {
+          "source_id": "F8",
+          "page_or_table": "taxon details"
+        }
+      ],
+      "notes": [
+        {
+          "source_id": "F8",
+          "page_or_table": "taxon details"
+        }
+      ]
+    }
+  },
+  {
+    "id": "merluza",
+    "common_name_en": "Peruvian hake",
+    "common_name_es": "merluza",
+    "scientific_name_accepted": "Merluccius peruanus",
+    "aphia_id": "1524920",
+    "group": "demersal fish",
+    "evidence_level": "limited",
+    "flags": "name_corrected;evidence_pending",
+    "notes": "The submitted Merluccius gayi peruanus is accepted by WoRMS as Merluccius peruanus.",
+    "sources": {
+      "scientific_name_accepted": [
+        {
+          "source_id": "F9",
+          "page_or_table": "taxon list"
+        }
+      ],
+      "notes": [
+        {
+          "source_id": "F9",
+          "page_or_table": "taxon list"
+        },
+        {
+          "source_id": "F9",
+          "page_or_table": "taxon list"
+        }
+      ],
+      "aphia_id": [
+        {
+          "source_id": "F11",
+          "page_or_table": "taxon details"
+        }
+      ]
+    }
+  },
+  {
+    "id": "cachema",
+    "common_name_en": "Peruvian weakfish",
+    "common_name_es": "cachema",
+    "scientific_name_accepted": "Cynoscion analis",
+    "aphia_id": "276076",
+    "group": "demersal fish",
+    "evidence_level": "limited",
+    "flags": "evidence_pending",
+    "notes": "WoRMS accepts this name; ecology fields remain pending.",
+    "sources": {
+      "scientific_name_accepted": [
+        {
+          "source_id": "F10",
+          "page_or_table": "taxon list"
+        }
+      ],
+      "aphia_id": [
+        {
+          "source_id": "F12",
+          "page_or_table": "taxon details"
+        }
+      ],
+      "notes": [
+        {
+          "source_id": "F12",
+          "page_or_table": "taxon details"
+        }
+      ]
+    }
+  }
+]
