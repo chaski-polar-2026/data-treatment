@@ -1,4 +1,4 @@
-﻿# Priority species data: review update
+# Priority species data: review update
 
 This first batch covers anchoveta, jumbo flying squid, Peruvian scallop, Peruvian octopus, Peruvian hake, and cachema. Populated ecological values have a source, locator, and short excerpt in `especies_fuentes.csv`; empty values mean no verifiable evidence was found.
 
@@ -86,3 +86,27 @@ Seed 20261115; population: five newly cited species-field values, in appended CS
 - Optional OBIS/GBIF presence counts were not collected; no environmental conditions were extracted.
 
 Existing differing source descriptions for squid depth wording and scallop depth coverage are now flagged `sources_disagree`; their original notes and references are retained. No new endpoint was chosen to resolve those differences.
+
+
+## Review completed 2026-11-15
+Six new species records: bonito, perico, jurel, caballa, lorna and corvina. All six accepted scientific names and Aphia IDs were verified through the public WoRMS REST API. The records remain partial in biological coverage: empty fields mean no sufficiently verified evidence, not absence of the phenomenon. No capture forecast is implied.
+
+### Remaining field gaps and decisions
+- All six new temperature ranges: left blank. Jurel and caballa factsheets give general environmental ranges without the required observation basis. Caballa also states a preferred range but does not identify life stage or study method; no scalar optimum was invented.
+- Bonito: verified depth, habitat, spawning, diet during El Nino, coast range and fishery; temperature and accessible landings series unresolved.
+- Perico: verified depth, habitat, coast range and fishery; seasonal and El Nino fields unresolved in the imported evidence. February 2010 IMARPE report table 17 contains survey-wide surface temperatures, not a demonstrated species-specific thermal range, so these were not imported.
+- Jurel: verified taxonomy, habitat, spawning and fishery. Closed depth bounds and coast-specific range remain blank.
+- Caballa: verified taxonomy, habitat, upper depth, coast range and fishery. Lower depth, spawning and species-specific El Nino response remain blank.
+- Lorna: Callaus deliciosa is accepted, not a spelling error. WoRMS returns authority Jordan, 1889, while IMARPE prints Tschudi, 1846; authority is not part of the accepted-name field and this discrepancy remains unresolved. The autumn spawning peak in the factsheet differs from the spring 1996 Huacho observation; both sources are retained with sources_disagree.
+- Corvina: verified taxonomy, habitat, upper depth, coast range and fishery. Lower depth, spawning, temperature and El Nino response remain blank.
+- Cachema: IMARPE summer 2003 report (https://repositorio.imarpe.gob.pe/bitstream/20.500.12958/2234/1/Informe%2039%283-4%2912.pdf) explicitly mentions a minimum of 19.2 C. Its multicolumn text extraction interleaves species and upper endpoints; visual page access failed, so no min/max pair was assigned. Laboratory hormone study table 1 (https://revistas.untumbes.edu.pe/index.php/manglar/es/article/download/99/113/387) was also reviewed; it is not a thermal-treatment study and was not forced into that basis.
+- Merluza: added published upper capture depth 800 m from F41, p. 249. This is a source-specific recorded extent, not a physiological limit. The original 50 m lower bound and guide note are preserved; the sources describe different scopes.
+- Thermal optima: no new optimum imported for the original six. Octopus mimus thermoregulation paper was located, but publisher access returned 403; secondary reports of 22.8 C were not used as primary evidence. Searches for the other five did not establish a directly verified optimum with study context. This does not prove that such studies do not exist.
+- Landing sources: three open PDF report entries added for lorna, corvina and caballa. These are report summaries, not machine-readable series; landing_data fields remain blank and landings_pending remains set. No bulk data downloaded.
+- Other coastal species and invertebrates in the candidate list were not added; the six-species minimum determines this delivery's scope.
+
+### Access log
+No accesible: WoRMS individual HTML records (403); public REST API succeeded for all six. IMARPE bonito PDF timed out in web tool; direct HTTPS download succeeded. IMARPE repository direct Python reads failed certificate verification; web-reader copies were used where available, without disabling TLS verification. Cachema review page timed out; Lambayeque El Nino 2017 item returned 502. FishBase corvina returned 403 and mirror cache miss. PRODUCE lorna page and Piura open-data CSV returned 418. Perico 2021 annual report returned 403. ScienceDirect hake and octopus articles returned 403; an open scholarly copy of the hake paper was read. No authentication or block evasion was used.
+
+### Audit
+Seed 20261115; 61 distinct new sourced field values; sample ceil(10%) = 7. Sources were downloaded again after sampling. Confirmed 7/7; unconfirmed 0. Sample: caballa/common_name_es; jurel/common_name_es; bonito/fishery_note; lorna/depth_min_m, group, depth_max_m, common_name_es. See RESUMEN_CAMBIOS.md for validation and packaging results.

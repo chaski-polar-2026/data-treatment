@@ -85,3 +85,69 @@ merluza,depth_min_m,50,F25,p. 49; habitat,desde 50 m a más de 600 m de profundi
 merluza,depth_note,The guide records depths from 50 m to more than 600 m; no closed maximum is given.,F25,p. 49; habitat,desde 50 m a más de 600 m de profundidad
 merluza,season_note,Main spawning in winter-spring; secondary spawning in summer-autumn.,F25,p. 49; spawning period,Invierno - primavera (periodo principal de desove) y verano - otoño (periodo secundario)
 cachema,depth_note,IMARPE gives 0-50 m. FishBase lists a depth range of 10 m to an unknown limit (Ref. 9118).,F27,"species summary, Environment line",depth range 10 - ? m
+jurel,common_name_en,Inca scad,F28,FAO (EN),Inca scad
+jurel,common_name_es,jurel,F28,Nombres comunes,Jurel
+jurel,scientific_name_accepted,Trachurus murphyi,F28,Title,"Trachurus murphyi Nichols, 1920"
+jurel,group,pelagic fish,F28,Habitat y ecologia,Especie pel?gica
+jurel,habitat_summary,Pelagic fish that forms schools.,F28,Habitat y ecologia,Tiene h?bitos gregarios formando card?menes
+jurel,season_note,"Main spawning occurs in winter and spring, with secondary spawning in summer.",F28,Periodo de desove,Invierno ? primavera (principal); verano (secundario)
+jurel,fishery_note,Industrial and artisanal fisheries are reported.,F28,Tipo de pesqueria,"Industrial, artesanal"
+perico,habitat_summary,Fast-swimming epipelagic fish.,F29,Habitat and ecology,"Epipel?gica, de nataci?n r?pida"
+perico,depth_min_m,0,F29,Distribution depth,Desde 0 m hasta 85 m
+perico,depth_max_m,85,F29,Distribution depth,Desde 0 m hasta 85 m
+perico,peru_coast_range_note,Occurs along the Peruvian coast.,F29,Distribution,presenta a lo largo de la costa
+perico,scientific_name_accepted,Coryphaena hippurus,F29,Title,Coryphaena hippurus
+perico,common_name_en,Common dolphinfish,F29,Common names,Common dolphinfish
+perico,common_name_es,perico,F29,Title,Perico
+caballa,habitat_summary,Neritic pelagic fish that forms schools.,F30,Habitat and ecology,Especie pel?gica ner?tica
+caballa,depth_max_m,300,F30,"p. 2, Distribution depth",Hasta300 m de profundidad
+caballa,fishery_note,Industrial and artisanal fisheries are reported.,F30,"p. 3, Fishery","Industrial,artesanal"
+caballa,scientific_name_accepted,Scomber japonicus,F30,Title,Scomber japonicus
+caballa,common_name_en,Chub mackerel,F30,Common names,Chub mackerel
+caballa,common_name_es,caballa,F30,Title,Caballa
+bonito,scientific_name_accepted,Sarda chiliensis,F31,JSON valid_name,Sarda chiliensis
+bonito,aphia_id,293729,F31,JSON valid_AphiaID,293729
+bonito,common_name_en,Eastern Pacific bonito,F32,"p. 1-2, common names",Eastern Pacific bonito
+bonito,common_name_es,bonito,F32,"p. 1-2, common names",BONITO
+bonito,habitat_summary,"Epipelagic, neritic fish associated with Humboldt Current waters.",F32,"pp. 2-3, distribution / ecology / reproduction / fishery","Especie epipelágica, nerítica asociada a aguas de la corriente de Humboldt"
+bonito,depth_min_m,0,F32,"pp. 2-3, distribution / ecology / reproduction / fishery",0 - 100 m
+bonito,depth_max_m,100,F32,"pp. 2-3, distribution / ecology / reproduction / fishery",0 - 100 m
+bonito,season_note,"Spawning occurs year-round, mainly in October-December and February-March.",F32,"pp. 2-3, distribution / ecology / reproduction / fishery",primavera (octubre – diciembre) y verano (febrero-marzo)
+bonito,el_nino_response_note,IMARPE reports juvenile sardine and samasa in the diet during El Nino events.,F32,"pp. 2-3, distribution / ecology / reproduction / fishery","Durante eventos El Niño, se alimenta de sardina juvenil y samasa."
+bonito,peru_coast_range_note,"Distribution extends from Puerto Pizarro, Peru, to Talcahuano, Chile.",F32,"pp. 2-3, distribution / ecology / reproduction / fishery",Se distribuye desde Puerto Pizarro
+bonito,fishery_note,Industrial and artisanal fisheries are reported.,F32,"pp. 2-3, distribution / ecology / reproduction / fishery","Industrial, artesanal"
+bonito,group,pelagic fish,F32,Habitat and ecology,Especie epipelágica
+perico,scientific_name_accepted,Coryphaena hippurus,F33,JSON valid_name,Coryphaena hippurus
+perico,aphia_id,126846,F33,JSON valid_AphiaID,126846
+perico,fishery_note,Industrial and artisanal fisheries are reported.,F29,"pp. 2-3, distribution / ecology / reproduction / fishery","Industrial, artesanal"
+perico,group,pelagic fish,F29,Habitat and ecology,Epipelágica
+jurel,scientific_name_accepted,Trachurus murphyi,F34,JSON valid_name,Trachurus murphyi
+jurel,aphia_id,273303,F34,JSON valid_AphiaID,273303
+jurel,group,pelagic fish,F28,Habitat and ecology,Especie pelágica
+caballa,scientific_name_accepted,Scomber japonicus,F35,JSON valid_name,Scomber japonicus
+caballa,aphia_id,127022,F35,JSON valid_AphiaID,127022
+caballa,peru_coast_range_note,"Reported from Costa Rica and Ecuador through Peru to Valparaiso, Chile, and the Galapagos.",F30,"pp. 2-3, distribution / ecology / reproduction / fishery","Costa Rica, Manta (Ecuador) a Perú y Valparaiso (Chile)"
+caballa,group,pelagic fish,F30,Habitat and ecology,Especie pelágica nerítica
+lorna,scientific_name_accepted,Callaus deliciosa,F36,JSON valid_name,Callaus deliciosa
+lorna,aphia_id,1674231,F36,JSON valid_AphiaID,1674231
+lorna,common_name_en,Lorna drum,F37,"p. 1-2, common names",Lorna drum
+lorna,common_name_es,lorna,F37,"p. 1-2, common names",LORNA
+lorna,habitat_summary,Benthopelagic fish on shallow sandy and sandy-rocky continental shelf bottoms.,F37,"pp. 2-3, distribution / ecology / reproduction / fishery",Bentopelágica de la plataforma continental sobre fondos someros arenosos y areno-rocosos
+lorna,depth_min_m,5,F37,"pp. 2-3, distribution / ecology / reproduction / fishery",De 5 a 50 metros de profundidad
+lorna,depth_max_m,50,F37,"pp. 2-3, distribution / ecology / reproduction / fishery",De 5 a 50 metros de profundidad
+lorna,season_note,The main spawning peak is in autumn; the Huacho cold-period study recorded a spring 1996 peak.,F37,"pp. 2-3, distribution / ecology / reproduction / fishery",Otoño (pico principal)
+lorna,peru_coast_range_note,"Reported from Ecuador and Puerto Pizarro, Peru, to Corral, Chile.",F37,"pp. 2-3, distribution / ecology / reproduction / fishery",Ecuador; Puerto Pizarro (Perú) a Corral (Chile)
+lorna,fishery_note,Artisanal fishery.,F37,"pp. 2-3, distribution / ecology / reproduction / fishery",Artesanal
+lorna,group,demersal fish,F37,Habitat and ecology,Bentopelágica
+corvina,scientific_name_accepted,Cilus gilberti,F38,JSON valid_name,Cilus gilberti
+corvina,aphia_id,280187,F38,JSON valid_AphiaID,280187
+corvina,common_name_en,Corvina drum,F39,"p. 1-2, common names",Corvina drum
+corvina,common_name_es,corvina,F39,"p. 1-2, common names",CORVINA
+corvina,habitat_summary,Fish on sandy coastal bottoms.,F39,"pp. 2-3, distribution / ecology / reproduction / fishery",Fondos costeros arenosos
+corvina,depth_max_m,50,F39,"pp. 2-3, distribution / ecology / reproduction / fishery",Hasta profundidades de 50 m
+corvina,peru_coast_range_note,"Reported from Sechura Bay, Piura, Peru, to Puerto Montt, Chile.",F39,"pp. 2-3, distribution / ecology / reproduction / fishery","Desde la Bahía de Sechura en Piura, Perú hasta Puerto Montt, Chile"
+corvina,fishery_note,Artisanal fishery.,F39,"pp. 2-3, distribution / ecology / reproduction / fishery",Artesanal
+corvina,group,demersal fish,F39,Habitat and ecology,Fondos costeros arenosos
+lorna,el_nino_response_note,The 1997-98 warm period negatively affected reproduction in the Huacho study.,F40,"p. 18, conclusion 5",El período cálido afectó negativamente el proceso reproductivo de la “lorna”
+lorna,season_note,The main spawning peak is in autumn; the Huacho cold-period study recorded a spring 1996 peak.,F40,"p. 18, conclusion 5",desove principal en la primavera de 1996
+merluza,depth_max_m,800,F41,"p. 249, introduction",from near the surface to 800 m depth

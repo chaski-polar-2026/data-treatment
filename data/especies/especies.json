@@ -711,8 +711,8 @@
     "landing_data_frequency": "Monthly",
     "landing_data_years": "2024-06 to 2026-07",
     "evidence_level": "sourced",
-    "flags": "name_corrected;depth_max_pending;thermal_optimum_pending",
-    "notes": "WoRMS accepts Merluccius peruanus; Merluccius gayi peruanus is retained as historical synonym. Review status: No thermal optimum reported in reviewed sources. Maximum depth pending: guide is open-ended; candidate 2025 report: no accesible (418).",
+    "flags": "name_corrected;thermal_optimum_pending",
+    "notes": "WoRMS accepts Merluccius peruanus; Merluccius gayi peruanus is retained as historical synonym. Review status: A closed published upper depth of 800 m is documented in F41; the original guide wording remains in depth_note.",
     "depth_note": "The guide records depths from 50 m to more than 600 m; no closed maximum is given.",
     "recorded_temperature": {
       "min": 10.0,
@@ -748,7 +748,7 @@
     },
     "recorded_depth": {
       "min": 50.0,
-      "max": null,
+      "max": 800.0,
       "depth_basis": "distribution_range",
       "label": "Recorded depth (not a species limit)",
       "source": {
@@ -759,7 +759,13 @@
             "short_quote": "desde 50 m a más de 600 m de profundidad"
           }
         ],
-        "depth_max_m": []
+        "depth_max_m": [
+          {
+            "source_id": "F41",
+            "page_or_table": "p. 249, introduction",
+            "short_quote": "from near the surface to 800 m depth"
+          }
+        ]
       }
     },
     "sources": {
@@ -866,6 +872,13 @@
           "source_id": "F25",
           "page_or_table": "p. 49; spawning period",
           "short_quote": "Invierno - primavera (periodo principal de desove) y verano - otoño (periodo secundario)"
+        }
+      ],
+      "depth_max_m": [
+        {
+          "source_id": "F41",
+          "page_or_table": "p. 249, introduction",
+          "short_quote": "from near the surface to 800 m depth"
         }
       ]
     }
@@ -1022,6 +1035,737 @@
           "source_id": "F27",
           "page_or_table": "species summary, Environment line",
           "short_quote": "depth range 10 - ? m"
+        }
+      ]
+    }
+  },
+  {
+    "id": "jurel",
+    "common_name_en": "Inca scad",
+    "common_name_es": "jurel",
+    "scientific_name_accepted": "Trachurus murphyi",
+    "aphia_id": "273303",
+    "group": "pelagic fish",
+    "habitat_summary": "Pelagic fish that forms schools.",
+    "season_note": "Main spawning occurs in winter and spring, with secondary spawning in summer.",
+    "fishery_note": "Industrial and artisanal fisheries are reported.",
+    "evidence_level": "limited",
+    "flags": "temperature_evidence_pending;thermal_optimum_pending;landings_pending",
+    "recorded_temperature": {
+      "min": null,
+      "max": null,
+      "basis": null,
+      "comparable": false,
+      "use_in_comparison": false,
+      "label": "Temperatures recorded in Peru (observations, not limits)",
+      "source": {
+        "temperature_min_c": [],
+        "temperature_max_c": [],
+        "temperature_note": []
+      },
+      "caveat": "No sourced temperature range recorded"
+    },
+    "recorded_depth": {
+      "min": null,
+      "max": null,
+      "depth_basis": null,
+      "label": "Recorded depth (not a species limit)",
+      "source": {
+        "depth_min_m": [],
+        "depth_max_m": []
+      }
+    },
+    "sources": {
+      "common_name_en": [
+        {
+          "source_id": "F28",
+          "page_or_table": "FAO (EN)",
+          "short_quote": "Inca scad"
+        }
+      ],
+      "common_name_es": [
+        {
+          "source_id": "F28",
+          "page_or_table": "Nombres comunes",
+          "short_quote": "Jurel"
+        }
+      ],
+      "scientific_name_accepted": [
+        {
+          "source_id": "F28",
+          "page_or_table": "Title",
+          "short_quote": "Trachurus murphyi Nichols, 1920"
+        },
+        {
+          "source_id": "F34",
+          "page_or_table": "JSON valid_name",
+          "short_quote": "Trachurus murphyi"
+        }
+      ],
+      "group": [
+        {
+          "source_id": "F28",
+          "page_or_table": "Habitat y ecologia",
+          "short_quote": "Especie pel?gica"
+        },
+        {
+          "source_id": "F28",
+          "page_or_table": "Habitat and ecology",
+          "short_quote": "Especie pelágica"
+        }
+      ],
+      "habitat_summary": [
+        {
+          "source_id": "F28",
+          "page_or_table": "Habitat y ecologia",
+          "short_quote": "Tiene h?bitos gregarios formando card?menes"
+        }
+      ],
+      "season_note": [
+        {
+          "source_id": "F28",
+          "page_or_table": "Periodo de desove",
+          "short_quote": "Invierno ? primavera (principal); verano (secundario)"
+        }
+      ],
+      "fishery_note": [
+        {
+          "source_id": "F28",
+          "page_or_table": "Tipo de pesqueria",
+          "short_quote": "Industrial, artesanal"
+        }
+      ],
+      "aphia_id": [
+        {
+          "source_id": "F34",
+          "page_or_table": "JSON valid_AphiaID",
+          "short_quote": "273303"
+        }
+      ]
+    }
+  },
+  {
+    "id": "perico",
+    "common_name_en": "Common dolphinfish",
+    "common_name_es": "perico",
+    "scientific_name_accepted": "Coryphaena hippurus",
+    "aphia_id": "126846",
+    "group": "pelagic fish",
+    "habitat_summary": "Fast-swimming epipelagic fish.",
+    "peru_coast_range_note": "Occurs along the Peruvian coast.",
+    "fishery_note": "Industrial and artisanal fisheries are reported.",
+    "evidence_level": "limited",
+    "flags": "temperature_evidence_pending;thermal_optimum_pending;landings_pending",
+    "recorded_temperature": {
+      "min": null,
+      "max": null,
+      "basis": null,
+      "comparable": false,
+      "use_in_comparison": false,
+      "label": "Temperatures recorded in Peru (observations, not limits)",
+      "source": {
+        "temperature_min_c": [],
+        "temperature_max_c": [],
+        "temperature_note": []
+      },
+      "caveat": "No sourced temperature range recorded"
+    },
+    "recorded_depth": {
+      "min": 0.0,
+      "max": 85.0,
+      "depth_basis": "distribution_range",
+      "label": "Recorded depth (not a species limit)",
+      "source": {
+        "depth_min_m": [
+          {
+            "source_id": "F29",
+            "page_or_table": "Distribution depth",
+            "short_quote": "Desde 0 m hasta 85 m"
+          }
+        ],
+        "depth_max_m": [
+          {
+            "source_id": "F29",
+            "page_or_table": "Distribution depth",
+            "short_quote": "Desde 0 m hasta 85 m"
+          }
+        ]
+      }
+    },
+    "sources": {
+      "habitat_summary": [
+        {
+          "source_id": "F29",
+          "page_or_table": "Habitat and ecology",
+          "short_quote": "Epipel?gica, de nataci?n r?pida"
+        }
+      ],
+      "depth_min_m": [
+        {
+          "source_id": "F29",
+          "page_or_table": "Distribution depth",
+          "short_quote": "Desde 0 m hasta 85 m"
+        }
+      ],
+      "depth_max_m": [
+        {
+          "source_id": "F29",
+          "page_or_table": "Distribution depth",
+          "short_quote": "Desde 0 m hasta 85 m"
+        }
+      ],
+      "peru_coast_range_note": [
+        {
+          "source_id": "F29",
+          "page_or_table": "Distribution",
+          "short_quote": "presenta a lo largo de la costa"
+        }
+      ],
+      "scientific_name_accepted": [
+        {
+          "source_id": "F29",
+          "page_or_table": "Title",
+          "short_quote": "Coryphaena hippurus"
+        },
+        {
+          "source_id": "F33",
+          "page_or_table": "JSON valid_name",
+          "short_quote": "Coryphaena hippurus"
+        }
+      ],
+      "common_name_en": [
+        {
+          "source_id": "F29",
+          "page_or_table": "Common names",
+          "short_quote": "Common dolphinfish"
+        }
+      ],
+      "common_name_es": [
+        {
+          "source_id": "F29",
+          "page_or_table": "Title",
+          "short_quote": "Perico"
+        }
+      ],
+      "aphia_id": [
+        {
+          "source_id": "F33",
+          "page_or_table": "JSON valid_AphiaID",
+          "short_quote": "126846"
+        }
+      ],
+      "fishery_note": [
+        {
+          "source_id": "F29",
+          "page_or_table": "pp. 2-3, distribution / ecology / reproduction / fishery",
+          "short_quote": "Industrial, artesanal"
+        }
+      ],
+      "group": [
+        {
+          "source_id": "F29",
+          "page_or_table": "Habitat and ecology",
+          "short_quote": "Epipelágica"
+        }
+      ]
+    }
+  },
+  {
+    "id": "caballa",
+    "common_name_en": "Chub mackerel",
+    "common_name_es": "caballa",
+    "scientific_name_accepted": "Scomber japonicus",
+    "aphia_id": "127022",
+    "group": "pelagic fish",
+    "habitat_summary": "Neritic pelagic fish that forms schools.",
+    "peru_coast_range_note": "Reported from Costa Rica and Ecuador through Peru to Valparaiso, Chile, and the Galapagos.",
+    "fishery_note": "Industrial and artisanal fisheries are reported.",
+    "evidence_level": "limited",
+    "flags": "temperature_evidence_pending;thermal_optimum_pending;landings_pending",
+    "recorded_temperature": {
+      "min": null,
+      "max": null,
+      "basis": null,
+      "comparable": false,
+      "use_in_comparison": false,
+      "label": "Temperatures recorded in Peru (observations, not limits)",
+      "source": {
+        "temperature_min_c": [],
+        "temperature_max_c": [],
+        "temperature_note": []
+      },
+      "caveat": "No sourced temperature range recorded"
+    },
+    "recorded_depth": {
+      "min": null,
+      "max": 300.0,
+      "depth_basis": "distribution_range",
+      "label": "Recorded depth (not a species limit)",
+      "source": {
+        "depth_min_m": [],
+        "depth_max_m": [
+          {
+            "source_id": "F30",
+            "page_or_table": "p. 2, Distribution depth",
+            "short_quote": "Hasta300 m de profundidad"
+          }
+        ]
+      }
+    },
+    "sources": {
+      "habitat_summary": [
+        {
+          "source_id": "F30",
+          "page_or_table": "Habitat and ecology",
+          "short_quote": "Especie pel?gica ner?tica"
+        }
+      ],
+      "depth_max_m": [
+        {
+          "source_id": "F30",
+          "page_or_table": "p. 2, Distribution depth",
+          "short_quote": "Hasta300 m de profundidad"
+        }
+      ],
+      "fishery_note": [
+        {
+          "source_id": "F30",
+          "page_or_table": "p. 3, Fishery",
+          "short_quote": "Industrial,artesanal"
+        }
+      ],
+      "scientific_name_accepted": [
+        {
+          "source_id": "F30",
+          "page_or_table": "Title",
+          "short_quote": "Scomber japonicus"
+        },
+        {
+          "source_id": "F35",
+          "page_or_table": "JSON valid_name",
+          "short_quote": "Scomber japonicus"
+        }
+      ],
+      "common_name_en": [
+        {
+          "source_id": "F30",
+          "page_or_table": "Common names",
+          "short_quote": "Chub mackerel"
+        }
+      ],
+      "common_name_es": [
+        {
+          "source_id": "F30",
+          "page_or_table": "Title",
+          "short_quote": "Caballa"
+        }
+      ],
+      "aphia_id": [
+        {
+          "source_id": "F35",
+          "page_or_table": "JSON valid_AphiaID",
+          "short_quote": "127022"
+        }
+      ],
+      "peru_coast_range_note": [
+        {
+          "source_id": "F30",
+          "page_or_table": "pp. 2-3, distribution / ecology / reproduction / fishery",
+          "short_quote": "Costa Rica, Manta (Ecuador) a Perú y Valparaiso (Chile)"
+        }
+      ],
+      "group": [
+        {
+          "source_id": "F30",
+          "page_or_table": "Habitat and ecology",
+          "short_quote": "Especie pelágica nerítica"
+        }
+      ]
+    }
+  },
+  {
+    "id": "bonito",
+    "common_name_en": "Eastern Pacific bonito",
+    "common_name_es": "bonito",
+    "scientific_name_accepted": "Sarda chiliensis",
+    "aphia_id": "293729",
+    "group": "pelagic fish",
+    "habitat_summary": "Epipelagic, neritic fish associated with Humboldt Current waters.",
+    "season_note": "Spawning occurs year-round, mainly in October-December and February-March.",
+    "el_nino_response_note": "IMARPE reports juvenile sardine and samasa in the diet during El Nino events.",
+    "peru_coast_range_note": "Distribution extends from Puerto Pizarro, Peru, to Talcahuano, Chile.",
+    "fishery_note": "Industrial and artisanal fisheries are reported.",
+    "evidence_level": "limited",
+    "flags": "temperature_evidence_pending;thermal_optimum_pending;landings_pending",
+    "recorded_temperature": {
+      "min": null,
+      "max": null,
+      "basis": null,
+      "comparable": false,
+      "use_in_comparison": false,
+      "label": "Temperatures recorded in Peru (observations, not limits)",
+      "source": {
+        "temperature_min_c": [],
+        "temperature_max_c": [],
+        "temperature_note": []
+      },
+      "caveat": "No sourced temperature range recorded"
+    },
+    "recorded_depth": {
+      "min": 0.0,
+      "max": 100.0,
+      "depth_basis": "distribution_range",
+      "label": "Recorded depth (not a species limit)",
+      "source": {
+        "depth_min_m": [
+          {
+            "source_id": "F32",
+            "page_or_table": "pp. 2-3, distribution / ecology / reproduction / fishery",
+            "short_quote": "0 - 100 m"
+          }
+        ],
+        "depth_max_m": [
+          {
+            "source_id": "F32",
+            "page_or_table": "pp. 2-3, distribution / ecology / reproduction / fishery",
+            "short_quote": "0 - 100 m"
+          }
+        ]
+      }
+    },
+    "sources": {
+      "scientific_name_accepted": [
+        {
+          "source_id": "F31",
+          "page_or_table": "JSON valid_name",
+          "short_quote": "Sarda chiliensis"
+        }
+      ],
+      "aphia_id": [
+        {
+          "source_id": "F31",
+          "page_or_table": "JSON valid_AphiaID",
+          "short_quote": "293729"
+        }
+      ],
+      "common_name_en": [
+        {
+          "source_id": "F32",
+          "page_or_table": "p. 1-2, common names",
+          "short_quote": "Eastern Pacific bonito"
+        }
+      ],
+      "common_name_es": [
+        {
+          "source_id": "F32",
+          "page_or_table": "p. 1-2, common names",
+          "short_quote": "BONITO"
+        }
+      ],
+      "habitat_summary": [
+        {
+          "source_id": "F32",
+          "page_or_table": "pp. 2-3, distribution / ecology / reproduction / fishery",
+          "short_quote": "Especie epipelágica, nerítica asociada a aguas de la corriente de Humboldt"
+        }
+      ],
+      "depth_min_m": [
+        {
+          "source_id": "F32",
+          "page_or_table": "pp. 2-3, distribution / ecology / reproduction / fishery",
+          "short_quote": "0 - 100 m"
+        }
+      ],
+      "depth_max_m": [
+        {
+          "source_id": "F32",
+          "page_or_table": "pp. 2-3, distribution / ecology / reproduction / fishery",
+          "short_quote": "0 - 100 m"
+        }
+      ],
+      "season_note": [
+        {
+          "source_id": "F32",
+          "page_or_table": "pp. 2-3, distribution / ecology / reproduction / fishery",
+          "short_quote": "primavera (octubre – diciembre) y verano (febrero-marzo)"
+        }
+      ],
+      "el_nino_response_note": [
+        {
+          "source_id": "F32",
+          "page_or_table": "pp. 2-3, distribution / ecology / reproduction / fishery",
+          "short_quote": "Durante eventos El Niño, se alimenta de sardina juvenil y samasa."
+        }
+      ],
+      "peru_coast_range_note": [
+        {
+          "source_id": "F32",
+          "page_or_table": "pp. 2-3, distribution / ecology / reproduction / fishery",
+          "short_quote": "Se distribuye desde Puerto Pizarro"
+        }
+      ],
+      "fishery_note": [
+        {
+          "source_id": "F32",
+          "page_or_table": "pp. 2-3, distribution / ecology / reproduction / fishery",
+          "short_quote": "Industrial, artesanal"
+        }
+      ],
+      "group": [
+        {
+          "source_id": "F32",
+          "page_or_table": "Habitat and ecology",
+          "short_quote": "Especie epipelágica"
+        }
+      ]
+    }
+  },
+  {
+    "id": "lorna",
+    "common_name_en": "Lorna drum",
+    "common_name_es": "lorna",
+    "scientific_name_accepted": "Callaus deliciosa",
+    "aphia_id": "1674231",
+    "group": "demersal fish",
+    "habitat_summary": "Benthopelagic fish on shallow sandy and sandy-rocky continental shelf bottoms.",
+    "season_note": "The main spawning peak is in autumn; the Huacho cold-period study recorded a spring 1996 peak.",
+    "el_nino_response_note": "The 1997-98 warm period negatively affected reproduction in the Huacho study.",
+    "peru_coast_range_note": "Reported from Ecuador and Puerto Pizarro, Peru, to Corral, Chile.",
+    "fishery_note": "Artisanal fishery.",
+    "evidence_level": "limited",
+    "flags": "temperature_evidence_pending;thermal_optimum_pending;landings_pending;sources_disagree",
+    "recorded_temperature": {
+      "min": null,
+      "max": null,
+      "basis": null,
+      "comparable": false,
+      "use_in_comparison": false,
+      "label": "Temperatures recorded in Peru (observations, not limits)",
+      "source": {
+        "temperature_min_c": [],
+        "temperature_max_c": [],
+        "temperature_note": []
+      },
+      "caveat": "No sourced temperature range recorded"
+    },
+    "recorded_depth": {
+      "min": 5.0,
+      "max": 50.0,
+      "depth_basis": "distribution_range",
+      "label": "Recorded depth (not a species limit)",
+      "source": {
+        "depth_min_m": [
+          {
+            "source_id": "F37",
+            "page_or_table": "pp. 2-3, distribution / ecology / reproduction / fishery",
+            "short_quote": "De 5 a 50 metros de profundidad"
+          }
+        ],
+        "depth_max_m": [
+          {
+            "source_id": "F37",
+            "page_or_table": "pp. 2-3, distribution / ecology / reproduction / fishery",
+            "short_quote": "De 5 a 50 metros de profundidad"
+          }
+        ]
+      }
+    },
+    "sources": {
+      "scientific_name_accepted": [
+        {
+          "source_id": "F36",
+          "page_or_table": "JSON valid_name",
+          "short_quote": "Callaus deliciosa"
+        }
+      ],
+      "aphia_id": [
+        {
+          "source_id": "F36",
+          "page_or_table": "JSON valid_AphiaID",
+          "short_quote": "1674231"
+        }
+      ],
+      "common_name_en": [
+        {
+          "source_id": "F37",
+          "page_or_table": "p. 1-2, common names",
+          "short_quote": "Lorna drum"
+        }
+      ],
+      "common_name_es": [
+        {
+          "source_id": "F37",
+          "page_or_table": "p. 1-2, common names",
+          "short_quote": "LORNA"
+        }
+      ],
+      "habitat_summary": [
+        {
+          "source_id": "F37",
+          "page_or_table": "pp. 2-3, distribution / ecology / reproduction / fishery",
+          "short_quote": "Bentopelágica de la plataforma continental sobre fondos someros arenosos y areno-rocosos"
+        }
+      ],
+      "depth_min_m": [
+        {
+          "source_id": "F37",
+          "page_or_table": "pp. 2-3, distribution / ecology / reproduction / fishery",
+          "short_quote": "De 5 a 50 metros de profundidad"
+        }
+      ],
+      "depth_max_m": [
+        {
+          "source_id": "F37",
+          "page_or_table": "pp. 2-3, distribution / ecology / reproduction / fishery",
+          "short_quote": "De 5 a 50 metros de profundidad"
+        }
+      ],
+      "season_note": [
+        {
+          "source_id": "F37",
+          "page_or_table": "pp. 2-3, distribution / ecology / reproduction / fishery",
+          "short_quote": "Otoño (pico principal)"
+        },
+        {
+          "source_id": "F40",
+          "page_or_table": "p. 18, conclusion 5",
+          "short_quote": "desove principal en la primavera de 1996"
+        }
+      ],
+      "peru_coast_range_note": [
+        {
+          "source_id": "F37",
+          "page_or_table": "pp. 2-3, distribution / ecology / reproduction / fishery",
+          "short_quote": "Ecuador; Puerto Pizarro (Perú) a Corral (Chile)"
+        }
+      ],
+      "fishery_note": [
+        {
+          "source_id": "F37",
+          "page_or_table": "pp. 2-3, distribution / ecology / reproduction / fishery",
+          "short_quote": "Artesanal"
+        }
+      ],
+      "group": [
+        {
+          "source_id": "F37",
+          "page_or_table": "Habitat and ecology",
+          "short_quote": "Bentopelágica"
+        }
+      ],
+      "el_nino_response_note": [
+        {
+          "source_id": "F40",
+          "page_or_table": "p. 18, conclusion 5",
+          "short_quote": "El período cálido afectó negativamente el proceso reproductivo de la “lorna”"
+        }
+      ]
+    }
+  },
+  {
+    "id": "corvina",
+    "common_name_en": "Corvina drum",
+    "common_name_es": "corvina",
+    "scientific_name_accepted": "Cilus gilberti",
+    "aphia_id": "280187",
+    "group": "demersal fish",
+    "habitat_summary": "Fish on sandy coastal bottoms.",
+    "peru_coast_range_note": "Reported from Sechura Bay, Piura, Peru, to Puerto Montt, Chile.",
+    "fishery_note": "Artisanal fishery.",
+    "evidence_level": "limited",
+    "flags": "temperature_evidence_pending;thermal_optimum_pending;landings_pending",
+    "recorded_temperature": {
+      "min": null,
+      "max": null,
+      "basis": null,
+      "comparable": false,
+      "use_in_comparison": false,
+      "label": "Temperatures recorded in Peru (observations, not limits)",
+      "source": {
+        "temperature_min_c": [],
+        "temperature_max_c": [],
+        "temperature_note": []
+      },
+      "caveat": "No sourced temperature range recorded"
+    },
+    "recorded_depth": {
+      "min": null,
+      "max": 50.0,
+      "depth_basis": "distribution_range",
+      "label": "Recorded depth (not a species limit)",
+      "source": {
+        "depth_min_m": [],
+        "depth_max_m": [
+          {
+            "source_id": "F39",
+            "page_or_table": "pp. 2-3, distribution / ecology / reproduction / fishery",
+            "short_quote": "Hasta profundidades de 50 m"
+          }
+        ]
+      }
+    },
+    "sources": {
+      "scientific_name_accepted": [
+        {
+          "source_id": "F38",
+          "page_or_table": "JSON valid_name",
+          "short_quote": "Cilus gilberti"
+        }
+      ],
+      "aphia_id": [
+        {
+          "source_id": "F38",
+          "page_or_table": "JSON valid_AphiaID",
+          "short_quote": "280187"
+        }
+      ],
+      "common_name_en": [
+        {
+          "source_id": "F39",
+          "page_or_table": "p. 1-2, common names",
+          "short_quote": "Corvina drum"
+        }
+      ],
+      "common_name_es": [
+        {
+          "source_id": "F39",
+          "page_or_table": "p. 1-2, common names",
+          "short_quote": "CORVINA"
+        }
+      ],
+      "habitat_summary": [
+        {
+          "source_id": "F39",
+          "page_or_table": "pp. 2-3, distribution / ecology / reproduction / fishery",
+          "short_quote": "Fondos costeros arenosos"
+        }
+      ],
+      "depth_max_m": [
+        {
+          "source_id": "F39",
+          "page_or_table": "pp. 2-3, distribution / ecology / reproduction / fishery",
+          "short_quote": "Hasta profundidades de 50 m"
+        }
+      ],
+      "peru_coast_range_note": [
+        {
+          "source_id": "F39",
+          "page_or_table": "pp. 2-3, distribution / ecology / reproduction / fishery",
+          "short_quote": "Desde la Bahía de Sechura en Piura, Perú hasta Puerto Montt, Chile"
+        }
+      ],
+      "fishery_note": [
+        {
+          "source_id": "F39",
+          "page_or_table": "pp. 2-3, distribution / ecology / reproduction / fishery",
+          "short_quote": "Artesanal"
+        }
+      ],
+      "group": [
+        {
+          "source_id": "F39",
+          "page_or_table": "Habitat and ecology",
+          "short_quote": "Fondos costeros arenosos"
         }
       ]
     }
