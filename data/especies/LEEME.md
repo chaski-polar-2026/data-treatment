@@ -14,6 +14,20 @@ This first batch covers anchoveta, jumbo flying squid, Peruvian scallop, Peruvia
 
 Using seed `20261115`, 8 of 80 sourced field values (10%) were selected and checked against the linked source and locator. **8 confirmed; 0 unconfirmed:** scallop maximum temperature, anchoveta minimum depth, hake minimum temperature, squid maximum depth, octopus AphiaID, squid maximum temperature, hake accepted name, and squid spawning season. The WoRMS taxon page HTML returned an access error to the automated browser; the public Aphia REST records confirmed accepted names and AphiaIDs.
 
+## How to read the ranges
+
+Recorded values describe the records cited here. They are not tolerance limits, preferred ranges or evidence of catch likelihood. A comparison flag does not establish that any environmental measurement is suitable for comparison: depth, place and measurement context must match.
+
+- `field_seasonal_observation`: seasonal field temperatures. `temperature_comparable` may be true for a comparison in the same measurement context.
+- `field_depth_mixed_observation`: observations from different depths. The squid values combine 50 m and surface observations; comparison is disabled.
+- `bottom_temperature_cruise`: bottom temperatures recorded during cruises. Compare only with bottom measurements in the same context, not sea-surface temperature.
+- `laboratory_treatment`: experimental treatment temperatures. They do not define a field range; comparison is disabled.
+- `distribution_range`: a depth range described by the cited distribution record. It is not a tolerance limit.
+- `dive_depth_observation`: a recorded dive. The squid maximum comes from two tagged animals, not a species-wide endpoint. The web label is "Deepest recorded dive".
+- `survey_stratum`: a depth band sampled by a survey, not the limits of a species. No current record uses this basis.
+
+The new columns classify existing notes and quotes. They do not add new measurements or sources. Empty metadata means no range is recorded. JSON groups temperatures under `recorded_temperature` and depths under `recorded_depth`. CSV numerical columns retain their existing values.
+
 ## Remaining gaps
 
 - No reviewed source states temperature optima; cachema min/max remain pending.
