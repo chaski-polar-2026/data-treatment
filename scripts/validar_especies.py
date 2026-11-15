@@ -1,83 +1,41 @@
 #!/usr/bin/env python3
-"""Validate the sourced species-data tables."""
-
-from __future__ import annotations
-
-import csv
-import re
-import sys
+"""Validate sourced species tables."""
+import csv, re, sys
 from pathlib import Path
-
-ROOT = Path(__file__).resolve().parents[1]
-DATA = ROOT / "data" / "especies"
-SPECIES_FILE = DATA / "especies.csv"
-VALUE_SOURCES_FILE = DATA / "especies_fuentes.csv"
-SOURCES_FILE = DATA / "fuentes.csv"
-STRUCTURAL_FIELDS = {
-    "id", "common_name_en", "common_name_es", "scientific_name_accepted",
-    "aphia_id", "group", "evidence_level", "flags",
-}
-TEXT_FIELDS = {
-    "common_name_en", "habitat_summary", "temperature_note", "season_note",
-    "el_nino_response_note", "peru_coast_range_note", "fishery_note", "notes",
-}
-SPANISH_MARKERS = re.compile(
-    r"\b(?:que|para|con|una|uno|los|las|por|del|desde|hasta|según|especie|"
-    r"pesquería|profundidad|costa|pendiente|fuente|datos)\b",
-    re.IGNORECASE,
-)
-
-
-def read_csv(path: Path) -> list[dict[str, str]]:
-    with path.open(encoding="utf-8-sig", newline="") as handle:
-        return list(csv.DictReader(handle))
-
-
-def main() -> int:
-    errors: list[str] = []
-    species = read_csv(SPECIES_FILE)
-    field_sources = read_csv(VALUE_SOURCES_FILE)
-    sources = read_csv(SOURCES_FILE)
-
-    source_ids = {row["id_fuente"] for row in sources}
-    species_ids = {row["id"] for row in species}
-    source_map: dict[tuple[str, str], list[str]] = {}
-    for row in field_sources:
-        key = (row["id_especie"], row["campo"])
-        source_map.setdefault(key, []).append(row["valor"])
-        if row["id_especie"] not in species_ids:
-            errors.append(f"Unknown species id in source map: {row['id_especie']}")
-        if row["id_fuente"] not in source_ids:
-            errors.append(f"Unknown source id: {row['id_fuente']} ({row['id_especie']}.{row['campo']})")
-
-    for row in species:
-        species_id = row["id"]
-        if not row["scientific_name_accepted"] or not row["aphia_id"]:
-            errors.append(f"{species_id}: accepted scientific name and AphiaID are required")
-        for field, value in row.items():
-            if not value or field in STRUCTURAL_FIELDS:
-                continue
-            matches = source_map.get((species_id, field), [])
-            if value not in matches:
-                errors.append(f"{species_id}.{field}: populated value has no matching source record")
-            if field in TEXT_FIELDS and SPANISH_MARKERS.search(value):
-                errors.append(f"{species_id}.{field}: text appears to contain Spanish; use English")
-
-        if row["depth_min_m"] and row["depth_max_m"]:
-            if float(row["depth_min_m"]) > float(row["depth_max_m"]):
-                errors.append(f"{species_id}: depth minimum exceeds maximum")
-        if row["temperature_min_c"] and row["temperature_max_c"]:
-            if float(row["temperature_min_c"]) > float(row["temperature_max_c"]):
-                errors.append(f"{species_id}: temperature minimum exceeds maximum")
-
+DATA=Path(__file__).resolve().parents[1]/"data"/"especies"
+def load(n):
+    with (DATA/n).open(encoding="utf-8-sig",newline="") as f:return list(csv.DictReader(f))
+def main():
+    errors=[]; species=load("especies.csv"); refs=load("especies_fuentes.csv"); sources=load("fuentes.csv")
+    source={x["id_fuente"]:x for x in sources}; ids={x["id"] for x in species}; mapped={}
+    if not refs or "cita_corta" not in refs[0]:errors.append("especies_fuentes.csv requires cita_corta")
+    for x in refs:
+        key=(x["id_especie"],x["campo"]);mapped.setdefault(key,[]).append(x)
+        if key[0] not in ids:errors.append(f"unknown species {key[0]}")
+        if x["id_fuente"] not in source:errors.append(f"unknown source {x['id_fuente']}")
+        q=x.get("cita_corta","").strip()
+        if not q:errors.append(f"{key}: empty cita_corta")
+        if len(q.split())>15:errors.append(f"{key}: cita_corta exceeds 15 words")
+        if x["pagina_o_tabla"].casefold()=="abstract":
+            abstract=source.get(x["id_fuente"],{}).get("abstract_text","")
+            norm=lambda s:re.sub(r"\W+"," ",s.casefold()).strip()
+            if not abstract or norm(q) not in norm(abstract):errors.append(f"{key}: quote absent from source abstract")
+    structural={"id","common_name_en","common_name_es","scientific_name_accepted","aphia_id","group","evidence_level","flags"}
+    for r in species:
+        sid=r["id"]
+        for field,value in r.items():
+            if value and field not in structural and not any(a["valor"]==value and a.get("cita_corta","").strip() for a in mapped.get((sid,field),[])):
+                errors.append(f"{sid}.{field}: populated value lacks matching sourced quote")
+        for lo,hi in (("depth_min_m","depth_max_m"),("temperature_min_c","temperature_max_c")):
+            if r.get(lo) and r.get(hi) and float(r[lo])>float(r[hi]):errors.append(f"{sid}: {lo} exceeds {hi}")
+        lo,hi,opt=(r.get(k,"") for k in ("temperature_min_c","temperature_max_c","temperature_optimum_c"))
+        if any((lo,hi,opt)):
+            if not lo or not hi:errors.append(f"{sid}: temperature min and max both required")
+            if not r.get("temperature_note","").strip():errors.append(f"{sid}: temperature_note required")
+            if not mapped.get((sid,"temperature_min_c")) or not mapped.get((sid,"temperature_max_c")):errors.append(f"{sid}: temperature range needs source")
+            if opt and lo and hi and not float(lo)<=float(opt)<=float(hi):errors.append(f"{sid}: optimum outside min/max")
     if errors:
-        print("Species validation failed:")
-        for error in errors:
-            print(f"- {error}")
-        return 1
-    print(f"Species validation passed ({len(species)} records; source links and required taxonomy present).")
+        print("Species validation failed:");[print('- '+x) for x in errors];return 1
+    print(f"Species validation passed ({len(species)} records; {len(refs)} cited field values).")
     return 0
-
-
-if __name__ == "__main__":
-    sys.exit(main())
+if __name__=="__main__":sys.exit(main())

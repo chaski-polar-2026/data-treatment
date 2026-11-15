@@ -22,7 +22,11 @@ def main() -> None:
     by_species: dict[str, dict[str, list[dict[str, str]]]] = {}
     for ref in references:
         by_species.setdefault(ref["id_especie"], {}).setdefault(ref["campo"], []).append(
-            {"source_id": ref["id_fuente"], "page_or_table": ref["pagina_o_tabla"]}
+            {
+                "source_id": ref["id_fuente"],
+                "page_or_table": ref["pagina_o_tabla"],
+                "short_quote": ref["cita_corta"],
+            }
         )
 
     result = []

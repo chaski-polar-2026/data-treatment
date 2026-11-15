@@ -1,30 +1,81 @@
-id_especie,campo,valor,id_fuente,pagina_o_tabla
-anchoveta,scientific_name_accepted,Engraulis ringens,F1,taxon details
-anchoveta,aphia_id,272287,F1,taxon details
-anchoveta,el_nino_response_note,"IMARPE reports north-central Peruvian anchoveta distribution changes during warm events.",F2,abstract
-anchoveta,peru_coast_range_note,Northern Humboldt Current region of Peru,F2,abstract
-pota,scientific_name_accepted,Dosidicus gigas,F3,taxon details
-pota,aphia_id,342291,F3,taxon details
-pota,habitat_summary,"Neritic to oceanic squid, from epipelagic to mesopelagic waters.",F3,habitat attribute
-pota,depth_min_m,0,F4,abstract
-pota,depth_max_m,1200,F4,abstract
-pota,peru_coast_range_note,"Along the Peruvian coast, from 10 to more than 500 nautical miles offshore.",F4,abstract
-pota,fishery_note,both,F4,abstract
-concha_abanico,scientific_name_accepted,Argopecten purpuratus,F5,taxon details
-concha_abanico,aphia_id,394269,F5,taxon details
-concha_abanico,habitat_summary,"Benthos of semi-protected bays, on sedimentary and mixed substrates.",F6,section 2.7.2
-concha_abanico,depth_min_m,5,F6,section 2.7.2
-concha_abanico,depth_max_m,40,F6,section 2.7.2
-pulpo,scientific_name_accepted,Octopus mimus,F8,taxon details
-pulpo,aphia_id,342001,F8,taxon details
-merluza,scientific_name_accepted,Merluccius peruanus,F9,taxon list
-merluza,notes,"WoRMS accepts Merluccius gayi peruanus as Merluccius peruanus.",F9,taxon list
-cachema,scientific_name_accepted,Cynoscion analis,F10,taxon list
-merluza,aphia_id,1524920,F11,taxon details
-merluza,notes,"The submitted Merluccius gayi peruanus is accepted by WoRMS as Merluccius peruanus.",F9,taxon list
-cachema,aphia_id,276076,F12,taxon details
-cachema,notes,"WoRMS accepts this name; ecology fields remain pending.",F12,taxon details
-anchoveta,notes,"Only sourced fields populated; other ecological and landing fields remain pending.",F2,abstract
-pota,notes,"Depth and range summarize a Peru-focused IMARPE article; avoid treating the wide depth range as current location.",F4,abstract
-concha_abanico,notes,"Depth range is reported in an IMARPE review citing regional studies; temperature and landings remain pending.",F6,section 2.7.2
-pulpo,notes,"WoRMS records the type locality within Peru's EEZ; ecological and fishery fields pending.",F8,taxon details
+id_especie,campo,valor,id_fuente,pagina_o_tabla,cita_corta
+anchoveta,scientific_name_accepted,Engraulis ringens,F1,taxon details,Engraulis ringens
+anchoveta,aphia_id,272287,F1,taxon details,AphiaID 272287
+anchoveta,habitat_summary,Pelagic fish in moderately cold coastal waters.,F11,p. 1,"pelagic, moderately cold waters"
+anchoveta,depth_min_m,3,F11,p. 1,distribution depth 3-80 m
+anchoveta,depth_max_m,80,F11,p. 1,distribution depth 3-80 m
+anchoveta,temperature_min_c,14,F11,p. 1,14-18 C in winter
+anchoveta,temperature_max_c,23,F11,p. 1,16-23 C in summer
+anchoveta,temperature_note,"Peru field seasonal temperatures: 14-18 C in winter and 16-23 C in summer; observations, not thermal limits or optimum.",F11,p. 1,14-18 C in winter; 16-23 C in summer
+anchoveta,season_note,"Spawning occurs nearly year-round, strongest in August-September and February-March.",F11,p. 1,spawning nearly year-round; peaks in winter and summer
+anchoveta,el_nino_response_note,IMARPE reports distribution changes during warm 2023 conditions in the northern Humboldt Current region.,F11,p. 1,distribution changes during warm 2023 conditions
+anchoveta,peru_coast_range_note,Northern Humboldt Current region of Peru.,F11,p. 1,Northern Humboldt Current region of Peru
+anchoveta,fishery_note,Industrial and artisanal fisheries are reported.,F11,p. 1,industrial and artisanal fishery
+anchoveta,landing_data_source,PRODUCE open anchovy landing register,F18,dataset metadata,resource type: file upload
+anchoveta,landing_data_frequency,Quarterly updates; individual records,F18,dataset metadata,frequency: monthly
+anchoveta,landing_data_years,2023-2026 Q2,F18,dataset metadata,data records through 2026
+anchoveta,notes,No thermal optimum reported.,F11,p. 1,14-18 C in winter
+pota,scientific_name_accepted,Dosidicus gigas,F3,taxon details,Dosidicus gigas
+pota,aphia_id,342291,F3,taxon details,AphiaID 342291
+pota,habitat_summary,Neritic to oceanic; epipelagic to mesopelagic. Two tagged animals moved from near-surface to deep daytime waters.,F4,section 3.3,epipelagic and mesopelagic
+pota,depth_min_m,0,F4,section 3.3,surface waters
+pota,depth_max_m,1200,F10,p. 174,both squid dived to a depth of 1200 m
+pota,temperature_min_c,14,F4,section 3.3,captures at 14 C at 50 m
+pota,temperature_max_c,27.5,F4,section 3.3,sea-surface temperature 17.5-27.5 C
+pota,temperature_note,"Peru observations span about 14 C at 50 m to 27.5 C at sea surface; different depths, not thermal limits.",F4,section 3.3,captures at 14 C at 50 m
+pota,season_note,IMARPE reports main spawning from October to January and secondary activity in August.,F12,p. 2,spawning October to January
+pota,el_nino_response_note,IMARPE survey reports a negative El Nino effect; 2018 bilingual abstracts differ in depth wording.,F22,survey results,negative El Nino effect
+pota,peru_coast_range_note,"Peru, 10 to more than 500 nautical miles offshore.",F4,section 3.3,10 to over 500 nautical miles
+pota,fishery_note,IMARPE reports artisanal and industrial fleets.,F4,section 3.3,artisanal and industrial fleets
+pota,landing_data_source,GORE Piura monthly species-by-port landings,F19,dataset metadata,resource type: file upload
+pota,landing_data_frequency,Monthly,F19,dataset metadata,frequency: monthly
+pota,landing_data_years,2024-06 to 2026-07,F19,dataset metadata,data records through 2026
+pota,notes,"Two tagged squid reached 1200 m (2017, p. 174); this is not a population limit.",F4,section 3.3,two tagged squid reached 1200 m
+concha_abanico,scientific_name_accepted,Argopecten purpuratus,F5,taxon details,Argopecten purpuratus
+concha_abanico,aphia_id,394269,F5,taxon details,AphiaID 394269
+concha_abanico,habitat_summary,Benthic in semi-protected bays on sedimentary bottoms; also sandy or muddy bottoms with shells and macroalgae.,F6,section 2.7.2 p. 12,semi-protected bays; sedimentary bottoms
+concha_abanico,depth_min_m,5,F6,section 2.7.2 p. 12,entre los 5 y 40 metros
+concha_abanico,depth_max_m,40,F6,section 2.7.2 p. 12,entre los 5 y 40 metros
+concha_abanico,temperature_min_c,17,F7,lab methods,experimental temperatures 17 and 22 C
+concha_abanico,temperature_max_c,22,F7,lab methods,experimental temperatures 17 and 22 C
+concha_abanico,temperature_note,"Lab juveniles were tested at 17 and 22 C in Peru; treatment temperatures, not limits or optimum.",F7,lab methods,experimental temperatures 17 and 22 C
+concha_abanico,season_note,"Spawning occurs year-round, stronger September to May.",F14,species sheet p. 2,spawning throughout the year
+concha_abanico,el_nino_response_note,An IMARPE 2024 assessment reports poor population condition after the 2023-24 warm event despite expected density increase.,F23,assessment summary,poor population condition after the warm event
+concha_abanico,fishery_note,"Artisanal fishery, including diving harvest.",F14,species sheet p. 2,artisanal fishery; diving harvest
+concha_abanico,notes,Section 2.7.2 reports typical 5-40 m; IMARPE species record gives a broader intertidal-to-95 m distribution.,F6,section 2.7.2 p. 12,intertidal to 95 m
+pulpo,scientific_name_accepted,Octopus mimus,F8,taxon details,Octopus mimus
+pulpo,aphia_id,342001,F8,taxon details,AphiaID 342001
+pulpo,habitat_summary,Rocky intertidal and subtidal habitat; shelters in crevices and beneath rocks.,F15,species sheet,rocky intertidal and subtidal areas
+pulpo,depth_min_m,0,F15,species sheet,intertidal to 30 m
+pulpo,depth_max_m,30,F15,species sheet,intertidal to 30 m
+pulpo,temperature_min_c,18.5,F13,abstract,18.5 C in winter
+pulpo,temperature_max_c,21.7,F13,abstract,21.7 C in summer
+pulpo,temperature_note,"Field seasonal sea-surface averages in Ancash, Peru (2014-2023): 18.5-21.7 C; not thermal limits or optimum.",F13,abstract,seasonal sea temperatures from 18.5 to 21.7 C
+pulpo,season_note,"Spawning occurs year-round, with spring and summer peaks.",F13,abstract,"spawning year-round, with spring and summer peaks"
+pulpo,el_nino_response_note,IMARPE diet observations during 1982-83 and 1997-98 El Nino differed by site; no coast-wide response inferred.,F15,species sheet,diet observations from 1982-83 and 1997-98
+pulpo,peru_coast_range_note,Tumbes to central Chile.,F15,species sheet,Tumbes to central Chile
+pulpo,fishery_note,Artisanal fishery; diving is reported.,F15,species sheet,artisanal fishery and diving
+pulpo,notes,Species record gives intertidal to 30 m.,F15,species sheet,intertidal to 30 m
+merluza,scientific_name_accepted,Merluccius peruanus,F20,taxon details,Merluccius peruanus
+merluza,aphia_id,1524920,F20,taxon details,AphiaID 1524920
+merluza,habitat_summary,Benthodemersal; IMARPE assessment reports concentrations at 100-200 m.,F16,IMARPE report,benthodemersal; concentration at 100-200 m
+merluza,temperature_min_c,10,F16,IMARPE report,bottom temperature 10-16 C
+merluza,temperature_max_c,22.3,F16,IMARPE report,bottom temperature 14.5-22.3 C
+merluza,temperature_note,Peru field bottom temperatures: 10-16 C on normal cruise and 14.5-22.3 C during El Nino; not limits or optimum.,F16,IMARPE report,10-16 C normal; 14.5-22.3 C El Nino
+merluza,el_nino_response_note,IMARPE reports inverted distribution and 14.5-22.3 C bottom temperatures in the 1983 El Nino cruise.,F16,IMARPE report,distribution pattern was inverted
+merluza,peru_coast_range_note,Peruvian and adjacent Ecuadorian waters.,F16,IMARPE report,Peru and adjacent Ecuadorian waters
+merluza,landing_data_source,GORE Piura monthly species-by-port landings,F19,dataset metadata,resource type: file upload
+merluza,landing_data_frequency,Monthly,F19,dataset metadata,frequency: monthly
+merluza,landing_data_years,2024-06 to 2026-07,F19,dataset metadata,data records through 2026
+merluza,notes,WoRMS accepts Merluccius peruanus; Merluccius gayi peruanus is retained as historical synonym.,F9,taxon details,Merluccius gayi peruanus
+cachema,scientific_name_accepted,Cynoscion analis,F21,taxon details,Cynoscion analis
+cachema,aphia_id,276076,F21,taxon details,AphiaID 276076
+cachema,habitat_summary,Pelagic-neritic fish in warm-temperate coastal waters over sandy or muddy bottoms.,F17,IMARPE report,"pelagic-neritic, warm-temperate; sandy or muddy bottoms"
+cachema,season_note,Higher reproductive activity and landings occur in spring and summer.,F17,IMARPE report,higher reproductive activity in spring and summer
+cachema,el_nino_response_note,IMARPE reports higher cachema catches in Ancash and Lima during the 1997-98 El Nino; historical observation.,F17,IMARPE report,increased catches in Ancash and Lima in 1997-98
+cachema,peru_coast_range_note,Peruvian coastal waters; source describes a northern-central Peru fishery.,F17,IMARPE report,northern-central Peru
+cachema,fishery_note,Coastal fishery; landings reported from artisanal monitoring and PRODUCE records.,F17,IMARPE report,artisanal monitoring and PRODUCE records
+cachema,landing_data_source,GORE Piura monthly species-by-port landings,F19,dataset metadata,resource type: file upload
+cachema,landing_data_frequency,Monthly,F19,dataset metadata,frequency: monthly
+cachema,landing_data_years,2024-06 to 2026-07,F19,dataset metadata,data records through 2026
+cachema,notes,No unambiguous min/max/optimum source found; temperature fields remain blank.,F17,IMARPE report,temperature data not unambiguous
