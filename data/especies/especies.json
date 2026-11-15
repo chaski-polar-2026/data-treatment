@@ -711,9 +711,9 @@
     "landing_data_frequency": "Monthly",
     "landing_data_years": "2024-06 to 2026-07",
     "evidence_level": "sourced",
-    "flags": "name_corrected;thermal_optimum_pending;sources_disagree",
+    "flags": "name_corrected;thermal_optimum_pending",
     "notes": "WoRMS accepts Merluccius peruanus; Merluccius gayi peruanus is retained as historical synonym. Review status: A closed published upper depth of 800 m is documented in F41; the original guide wording remains in depth_note.",
-    "depth_note": "The guide records depths from 50 m to more than 600 m; no closed maximum is given. F41 reports 800 m as the upper depth; this value has not yet been checked against the article text.",
+    "depth_note": "The guide records depths from 50 m to more than 600 m; no closed maximum is given. F41 states the species can be caught from near the surface to 800 m depth (fishing depth range).",
     "recorded_temperature": {
       "min": 10.0,
       "max": 22.3,

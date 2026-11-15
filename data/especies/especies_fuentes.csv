@@ -82,7 +82,7 @@ cachema,notes,No unambiguous min/max/optimum source found; temperature fields re
 cachema,depth_min_m,0,F24,Section Cynoscion analis; Figure 6,de 0 a 50 metros
 cachema,depth_max_m,50,F24,Section Cynoscion analis; Figure 6,de 0 a 50 metros
 merluza,depth_min_m,50,F25,p. 49; habitat,desde 50 m a más de 600 m de profundidad
-merluza,depth_note,The guide records depths from 50 m to more than 600 m; no closed maximum is given. F41 reports 800 m as the upper depth; this value has not yet been checked against the article text.,F25,p. 49; habitat,desde 50 m a más de 600 m de profundidad
+merluza,depth_note,The guide records depths from 50 m to more than 600 m; no closed maximum is given. F41 states the species can be caught from near the surface to 800 m depth (fishing depth range).,F25,p. 49; habitat,desde 50 m a más de 600 m de profundidad
 merluza,season_note,Main spawning in winter-spring; secondary spawning in summer-autumn.,F25,p. 49; spawning period,Invierno - primavera (periodo principal de desove) y verano - otoño (periodo secundario)
 cachema,depth_note,IMARPE gives 0-50 m. FishBase lists a depth range of 10 m to an unknown limit (Ref. 9118).,F27,"species summary, Environment line",depth range 10 - ? m
 jurel,common_name_en,Inca scad,F28,FAO (EN),Inca scad
