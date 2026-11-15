@@ -1,3 +1,4 @@
+from config_datos import DATA, OUTPUT, TABLES, require
 """Pruebas pendientes (ver PRUEBAS_POSIBLES.md): A4 predicción con asimetría, A1 clorofila -> desembarques mensuales,
 B1 El Niño -> Antártida, A3 viento ERA5 -> clorofila. Solo datos locales. Criterio de aceptación: correlación parcial con
 Niño 1+2, n efectivo (Pyper-Peterman), FDR, sin 1998 y mitades del periodo."""
@@ -7,8 +8,8 @@ import numpy as np
 import pandas as pd
 from scipy import stats
 
-RAIZ = Path(r"D:\hackathon\NASA")
-SALIDA = RAIZ / "pruebas" / "fitoplancton" / "tablas"
+RAIZ = DATA
+SALIDA = TABLES
 ZONAS = ["paita", "chimbote", "callao", "pisco", "ilo"]
 CLAVE = {"paita": "peru_norte_paita_sechura", "chimbote": "peru_centro_norte_chimbote", "callao": "peru_centro_callao",
          "pisco": "peru_sur_pisco", "ilo": "peru_sur_ilo"}

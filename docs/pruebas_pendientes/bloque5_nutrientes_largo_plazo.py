@@ -1,3 +1,4 @@
+from config_datos import DOCS
 """Preregistered tests; local data only. Run without -I."""
 import argparse, hashlib, json, platform
 from pathlib import Path
@@ -14,7 +15,7 @@ REGIONS=('bellingshausen','peninsula_antarctica','south_pacific_intermediate','s
 VARS=('no3','po4','o2','thetao','so')
 TARGETS=(('no3','surface_0_5m'),('no3','subsurface_100_200m'),('po4','subsurface_100_200m'),('o2','subsurface_100_200m'),('chl','surface_0_5m'))
 OUT=REPO/'data/tablas_pruebas_pendientes'
-DOC=Path(__file__).parent
+DOC=DOCS
 PREFIX='bloque5_nutrientes_'
 def align(x,y,z,k):
     return pd.Series(x).shift(k).to_numpy(),y,np.column_stack([z,pd.Series(z).shift(k).to_numpy()])
@@ -127,11 +128,13 @@ def report():
 
 Preregistro confirmado en commit 7a64339, con enmienda de selftest db6c14f antes de ejecutar datos reales. Conclusión: **{conclusion}**.
 
+{("AVISO: ejecución rápida de infraestructura, no equivalente al preregistro de 2000 sustitutos." if meta["B"] != 2000 else "")}
+
 ## Método confirmatorio
 
 Reanálisis, no observaciones directas. Veinte predictores en 200–500 m, diez objetivos y seis retrasos; 1998–2025. Se reutilizan cargar/pn de bloque 1 y parcial_multi/corr_neff/fdr de utils, sin modificarlos. Anomalías recentradas por mes; Niño 1+2 en t y t-k; r cruda y parcial sobre los mismos pares completos. FDR sobre las 1200 filas, p=1 para filas no calculables. No se rellenan huecos. Mitades y exclusiones afectan ambos instantes; se exige el signo completo en ambas mitades. ONI se aplica a los que pasan antes del filtro positivo, sin añadir un criterio nuevo.
 
-Sustitutos: 2000 desplazamientos por fila, offsets en [24,312], con reemplazo (289 offsets posibles). Se rota X antes del lag, no Y ni los controles. Estadístico bilateral |r parcial|; p=(1+excedencias)/(2001). Un sustituto inválido cuenta conservadoramente como excedencia. Selección: top 20 p parciales y todos con q<.05. No es un test máximo sobre retrasos. Tamaño efectivo AC1 de residuos y p con neff-2, exactamente como utils, sin descuento explícito de controles.
+Sustitutos: {meta["B"]} desplazamientos por fila, offsets en [24,312], con reemplazo (289 offsets posibles). Se rota X antes del lag, no Y ni los controles. Estadístico bilateral |r parcial|; p=(1+excedencias)/({meta["B"]+1}). Un sustituto inválido cuenta conservadoramente como excedencia. Selección: top 20 p parciales y todos con q<.05. No es un test máximo sobre retrasos. Tamaño efectivo AC1 de residuos y p con neff-2, exactamente como utils, sin descuento explícito de controles.
 
 ## Conteos desde las tablas
 
@@ -191,8 +194,10 @@ def verify_report():
     assert set(survivors.test_id)==set(d.loc[d.finding|d.unexpected_sign,'test_id'])
     print('Report counts, surrogate p-values, survivors and finding criteria: PASS')
 if __name__=='__main__':
-    p=argparse.ArgumentParser();p.add_argument('--selftest',action='store_true');p.add_argument('--report-only',action='store_true');p.add_argument('--verify-report',action='store_true');a=p.parse_args()
+    p=argparse.ArgumentParser();p.add_argument('--rapido',action='store_true');p.add_argument('--selftest',action='store_true');p.add_argument('--report-only',action='store_true');p.add_argument('--verify-report',action='store_true');a=p.parse_args()
     if a.selftest:selftest()
     elif a.report_only:report()
     elif a.verify_report:verify_report()
-    else:run()
+    else:
+        if a.rapido: B=100
+        run()

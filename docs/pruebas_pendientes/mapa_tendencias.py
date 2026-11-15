@@ -1,3 +1,4 @@
+from config_datos import DATA, OUTPUT, TABLES, require
 """E9: tendencia por celda (dónde sube o baja): Mann-Kendall y pendiente de Sen sobre promedios anuales de cada celda de los mapas de
 la web (clorofila de 0,5 grados y anomalía de temperatura de 1 grado), con corrección FDR (Benjamini-Hochberg) entre celdas y con tres
 años de inicio (1998, 2003, 2012) para mostrar cuánto depende el resultado del periodo."""
@@ -6,8 +7,8 @@ from pathlib import Path
 import numpy as np
 from scipy import stats
 
-SRC = Path(r"D:\hackathon\NASA\repos\chaski-polar-estetica\public\assets\data\mapas\mapas.json")
-SAL = Path(r"D:\hackathon\NASA\pruebas\fitoplancton\tablas\nuevos_E9_tendencias_por_celda.json")
+SRC = require("web/mapas.json")
+SAL = TABLES / "nuevos_E9_tendencias_por_celda.json"
 d = json.load(open(SRC, encoding="utf-8"))
 NM = d["meses"]
 

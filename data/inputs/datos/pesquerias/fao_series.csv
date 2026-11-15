@@ -1,0 +1,2117 @@
+especie,pais,tipo,anio,toneladas
+Anchoveta,Chile,pesca,1995,2086468
+Anchoveta,Chile,pesca,1996,1400567
+Anchoveta,Chile,pesca,1997,1757499
+Anchoveta,Chile,pesca,1998,522742
+Anchoveta,Chile,pesca,1999,1983040
+Anchoveta,Chile,pesca,2000,1700640
+Anchoveta,Chile,pesca,2001,852789
+Anchoveta,Chile,pesca,2002,1526872
+Anchoveta,Chile,pesca,2003,823180
+Anchoveta,Chile,pesca,2004,1859571
+Anchoveta,Chile,pesca,2005,1548797
+Anchoveta,Chile,pesca,2006,995249
+Anchoveta,Chile,pesca,2007,1393747
+Anchoveta,Chile,pesca,2008,1116748
+Anchoveta,Chile,pesca,2009,955150
+Anchoveta,Chile,pesca,2010,755370
+Anchoveta,Chile,pesca,2011,1191376
+Anchoveta,Chile,pesca,2012,903866
+Anchoveta,Chile,pesca,2013,803404
+Anchoveta,Chile,pesca,2014,817900
+Anchoveta,Chile,pesca,2015,540095
+Anchoveta,Chile,pesca,2016,337436
+Anchoveta,Chile,pesca,2017,625697
+Anchoveta,Chile,pesca,2018,850073
+Anchoveta,Chile,pesca,2019,744241
+Anchoveta,Chile,pesca,2020,501676
+Anchoveta,Chile,pesca,2021,606924
+Anchoveta,Chile,pesca,2022,741344
+Anchoveta,Chile,pesca,2023,353267
+Anchoveta,Chile,pesca,2024,305499
+Anchoveta,Ecuador,pesca,1995,0
+Anchoveta,Ecuador,pesca,1996,0
+Anchoveta,Ecuador,pesca,1997,0
+Anchoveta,Ecuador,pesca,1998,0
+Anchoveta,Ecuador,pesca,1999,0
+Anchoveta,Ecuador,pesca,2000,0
+Anchoveta,Ecuador,pesca,2001,2071
+Anchoveta,Ecuador,pesca,2002,71013
+Anchoveta,Ecuador,pesca,2003,33384
+Anchoveta,Ecuador,pesca,2004,11273
+Anchoveta,Ecuador,pesca,2005,39908
+Anchoveta,Ecuador,pesca,2006,76606
+Anchoveta,Ecuador,pesca,2007,58309
+Anchoveta,Ecuador,pesca,2008,44566
+Anchoveta,Ecuador,pesca,2009,20152
+Anchoveta,Ecuador,pesca,2010,0
+Anchoveta,Ecuador,pesca,2011,2977
+Anchoveta,Ecuador,pesca,2012,12109
+Anchoveta,Ecuador,pesca,2013,2
+Anchoveta,Ecuador,pesca,2014,0
+Anchoveta,Ecuador,pesca,2015,0
+Anchoveta,Ecuador,pesca,2016,0
+Anchoveta,Ecuador,pesca,2017,0
+Anchoveta,Ecuador,pesca,2018,34
+Anchoveta,Ecuador,pesca,2019,1
+Anchoveta,Ecuador,pesca,2020,150
+Anchoveta,Ecuador,pesca,2021,2
+Anchoveta,Ecuador,pesca,2022,4
+Anchoveta,Ecuador,pesca,2023,14710
+Anchoveta,MUNDO,pesca,1995,8644576
+Anchoveta,MUNDO,pesca,1996,8863714
+Anchoveta,MUNDO,pesca,1997,7685098
+Anchoveta,MUNDO,pesca,1998,1729064
+Anchoveta,MUNDO,pesca,1999,8723265
+Anchoveta,MUNDO,pesca,2000,11276357
+Anchoveta,MUNDO,pesca,2001,7213077
+Anchoveta,MUNDO,pesca,2002,9702614
+Anchoveta,MUNDO,pesca,2003,6203751
+Anchoveta,MUNDO,pesca,2004,10679338
+Anchoveta,MUNDO,pesca,2005,10244166
+Anchoveta,MUNDO,pesca,2006,7007157
+Anchoveta,MUNDO,pesca,2007,7611858
+Anchoveta,MUNDO,pesca,2008,7419295
+Anchoveta,MUNDO,pesca,2009,6910467
+Anchoveta,MUNDO,pesca,2010,4205979
+Anchoveta,MUNDO,pesca,2011,8319597
+Anchoveta,MUNDO,pesca,2012,4692855
+Anchoveta,MUNDO,pesca,2013,5674036
+Anchoveta,MUNDO,pesca,2014,3140029
+Anchoveta,MUNDO,pesca,2015,4310015
+Anchoveta,MUNDO,pesca,2016,3192476
+Anchoveta,MUNDO,pesca,2017,3922746
+Anchoveta,MUNDO,pesca,2018,7044950
+Anchoveta,MUNDO,pesca,2019,4248852
+Anchoveta,MUNDO,pesca,2020,4896058
+Anchoveta,MUNDO,pesca,2021,5876142
+Anchoveta,MUNDO,pesca,2022,4859471
+Anchoveta,MUNDO,pesca,2023,2415709
+Anchoveta,MUNDO,pesca,2024,5037454
+Anchoveta,Perú,pesca,1995,6558108
+Anchoveta,Perú,pesca,1996,7463147
+Anchoveta,Perú,pesca,1997,5927599
+Anchoveta,Perú,pesca,1998,1206322
+Anchoveta,Perú,pesca,1999,6740225
+Anchoveta,Perú,pesca,2000,9575717
+Anchoveta,Perú,pesca,2001,6358217
+Anchoveta,Perú,pesca,2002,8104729
+Anchoveta,Perú,pesca,2003,5347187
+Anchoveta,Perú,pesca,2004,8808494
+Anchoveta,Perú,pesca,2005,8655461
+Anchoveta,Perú,pesca,2006,5935302
+Anchoveta,Perú,pesca,2007,6159802
+Anchoveta,Perú,pesca,2008,6257981
+Anchoveta,Perú,pesca,2009,5935165
+Anchoveta,Perú,pesca,2010,3450609
+Anchoveta,Perú,pesca,2011,7125244
+Anchoveta,Perú,pesca,2012,3776880
+Anchoveta,Perú,pesca,2013,4870630
+Anchoveta,Perú,pesca,2014,2322129
+Anchoveta,Perú,pesca,2015,3769920
+Anchoveta,Perú,pesca,2016,2855040
+Anchoveta,Perú,pesca,2017,3297049
+Anchoveta,Perú,pesca,2018,6194843
+Anchoveta,Perú,pesca,2019,3504610
+Anchoveta,Perú,pesca,2020,4394232
+Anchoveta,Perú,pesca,2021,5269216
+Anchoveta,Perú,pesca,2022,4118122
+Anchoveta,Perú,pesca,2023,2047732
+Anchoveta,Perú,pesca,2024,4731955
+Austromerluza (bacalao de profundidad),Argentina,pesca,1995,19996
+Austromerluza (bacalao de profundidad),Argentina,pesca,1996,15040
+Austromerluza (bacalao de profundidad),Argentina,pesca,1997,8783
+Austromerluza (bacalao de profundidad),Argentina,pesca,1998,9975
+Austromerluza (bacalao de profundidad),Argentina,pesca,1999,7722
+Austromerluza (bacalao de profundidad),Argentina,pesca,2000,7771
+Austromerluza (bacalao de profundidad),Argentina,pesca,2001,6410
+Austromerluza (bacalao de profundidad),Argentina,pesca,2002,8164
+Austromerluza (bacalao de profundidad),Argentina,pesca,2003,5652
+Austromerluza (bacalao de profundidad),Argentina,pesca,2004,2349
+Austromerluza (bacalao de profundidad),Argentina,pesca,2005,1219
+Austromerluza (bacalao de profundidad),Argentina,pesca,2006,1411
+Austromerluza (bacalao de profundidad),Argentina,pesca,2007,1873
+Austromerluza (bacalao de profundidad),Argentina,pesca,2008,2171
+Austromerluza (bacalao de profundidad),Argentina,pesca,2009,2434
+Austromerluza (bacalao de profundidad),Argentina,pesca,2010,3015
+Austromerluza (bacalao de profundidad),Argentina,pesca,2011,2989
+Austromerluza (bacalao de profundidad),Argentina,pesca,2012,3266
+Austromerluza (bacalao de profundidad),Argentina,pesca,2013,3464
+Austromerluza (bacalao de profundidad),Argentina,pesca,2014,3897
+Austromerluza (bacalao de profundidad),Argentina,pesca,2015,3719
+Austromerluza (bacalao de profundidad),Argentina,pesca,2016,3656
+Austromerluza (bacalao de profundidad),Argentina,pesca,2017,3669
+Austromerluza (bacalao de profundidad),Argentina,pesca,2018,3705
+Austromerluza (bacalao de profundidad),Argentina,pesca,2019,3919
+Austromerluza (bacalao de profundidad),Argentina,pesca,2020,3785
+Austromerluza (bacalao de profundidad),Argentina,pesca,2021,3701
+Austromerluza (bacalao de profundidad),Argentina,pesca,2022,3638
+Austromerluza (bacalao de profundidad),Argentina,pesca,2023,3473
+Austromerluza (bacalao de profundidad),Argentina,pesca,2024,3666
+Austromerluza (bacalao de profundidad),Chile,pesca,1995,17848
+Austromerluza (bacalao de profundidad),Chile,pesca,1996,11747
+Austromerluza (bacalao de profundidad),Chile,pesca,1997,10138
+Austromerluza (bacalao de profundidad),Chile,pesca,1998,10571
+Austromerluza (bacalao de profundidad),Chile,pesca,1999,12506
+Austromerluza (bacalao de profundidad),Chile,pesca,2000,12342
+Austromerluza (bacalao de profundidad),Chile,pesca,2001,7891
+Austromerluza (bacalao de profundidad),Chile,pesca,2002,8539
+Austromerluza (bacalao de profundidad),Chile,pesca,2003,8274
+Austromerluza (bacalao de profundidad),Chile,pesca,2004,6471
+Austromerluza (bacalao de profundidad),Chile,pesca,2005,6134
+Austromerluza (bacalao de profundidad),Chile,pesca,2006,5111
+Austromerluza (bacalao de profundidad),Chile,pesca,2007,4873
+Austromerluza (bacalao de profundidad),Chile,pesca,2008,5140
+Austromerluza (bacalao de profundidad),Chile,pesca,2009,5221
+Austromerluza (bacalao de profundidad),Chile,pesca,2010,5297
+Austromerluza (bacalao de profundidad),Chile,pesca,2011,4786
+Austromerluza (bacalao de profundidad),Chile,pesca,2012,4656
+Austromerluza (bacalao de profundidad),Chile,pesca,2013,4090
+Austromerluza (bacalao de profundidad),Chile,pesca,2014,2707
+Austromerluza (bacalao de profundidad),Chile,pesca,2015,3768
+Austromerluza (bacalao de profundidad),Chile,pesca,2016,5271
+Austromerluza (bacalao de profundidad),Chile,pesca,2017,3649
+Austromerluza (bacalao de profundidad),Chile,pesca,2018,3007
+Austromerluza (bacalao de profundidad),Chile,pesca,2019,3409
+Austromerluza (bacalao de profundidad),Chile,pesca,2020,3236
+Austromerluza (bacalao de profundidad),Chile,pesca,2021,1861
+Austromerluza (bacalao de profundidad),Chile,pesca,2022,4357
+Austromerluza (bacalao de profundidad),Chile,pesca,2023,4941
+Austromerluza (bacalao de profundidad),Chile,pesca,2024,4816
+Austromerluza (bacalao de profundidad),Corea del Sur,pesca,1995,383
+Austromerluza (bacalao de profundidad),Corea del Sur,pesca,1996,432
+Austromerluza (bacalao de profundidad),Corea del Sur,pesca,1997,1040
+Austromerluza (bacalao de profundidad),Corea del Sur,pesca,1998,1051
+Austromerluza (bacalao de profundidad),Corea del Sur,pesca,1999,1241
+Austromerluza (bacalao de profundidad),Corea del Sur,pesca,2000,1704
+Austromerluza (bacalao de profundidad),Corea del Sur,pesca,2001,2045
+Austromerluza (bacalao de profundidad),Corea del Sur,pesca,2002,2612
+Austromerluza (bacalao de profundidad),Corea del Sur,pesca,2003,2361
+Austromerluza (bacalao de profundidad),Corea del Sur,pesca,2004,1420
+Austromerluza (bacalao de profundidad),Corea del Sur,pesca,2005,1479
+Austromerluza (bacalao de profundidad),Corea del Sur,pesca,2006,1607
+Austromerluza (bacalao de profundidad),Corea del Sur,pesca,2007,1581
+Austromerluza (bacalao de profundidad),Corea del Sur,pesca,2008,1095
+Austromerluza (bacalao de profundidad),Corea del Sur,pesca,2009,1382
+Austromerluza (bacalao de profundidad),Corea del Sur,pesca,2010,977
+Austromerluza (bacalao de profundidad),Corea del Sur,pesca,2011,2067
+Austromerluza (bacalao de profundidad),Corea del Sur,pesca,2012,1385
+Austromerluza (bacalao de profundidad),Corea del Sur,pesca,2013,2069
+Austromerluza (bacalao de profundidad),Corea del Sur,pesca,2014,1815
+Austromerluza (bacalao de profundidad),Corea del Sur,pesca,2015,2003
+Austromerluza (bacalao de profundidad),Corea del Sur,pesca,2016,2049
+Austromerluza (bacalao de profundidad),Corea del Sur,pesca,2017,2398
+Austromerluza (bacalao de profundidad),Corea del Sur,pesca,2018,2200
+Austromerluza (bacalao de profundidad),Corea del Sur,pesca,2019,2269
+Austromerluza (bacalao de profundidad),Corea del Sur,pesca,2020,2078
+Austromerluza (bacalao de profundidad),Corea del Sur,pesca,2021,2244
+Austromerluza (bacalao de profundidad),Corea del Sur,pesca,2022,2518
+Austromerluza (bacalao de profundidad),Corea del Sur,pesca,2023,2231
+Austromerluza (bacalao de profundidad),Corea del Sur,pesca,2024,1854
+Austromerluza (bacalao de profundidad),Ecuador,pesca,2018,314
+Austromerluza (bacalao de profundidad),Ecuador,pesca,2019,8
+Austromerluza (bacalao de profundidad),Ecuador,pesca,2020,32
+Austromerluza (bacalao de profundidad),Ecuador,pesca,2021,15
+Austromerluza (bacalao de profundidad),Ecuador,pesca,2022,4
+Austromerluza (bacalao de profundidad),MUNDO,pesca,1995,44219
+Austromerluza (bacalao de profundidad),MUNDO,pesca,1996,34357
+Austromerluza (bacalao de profundidad),MUNDO,pesca,1997,30175
+Austromerluza (bacalao de profundidad),MUNDO,pesca,1998,35955
+Austromerluza (bacalao de profundidad),MUNDO,pesca,1999,35891
+Austromerluza (bacalao de profundidad),MUNDO,pesca,2000,40938
+Austromerluza (bacalao de profundidad),MUNDO,pesca,2001,41128
+Austromerluza (bacalao de profundidad),MUNDO,pesca,2002,41669
+Austromerluza (bacalao de profundidad),MUNDO,pesca,2003,35459
+Austromerluza (bacalao de profundidad),MUNDO,pesca,2004,25657
+Austromerluza (bacalao de profundidad),MUNDO,pesca,2005,22576
+Austromerluza (bacalao de profundidad),MUNDO,pesca,2006,22938
+Austromerluza (bacalao de profundidad),MUNDO,pesca,2007,24517
+Austromerluza (bacalao de profundidad),MUNDO,pesca,2008,23010
+Austromerluza (bacalao de profundidad),MUNDO,pesca,2009,23831
+Austromerluza (bacalao de profundidad),MUNDO,pesca,2010,22239
+Austromerluza (bacalao de profundidad),MUNDO,pesca,2011,22657
+Austromerluza (bacalao de profundidad),MUNDO,pesca,2012,21610
+Austromerluza (bacalao de profundidad),MUNDO,pesca,2013,22494
+Austromerluza (bacalao de profundidad),MUNDO,pesca,2014,21275
+Austromerluza (bacalao de profundidad),MUNDO,pesca,2015,22974
+Austromerluza (bacalao de profundidad),MUNDO,pesca,2016,25187
+Austromerluza (bacalao de profundidad),MUNDO,pesca,2017,30330
+Austromerluza (bacalao de profundidad),MUNDO,pesca,2018,26787
+Austromerluza (bacalao de profundidad),MUNDO,pesca,2019,26916
+Austromerluza (bacalao de profundidad),MUNDO,pesca,2020,26184
+Austromerluza (bacalao de profundidad),MUNDO,pesca,2021,23492
+Austromerluza (bacalao de profundidad),MUNDO,pesca,2022,26715
+Austromerluza (bacalao de profundidad),MUNDO,pesca,2023,25301
+Austromerluza (bacalao de profundidad),MUNDO,pesca,2024,23816
+Austromerluza (bacalao de profundidad),Noruega,pesca,1995,0
+Austromerluza (bacalao de profundidad),Noruega,pesca,1996,0
+Austromerluza (bacalao de profundidad),Noruega,pesca,1997,0
+Austromerluza (bacalao de profundidad),Noruega,pesca,1998,0
+Austromerluza (bacalao de profundidad),Noruega,pesca,1999,0
+Austromerluza (bacalao de profundidad),Noruega,pesca,2000,0
+Austromerluza (bacalao de profundidad),Noruega,pesca,2001,0
+Austromerluza (bacalao de profundidad),Noruega,pesca,2002,0
+Austromerluza (bacalao de profundidad),Noruega,pesca,2003,0
+Austromerluza (bacalao de profundidad),Noruega,pesca,2004,0
+Austromerluza (bacalao de profundidad),Noruega,pesca,2005,0
+Austromerluza (bacalao de profundidad),Noruega,pesca,2006,0
+Austromerluza (bacalao de profundidad),Noruega,pesca,2007,0
+Austromerluza (bacalao de profundidad),Otros,pesca,1995,5982
+Austromerluza (bacalao de profundidad),Otros,pesca,1996,7035
+Austromerluza (bacalao de profundidad),Otros,pesca,1997,10214
+Austromerluza (bacalao de profundidad),Otros,pesca,1998,14358
+Austromerluza (bacalao de profundidad),Otros,pesca,1999,14422
+Austromerluza (bacalao de profundidad),Otros,pesca,2000,19121
+Austromerluza (bacalao de profundidad),Otros,pesca,2001,24557
+Austromerluza (bacalao de profundidad),Otros,pesca,2002,22038
+Austromerluza (bacalao de profundidad),Otros,pesca,2003,18557
+Austromerluza (bacalao de profundidad),Otros,pesca,2004,15172
+Austromerluza (bacalao de profundidad),Otros,pesca,2005,13739
+Austromerluza (bacalao de profundidad),Otros,pesca,2006,14809
+Austromerluza (bacalao de profundidad),Otros,pesca,2007,16190
+Austromerluza (bacalao de profundidad),Otros,pesca,2008,14604
+Austromerluza (bacalao de profundidad),Otros,pesca,2009,14794
+Austromerluza (bacalao de profundidad),Otros,pesca,2010,12841
+Austromerluza (bacalao de profundidad),Otros,pesca,2011,12652
+Austromerluza (bacalao de profundidad),Otros,pesca,2012,12299
+Austromerluza (bacalao de profundidad),Otros,pesca,2013,12800
+Austromerluza (bacalao de profundidad),Otros,pesca,2014,12856
+Austromerluza (bacalao de profundidad),Otros,pesca,2015,13468
+Austromerluza (bacalao de profundidad),Otros,pesca,2016,14211
+Austromerluza (bacalao de profundidad),Otros,pesca,2017,20362
+Austromerluza (bacalao de profundidad),Otros,pesca,2018,17310
+Austromerluza (bacalao de profundidad),Otros,pesca,2019,17039
+Austromerluza (bacalao de profundidad),Otros,pesca,2020,16924
+Austromerluza (bacalao de profundidad),Otros,pesca,2021,15432
+Austromerluza (bacalao de profundidad),Otros,pesca,2022,15894
+Austromerluza (bacalao de profundidad),Otros,pesca,2023,14434
+Austromerluza (bacalao de profundidad),Otros,pesca,2024,13285
+Austromerluza (bacalao de profundidad),Perú,pesca,2017,252
+Austromerluza (bacalao de profundidad),Perú,pesca,2018,250
+Austromerluza (bacalao de profundidad),Perú,pesca,2019,272
+Austromerluza (bacalao de profundidad),Perú,pesca,2020,130
+Austromerluza (bacalao de profundidad),Perú,pesca,2021,240
+Austromerluza (bacalao de profundidad),Perú,pesca,2022,303
+Austromerluza (bacalao de profundidad),Perú,pesca,2023,222
+Austromerluza (bacalao de profundidad),Perú,pesca,2024,194
+Austromerluza (bacalao de profundidad),Rusia,pesca,1995,10
+Austromerluza (bacalao de profundidad),Rusia,pesca,1996,103
+Austromerluza (bacalao de profundidad),Rusia,pesca,1997,0
+Austromerluza (bacalao de profundidad),Rusia,pesca,1998,0
+Austromerluza (bacalao de profundidad),Rusia,pesca,1999,0
+Austromerluza (bacalao de profundidad),Rusia,pesca,2000,0
+Austromerluza (bacalao de profundidad),Rusia,pesca,2001,225
+Austromerluza (bacalao de profundidad),Rusia,pesca,2002,316
+Austromerluza (bacalao de profundidad),Rusia,pesca,2003,615
+Austromerluza (bacalao de profundidad),Rusia,pesca,2004,245
+Austromerluza (bacalao de profundidad),Rusia,pesca,2005,5
+Austromerluza (bacalao de profundidad),Rusia,pesca,2006,0
+Austromerluza (bacalao de profundidad),Rusia,pesca,2007,0
+Austromerluza (bacalao de profundidad),Rusia,pesca,2008,0
+Austromerluza (bacalao de profundidad),Rusia,pesca,2009,0
+Austromerluza (bacalao de profundidad),Rusia,pesca,2010,109
+Austromerluza (bacalao de profundidad),Rusia,pesca,2011,163
+Austromerluza (bacalao de profundidad),Rusia,pesca,2012,4
+Austromerluza (bacalao de profundidad),Rusia,pesca,2013,71
+Austromerluza (bacalao de profundidad),Rusia,pesca,2014,0
+Austromerluza (bacalao de profundidad),Rusia,pesca,2015,17
+Austromerluza (bacalao de profundidad),Rusia,pesca,2016,0
+Austromerluza (bacalao de profundidad),Rusia,pesca,2017,0
+Austromerluza (bacalao de profundidad),Rusia,pesca,2018,0
+Austromerluza (bacalao de profundidad),Rusia,pesca,2019,0
+Austromerluza (bacalao de profundidad),Rusia,pesca,2021,0
+Austromerluza (bacalao de profundidad),Rusia,pesca,2022,0
+Calamar argentino,Argentina,pesca,1995,199744
+Calamar argentino,Argentina,pesca,1996,294252
+Calamar argentino,Argentina,pesca,1997,411719
+Calamar argentino,Argentina,pesca,1998,291240
+Calamar argentino,Argentina,pesca,1999,343437
+Calamar argentino,Argentina,pesca,2000,279046
+Calamar argentino,Argentina,pesca,2001,230272
+Calamar argentino,Argentina,pesca,2002,177314
+Calamar argentino,Argentina,pesca,2003,140938
+Calamar argentino,Argentina,pesca,2004,76485
+Calamar argentino,Argentina,pesca,2005,146097
+Calamar argentino,Argentina,pesca,2006,292070
+Calamar argentino,Argentina,pesca,2007,233062
+Calamar argentino,Argentina,pesca,2008,255531
+Calamar argentino,Argentina,pesca,2009,72604
+Calamar argentino,Argentina,pesca,2010,85989
+Calamar argentino,Argentina,pesca,2011,76598
+Calamar argentino,Argentina,pesca,2012,94984
+Calamar argentino,Argentina,pesca,2013,191741
+Calamar argentino,Argentina,pesca,2014,168727
+Calamar argentino,Argentina,pesca,2015,126671
+Calamar argentino,Argentina,pesca,2016,59891
+Calamar argentino,Argentina,pesca,2017,99170
+Calamar argentino,Argentina,pesca,2018,108304
+Calamar argentino,Argentina,pesca,2019,96265
+Calamar argentino,Argentina,pesca,2020,171162
+Calamar argentino,Argentina,pesca,2021,132194
+Calamar argentino,Argentina,pesca,2022,167109
+Calamar argentino,Argentina,pesca,2023,153284
+Calamar argentino,Argentina,pesca,2024,154957
+Calamar argentino,Chile,pesca,1995,302
+Calamar argentino,Chile,pesca,1996,0
+Calamar argentino,Chile,pesca,1997,0
+Calamar argentino,Chile,pesca,1998,0
+Calamar argentino,Chile,pesca,1999,0
+Calamar argentino,Chile,pesca,2000,0
+Calamar argentino,Chile,pesca,2001,0
+Calamar argentino,Chile,pesca,2002,0
+Calamar argentino,Chile,pesca,2003,0
+Calamar argentino,Chile,pesca,2004,0
+Calamar argentino,Chile,pesca,2005,0
+Calamar argentino,Chile,pesca,2006,0
+Calamar argentino,Chile,pesca,2007,0
+Calamar argentino,Chile,pesca,2008,0
+Calamar argentino,Chile,pesca,2009,0
+Calamar argentino,Chile,pesca,2010,0
+Calamar argentino,Chile,pesca,2011,0
+Calamar argentino,Chile,pesca,2012,0
+Calamar argentino,Chile,pesca,2013,0
+Calamar argentino,Chile,pesca,2014,0
+Calamar argentino,Chile,pesca,2015,0
+Calamar argentino,Chile,pesca,2016,0
+Calamar argentino,Chile,pesca,2018,0
+Calamar argentino,Chile,pesca,2019,0
+Calamar argentino,Chile,pesca,2024,342
+Calamar argentino,China,pesca,1995,0
+Calamar argentino,China,pesca,1996,0
+Calamar argentino,China,pesca,1997,0
+Calamar argentino,China,pesca,1998,30000
+Calamar argentino,China,pesca,1999,61000
+Calamar argentino,China,pesca,2000,93130
+Calamar argentino,China,pesca,2001,93500
+Calamar argentino,China,pesca,2002,85436
+Calamar argentino,China,pesca,2003,96000
+Calamar argentino,China,pesca,2004,13400
+Calamar argentino,China,pesca,2005,41000
+Calamar argentino,China,pesca,2006,104000
+Calamar argentino,China,pesca,2007,207626
+Calamar argentino,China,pesca,2008,197187
+Calamar argentino,China,pesca,2009,61400
+Calamar argentino,China,pesca,2010,35000
+Calamar argentino,China,pesca,2012,78000
+Calamar argentino,China,pesca,2013,108000
+Calamar argentino,China,pesca,2014,336000
+Calamar argentino,China,pesca,2015,470000
+Calamar argentino,China,pesca,2016,69000
+Calamar argentino,China,pesca,2017,127580
+Calamar argentino,China,pesca,2018,105300
+Calamar argentino,China,pesca,2019,20880
+Calamar argentino,China,pesca,2020,60000
+Calamar argentino,China,pesca,2021,139727
+Calamar argentino,China,pesca,2022,75000
+Calamar argentino,China,pesca,2023,128000
+Calamar argentino,China,pesca,2024,107396
+Calamar argentino,Corea del Sur,pesca,1995,124005
+Calamar argentino,Corea del Sur,pesca,1996,144750
+Calamar argentino,Corea del Sur,pesca,1997,208160
+Calamar argentino,Corea del Sur,pesca,1998,92397
+Calamar argentino,Corea del Sur,pesca,1999,271716
+Calamar argentino,Corea del Sur,pesca,2000,150149
+Calamar argentino,Corea del Sur,pesca,2001,142585
+Calamar argentino,Corea del Sur,pesca,2002,98649
+Calamar argentino,Corea del Sur,pesca,2003,91445
+Calamar argentino,Corea del Sur,pesca,2004,20440
+Calamar argentino,Corea del Sur,pesca,2005,42939
+Calamar argentino,Corea del Sur,pesca,2006,138751
+Calamar argentino,Corea del Sur,pesca,2007,193673
+Calamar argentino,Corea del Sur,pesca,2008,157816
+Calamar argentino,Corea del Sur,pesca,2009,56967
+Calamar argentino,Corea del Sur,pesca,2010,24985
+Calamar argentino,Corea del Sur,pesca,2011,22892
+Calamar argentino,Corea del Sur,pesca,2012,28554
+Calamar argentino,Corea del Sur,pesca,2013,49236
+Calamar argentino,Corea del Sur,pesca,2014,104257
+Calamar argentino,Corea del Sur,pesca,2015,98584
+Calamar argentino,Corea del Sur,pesca,2016,162
+Calamar argentino,Corea del Sur,pesca,2017,16491
+Calamar argentino,Corea del Sur,pesca,2018,12731
+Calamar argentino,Corea del Sur,pesca,2019,14263
+Calamar argentino,Corea del Sur,pesca,2020,37026
+Calamar argentino,Corea del Sur,pesca,2021,43782
+Calamar argentino,Corea del Sur,pesca,2022,48093
+Calamar argentino,Corea del Sur,pesca,2023,52165
+Calamar argentino,Corea del Sur,pesca,2024,63009
+Calamar argentino,MUNDO,pesca,1995,521634
+Calamar argentino,MUNDO,pesca,1996,658105
+Calamar argentino,MUNDO,pesca,1997,991799
+Calamar argentino,MUNDO,pesca,1998,700443
+Calamar argentino,MUNDO,pesca,1999,1153279
+Calamar argentino,MUNDO,pesca,2000,984393
+Calamar argentino,MUNDO,pesca,2001,750419
+Calamar argentino,MUNDO,pesca,2002,540414
+Calamar argentino,MUNDO,pesca,2003,503612
+Calamar argentino,MUNDO,pesca,2004,178974
+Calamar argentino,MUNDO,pesca,2005,287590
+Calamar argentino,MUNDO,pesca,2006,703804
+Calamar argentino,MUNDO,pesca,2007,955044
+Calamar argentino,MUNDO,pesca,2008,837935
+Calamar argentino,MUNDO,pesca,2009,261227
+Calamar argentino,MUNDO,pesca,2010,189967
+Calamar argentino,MUNDO,pesca,2011,187577
+Calamar argentino,MUNDO,pesca,2012,305063
+Calamar argentino,MUNDO,pesca,2013,491937
+Calamar argentino,MUNDO,pesca,2014,860505
+Calamar argentino,MUNDO,pesca,2015,1007787
+Calamar argentino,MUNDO,pesca,2016,146534
+Calamar argentino,MUNDO,pesca,2017,332721
+Calamar argentino,MUNDO,pesca,2018,298811
+Calamar argentino,MUNDO,pesca,2019,170834
+Calamar argentino,MUNDO,pesca,2020,344912
+Calamar argentino,MUNDO,pesca,2021,490846
+Calamar argentino,MUNDO,pesca,2022,392836
+Calamar argentino,MUNDO,pesca,2023,400824
+Calamar argentino,MUNDO,pesca,2024,480844
+Calamar argentino,Otros,pesca,1995,185821
+Calamar argentino,Otros,pesca,1996,198849
+Calamar argentino,Otros,pesca,1997,371036
+Calamar argentino,Otros,pesca,1998,286806
+Calamar argentino,Otros,pesca,1999,477126
+Calamar argentino,Otros,pesca,2000,458664
+Calamar argentino,Otros,pesca,2001,281484
+Calamar argentino,Otros,pesca,2002,173562
+Calamar argentino,Otros,pesca,2003,172381
+Calamar argentino,Otros,pesca,2004,68095
+Calamar argentino,Otros,pesca,2005,57554
+Calamar argentino,Otros,pesca,2006,168983
+Calamar argentino,Otros,pesca,2007,320683
+Calamar argentino,Otros,pesca,2008,227401
+Calamar argentino,Otros,pesca,2009,70256
+Calamar argentino,Otros,pesca,2010,43993
+Calamar argentino,Otros,pesca,2011,88087
+Calamar argentino,Otros,pesca,2012,103525
+Calamar argentino,Otros,pesca,2013,142960
+Calamar argentino,Otros,pesca,2014,251521
+Calamar argentino,Otros,pesca,2015,312532
+Calamar argentino,Otros,pesca,2016,17481
+Calamar argentino,Otros,pesca,2017,89480
+Calamar argentino,Otros,pesca,2018,72476
+Calamar argentino,Otros,pesca,2019,39426
+Calamar argentino,Otros,pesca,2020,76724
+Calamar argentino,Otros,pesca,2021,175143
+Calamar argentino,Otros,pesca,2022,102634
+Calamar argentino,Otros,pesca,2023,67157
+Calamar argentino,Otros,pesca,2024,154365
+Calamar argentino,Rusia,pesca,1995,11762
+Calamar argentino,Rusia,pesca,1996,20254
+Calamar argentino,Rusia,pesca,1997,884
+Calamar argentino,Rusia,pesca,1998,0
+Calamar argentino,Rusia,pesca,1999,0
+Calamar argentino,Rusia,pesca,2000,3404
+Calamar argentino,Rusia,pesca,2001,2578
+Calamar argentino,Rusia,pesca,2002,5453
+Calamar argentino,Rusia,pesca,2003,2848
+Calamar argentino,Rusia,pesca,2004,554
+Calamar argentino,Rusia,pesca,2005,0
+Calamar argentino,Rusia,pesca,2006,0
+Calamar argentino,Rusia,pesca,2007,0
+Calamar argentino,Rusia,pesca,2008,0
+Calamar argentino,Rusia,pesca,2009,0
+Calamar argentino,Rusia,pesca,2010,0
+Calamar argentino,Rusia,pesca,2011,0
+Calamar argentino,Rusia,pesca,2012,0
+Calamar argentino,Rusia,pesca,2013,0
+Calamar argentino,Rusia,pesca,2014,0
+Calamar argentino,Rusia,pesca,2015,0
+Calamar argentino,Rusia,pesca,2016,0
+Calamar argentino,Rusia,pesca,2017,0
+Calamar argentino,Rusia,pesca,2018,0
+Calamar argentino,Rusia,pesca,2019,0
+Calamar argentino,Rusia,pesca,2023,218
+Calamar argentino,Rusia,pesca,2024,775
+Chorito,Argentina,acui,2024,22
+Chorito,Chile,acui,1995,5595
+Chorito,Chile,acui,1996,6064
+Chorito,Chile,acui,1997,8635
+Chorito,Chile,acui,1998,11911
+Chorito,Chile,acui,1999,16203
+Chorito,Chile,acui,2000,23477
+Chorito,Chile,acui,2001,34648
+Chorito,Chile,acui,2002,41797
+Chorito,Chile,acui,2003,57809
+Chorito,Chile,acui,2004,77461
+Chorito,Chile,acui,2005,87736
+Chorito,Chile,acui,2006,126952
+Chorito,Chile,acui,2007,153433
+Chorito,Chile,acui,2008,187064
+Chorito,Chile,acui,2009,166952
+Chorito,Chile,acui,2010,221522
+Chorito,Chile,acui,2011,288583
+Chorito,Chile,acui,2012,244137
+Chorito,Chile,acui,2013,241841
+Chorito,Chile,acui,2014,238088
+Chorito,Chile,acui,2015,208707
+Chorito,Chile,acui,2016,300648
+Chorito,Chile,acui,2017,338846
+Chorito,Chile,acui,2018,365595
+Chorito,Chile,acui,2019,379097
+Chorito,Chile,acui,2020,399097
+Chorito,Chile,acui,2021,424294
+Chorito,Chile,acui,2022,427084
+Chorito,Chile,acui,2023,388992
+Chorito,Chile,acui,2024,403247
+Chorito,Chile,pesca,1995,5128
+Chorito,Chile,pesca,1996,5714
+Chorito,Chile,pesca,1997,4723
+Chorito,Chile,pesca,1998,4899
+Chorito,Chile,pesca,1999,4343
+Chorito,Chile,pesca,2000,5236
+Chorito,Chile,pesca,2001,6758
+Chorito,Chile,pesca,2002,1416
+Chorito,Chile,pesca,2003,2899
+Chorito,Chile,pesca,2004,1046
+Chorito,Chile,pesca,2005,335
+Chorito,Chile,pesca,2006,217
+Chorito,Chile,pesca,2007,8048
+Chorito,Chile,pesca,2008,476
+Chorito,Chile,pesca,2009,293
+Chorito,Chile,pesca,2010,354
+Chorito,Chile,pesca,2011,408
+Chorito,Chile,pesca,2012,400
+Chorito,Chile,pesca,2013,355
+Chorito,Chile,pesca,2014,739
+Chorito,Chile,pesca,2015,1142
+Chorito,Chile,pesca,2016,2129
+Chorito,Chile,pesca,2017,2198
+Chorito,Chile,pesca,2018,1431
+Chorito,Chile,pesca,2019,1402
+Chorito,Chile,pesca,2020,1207
+Chorito,Chile,pesca,2021,1539
+Chorito,Chile,pesca,2022,800
+Chorito,Chile,pesca,2023,1513
+Chorito,Chile,pesca,2024,1360
+Chorito,MUNDO,acui,1995,5595
+Chorito,MUNDO,acui,1996,6064
+Chorito,MUNDO,acui,1997,8635
+Chorito,MUNDO,acui,1998,11911
+Chorito,MUNDO,acui,1999,16203
+Chorito,MUNDO,acui,2000,23477
+Chorito,MUNDO,acui,2001,34648
+Chorito,MUNDO,acui,2002,41797
+Chorito,MUNDO,acui,2003,57809
+Chorito,MUNDO,acui,2004,77461
+Chorito,MUNDO,acui,2005,87736
+Chorito,MUNDO,acui,2006,126952
+Chorito,MUNDO,acui,2007,153433
+Chorito,MUNDO,acui,2008,187064
+Chorito,MUNDO,acui,2009,166952
+Chorito,MUNDO,acui,2010,221522
+Chorito,MUNDO,acui,2011,288583
+Chorito,MUNDO,acui,2012,244137
+Chorito,MUNDO,acui,2013,241841
+Chorito,MUNDO,acui,2014,238088
+Chorito,MUNDO,acui,2015,208707
+Chorito,MUNDO,acui,2016,300648
+Chorito,MUNDO,acui,2017,338846
+Chorito,MUNDO,acui,2018,365595
+Chorito,MUNDO,acui,2019,379097
+Chorito,MUNDO,acui,2020,399097
+Chorito,MUNDO,acui,2021,424294
+Chorito,MUNDO,acui,2022,427084
+Chorito,MUNDO,acui,2023,388992
+Chorito,MUNDO,acui,2024,403270
+Chorito,MUNDO,pesca,1995,5129
+Chorito,MUNDO,pesca,1996,5715
+Chorito,MUNDO,pesca,1997,4724
+Chorito,MUNDO,pesca,1998,4900
+Chorito,MUNDO,pesca,1999,4344
+Chorito,MUNDO,pesca,2000,5237
+Chorito,MUNDO,pesca,2001,6758
+Chorito,MUNDO,pesca,2002,1416
+Chorito,MUNDO,pesca,2003,2899
+Chorito,MUNDO,pesca,2004,1046
+Chorito,MUNDO,pesca,2005,336
+Chorito,MUNDO,pesca,2006,217
+Chorito,MUNDO,pesca,2007,8049
+Chorito,MUNDO,pesca,2008,476
+Chorito,MUNDO,pesca,2009,293
+Chorito,MUNDO,pesca,2010,354
+Chorito,MUNDO,pesca,2011,408
+Chorito,MUNDO,pesca,2012,400
+Chorito,MUNDO,pesca,2013,355
+Chorito,MUNDO,pesca,2014,739
+Chorito,MUNDO,pesca,2015,1142
+Chorito,MUNDO,pesca,2016,2129
+Chorito,MUNDO,pesca,2017,2198
+Chorito,MUNDO,pesca,2018,1431
+Chorito,MUNDO,pesca,2019,1402
+Chorito,MUNDO,pesca,2020,1207
+Chorito,MUNDO,pesca,2021,1539
+Chorito,MUNDO,pesca,2022,800
+Chorito,MUNDO,pesca,2023,1513
+Chorito,MUNDO,pesca,2024,1360
+Chorito,Otros,pesca,1995,1
+Chorito,Otros,pesca,1996,1
+Chorito,Otros,pesca,1997,1
+Chorito,Otros,pesca,1998,1
+Chorito,Otros,pesca,1999,1
+Chorito,Otros,pesca,2000,1
+Chorito,Otros,pesca,2001,0
+Chorito,Otros,pesca,2002,0
+Chorito,Otros,pesca,2003,0
+Chorito,Otros,pesca,2004,0
+Chorito,Otros,pesca,2005,1
+Chorito,Otros,pesca,2006,0
+Chorito,Otros,pesca,2007,1
+Chorito,Otros,pesca,2008,0
+Chorito,Otros,pesca,2009,0
+Chorito,Otros,pesca,2010,0
+Chorito,Otros,pesca,2011,0
+Chorito,Otros,pesca,2012,0
+Chorito,Otros,pesca,2013,0
+Concha de abanico,Chile,acui,1995,8264
+Concha de abanico,Chile,acui,1996,9779
+Concha de abanico,Chile,acui,1997,11482
+Concha de abanico,Chile,acui,1998,16474
+Concha de abanico,Chile,acui,1999,20668
+Concha de abanico,Chile,acui,2000,19018
+Concha de abanico,Chile,acui,2001,18534
+Concha de abanico,Chile,acui,2002,15124
+Concha de abanico,Chile,acui,2003,15109
+Concha de abanico,Chile,acui,2004,24577
+Concha de abanico,Chile,acui,2005,17319
+Concha de abanico,Chile,acui,2006,16076
+Concha de abanico,Chile,acui,2007,20072
+Concha de abanico,Chile,acui,2008,21277
+Concha de abanico,Chile,acui,2009,16864
+Concha de abanico,Chile,acui,2010,8840
+Concha de abanico,Chile,acui,2011,11018
+Concha de abanico,Chile,acui,2012,5798
+Concha de abanico,Chile,acui,2013,5001
+Concha de abanico,Chile,acui,2014,4146
+Concha de abanico,Chile,acui,2015,2960
+Concha de abanico,Chile,acui,2016,3547
+Concha de abanico,Chile,acui,2017,4706
+Concha de abanico,Chile,acui,2018,7518
+Concha de abanico,Chile,acui,2019,11313
+Concha de abanico,Chile,acui,2020,4367
+Concha de abanico,Chile,acui,2021,3890
+Concha de abanico,Chile,acui,2022,3465
+Concha de abanico,Chile,acui,2023,5396
+Concha de abanico,Chile,acui,2024,4132
+Concha de abanico,Chile,pesca,1995,0
+Concha de abanico,Chile,pesca,1996,9
+Concha de abanico,Chile,pesca,1997,4
+Concha de abanico,Chile,pesca,1998,21
+Concha de abanico,Chile,pesca,1999,0
+Concha de abanico,Chile,pesca,2000,20
+Concha de abanico,Chile,pesca,2001,272
+Concha de abanico,Chile,pesca,2002,55
+Concha de abanico,Chile,pesca,2003,20
+Concha de abanico,Chile,pesca,2004,120
+Concha de abanico,Chile,pesca,2005,43
+Concha de abanico,Chile,pesca,2006,0
+Concha de abanico,Chile,pesca,2007,0
+Concha de abanico,Chile,pesca,2008,0
+Concha de abanico,Chile,pesca,2009,189
+Concha de abanico,Chile,pesca,2010,0
+Concha de abanico,Chile,pesca,2011,0
+Concha de abanico,Chile,pesca,2012,0
+Concha de abanico,Chile,pesca,2013,0
+Concha de abanico,Chile,pesca,2014,0
+Concha de abanico,Chile,pesca,2015,0
+Concha de abanico,Chile,pesca,2016,0
+Concha de abanico,Chile,pesca,2017,0
+Concha de abanico,Chile,pesca,2018,0
+Concha de abanico,Chile,pesca,2019,0
+Concha de abanico,Chile,pesca,2024,41
+Concha de abanico,MUNDO,acui,1995,8695
+Concha de abanico,MUNDO,acui,1996,10806
+Concha de abanico,MUNDO,acui,1997,11947
+Concha de abanico,MUNDO,acui,1998,18379
+Concha de abanico,MUNDO,acui,1999,23308
+Concha de abanico,MUNDO,acui,2000,22934
+Concha de abanico,MUNDO,acui,2001,22447
+Concha de abanico,MUNDO,acui,2002,20825
+Concha de abanico,MUNDO,acui,2003,21779
+Concha de abanico,MUNDO,acui,2004,35061
+Concha de abanico,MUNDO,acui,2005,28385
+Concha de abanico,MUNDO,acui,2006,28413
+Concha de abanico,MUNDO,acui,2007,38590
+Concha de abanico,MUNDO,acui,2008,36079
+Concha de abanico,MUNDO,acui,2009,32911
+Concha de abanico,MUNDO,acui,2010,66941
+Concha de abanico,MUNDO,acui,2011,63231
+Concha de abanico,MUNDO,acui,2012,30580
+Concha de abanico,MUNDO,acui,2013,72695
+Concha de abanico,MUNDO,acui,2014,59242
+Concha de abanico,MUNDO,acui,2015,25989
+Concha de abanico,MUNDO,acui,2016,24522
+Concha de abanico,MUNDO,acui,2017,16633
+Concha de abanico,MUNDO,acui,2018,39408
+Concha de abanico,MUNDO,acui,2019,64809
+Concha de abanico,MUNDO,acui,2020,51948
+Concha de abanico,MUNDO,acui,2021,58834
+Concha de abanico,MUNDO,acui,2022,29970
+Concha de abanico,MUNDO,acui,2023,20760
+Concha de abanico,MUNDO,acui,2024,46347
+Concha de abanico,MUNDO,pesca,1995,3113
+Concha de abanico,MUNDO,pesca,1996,2095
+Concha de abanico,MUNDO,pesca,1997,4013
+Concha de abanico,MUNDO,pesca,1998,24567
+Concha de abanico,MUNDO,pesca,1999,30141
+Concha de abanico,MUNDO,pesca,2000,11830
+Concha de abanico,MUNDO,pesca,2001,2631
+Concha de abanico,MUNDO,pesca,2002,7787
+Concha de abanico,MUNDO,pesca,2003,14673
+Concha de abanico,MUNDO,pesca,2004,15596
+Concha de abanico,MUNDO,pesca,2005,15228
+Concha de abanico,MUNDO,pesca,2006,18763
+Concha de abanico,MUNDO,pesca,2007,24768
+Concha de abanico,MUNDO,pesca,2008,19618
+Concha de abanico,MUNDO,pesca,2009,26667
+Concha de abanico,MUNDO,pesca,2010,62827
+Concha de abanico,MUNDO,pesca,2011,93050
+Concha de abanico,MUNDO,pesca,2012,14896
+Concha de abanico,MUNDO,pesca,2013,22178
+Concha de abanico,MUNDO,pesca,2014,56002
+Concha de abanico,MUNDO,pesca,2015,17176
+Concha de abanico,MUNDO,pesca,2016,13343
+Concha de abanico,MUNDO,pesca,2017,5727
+Concha de abanico,MUNDO,pesca,2018,19472
+Concha de abanico,MUNDO,pesca,2019,53957
+Concha de abanico,MUNDO,pesca,2020,48163
+Concha de abanico,MUNDO,pesca,2021,54070
+Concha de abanico,MUNDO,pesca,2022,26506
+Concha de abanico,MUNDO,pesca,2023,15787
+Concha de abanico,MUNDO,pesca,2024,42920
+Concha de abanico,Perú,acui,1995,431
+Concha de abanico,Perú,acui,1996,1027
+Concha de abanico,Perú,acui,1997,465
+Concha de abanico,Perú,acui,1998,1905
+Concha de abanico,Perú,acui,1999,2640
+Concha de abanico,Perú,acui,2000,3916
+Concha de abanico,Perú,acui,2001,3913
+Concha de abanico,Perú,acui,2002,5701
+Concha de abanico,Perú,acui,2003,6670
+Concha de abanico,Perú,acui,2004,10484
+Concha de abanico,Perú,acui,2005,11066
+Concha de abanico,Perú,acui,2006,12337
+Concha de abanico,Perú,acui,2007,18518
+Concha de abanico,Perú,acui,2008,14802
+Concha de abanico,Perú,acui,2009,16047
+Concha de abanico,Perú,acui,2010,58101
+Concha de abanico,Perú,acui,2011,52213
+Concha de abanico,Perú,acui,2012,24782
+Concha de abanico,Perú,acui,2013,67694
+Concha de abanico,Perú,acui,2014,55096
+Concha de abanico,Perú,acui,2015,23029
+Concha de abanico,Perú,acui,2016,20975
+Concha de abanico,Perú,acui,2017,11927
+Concha de abanico,Perú,acui,2018,31890
+Concha de abanico,Perú,acui,2019,53496
+Concha de abanico,Perú,acui,2020,47581
+Concha de abanico,Perú,acui,2021,54944
+Concha de abanico,Perú,acui,2022,26505
+Concha de abanico,Perú,acui,2023,15364
+Concha de abanico,Perú,acui,2024,42215
+Concha de abanico,Perú,pesca,1995,3113
+Concha de abanico,Perú,pesca,1996,2086
+Concha de abanico,Perú,pesca,1997,4009
+Concha de abanico,Perú,pesca,1998,24546
+Concha de abanico,Perú,pesca,1999,30141
+Concha de abanico,Perú,pesca,2000,11810
+Concha de abanico,Perú,pesca,2001,2359
+Concha de abanico,Perú,pesca,2002,7732
+Concha de abanico,Perú,pesca,2003,14653
+Concha de abanico,Perú,pesca,2004,15476
+Concha de abanico,Perú,pesca,2005,15185
+Concha de abanico,Perú,pesca,2006,18763
+Concha de abanico,Perú,pesca,2007,24768
+Concha de abanico,Perú,pesca,2008,19618
+Concha de abanico,Perú,pesca,2009,26478
+Concha de abanico,Perú,pesca,2010,62827
+Concha de abanico,Perú,pesca,2011,93050
+Concha de abanico,Perú,pesca,2012,14896
+Concha de abanico,Perú,pesca,2013,22178
+Concha de abanico,Perú,pesca,2014,56002
+Concha de abanico,Perú,pesca,2015,17176
+Concha de abanico,Perú,pesca,2016,13343
+Concha de abanico,Perú,pesca,2017,5727
+Concha de abanico,Perú,pesca,2018,19472
+Concha de abanico,Perú,pesca,2019,53957
+Concha de abanico,Perú,pesca,2020,48163
+Concha de abanico,Perú,pesca,2021,54070
+Concha de abanico,Perú,pesca,2022,26506
+Concha de abanico,Perú,pesca,2023,15787
+Concha de abanico,Perú,pesca,2024,42879
+Jurel,Chile,pesca,1995,4404193
+Jurel,Chile,pesca,1996,3883326
+Jurel,Chile,pesca,1997,2917064
+Jurel,Chile,pesca,1998,1612912
+Jurel,Chile,pesca,1999,1219689
+Jurel,Chile,pesca,2000,1234299
+Jurel,Chile,pesca,2001,1649933
+Jurel,Chile,pesca,2002,1518994
+Jurel,Chile,pesca,2003,1421296
+Jurel,Chile,pesca,2004,1451599
+Jurel,Chile,pesca,2005,1430438
+Jurel,Chile,pesca,2006,1379941
+Jurel,Chile,pesca,2007,1302784
+Jurel,Chile,pesca,2008,896189
+Jurel,Chile,pesca,2009,834927
+Jurel,Chile,pesca,2010,464808
+Jurel,Chile,pesca,2011,247295
+Jurel,Chile,pesca,2012,227460
+Jurel,Chile,pesca,2013,231360
+Jurel,Chile,pesca,2014,271601
+Jurel,Chile,pesca,2015,288772
+Jurel,Chile,pesca,2016,323298
+Jurel,Chile,pesca,2017,355296
+Jurel,Chile,pesca,2018,444567
+Jurel,Chile,pesca,2019,465964
+Jurel,Chile,pesca,2020,556494
+Jurel,Chile,pesca,2021,632963
+Jurel,Chile,pesca,2022,784800
+Jurel,Chile,pesca,2023,852831
+Jurel,Chile,pesca,2024,1083629
+Jurel,China,pesca,1995,0
+Jurel,China,pesca,1996,0
+Jurel,China,pesca,1997,0
+Jurel,China,pesca,1998,0
+Jurel,China,pesca,1999,0
+Jurel,China,pesca,2000,2318
+Jurel,China,pesca,2001,20090
+Jurel,China,pesca,2002,76261
+Jurel,China,pesca,2003,94690
+Jurel,China,pesca,2004,131020
+Jurel,China,pesca,2005,143000
+Jurel,China,pesca,2006,160000
+Jurel,China,pesca,2007,140582
+Jurel,China,pesca,2008,143182
+Jurel,China,pesca,2009,117963
+Jurel,China,pesca,2010,63606
+Jurel,China,pesca,2011,32862
+Jurel,China,pesca,2012,13012
+Jurel,China,pesca,2013,8329
+Jurel,China,pesca,2014,21155
+Jurel,China,pesca,2015,29180
+Jurel,China,pesca,2016,20207
+Jurel,China,pesca,2017,29200
+Jurel,China,pesca,2018,24366
+Jurel,China,pesca,2019,22698
+Jurel,China,pesca,2020,23000
+Jurel,China,pesca,2021,22000
+Jurel,China,pesca,2022,23000
+Jurel,China,pesca,2023,20000
+Jurel,China,pesca,2024,25000
+Jurel,Corea del Sur,pesca,1995,0
+Jurel,Corea del Sur,pesca,1996,0
+Jurel,Corea del Sur,pesca,1997,0
+Jurel,Corea del Sur,pesca,1998,0
+Jurel,Corea del Sur,pesca,1999,0
+Jurel,Corea del Sur,pesca,2000,0
+Jurel,Corea del Sur,pesca,2001,0
+Jurel,Corea del Sur,pesca,2002,0
+Jurel,Corea del Sur,pesca,2003,2196
+Jurel,Corea del Sur,pesca,2004,9227
+Jurel,Corea del Sur,pesca,2005,9444
+Jurel,Corea del Sur,pesca,2006,11492
+Jurel,Corea del Sur,pesca,2007,11138
+Jurel,Corea del Sur,pesca,2008,12600
+Jurel,Corea del Sur,pesca,2009,14080
+Jurel,Corea del Sur,pesca,2010,8547
+Jurel,Corea del Sur,pesca,2011,9253
+Jurel,Corea del Sur,pesca,2012,5493
+Jurel,Corea del Sur,pesca,2013,5267
+Jurel,Corea del Sur,pesca,2014,4078
+Jurel,Corea del Sur,pesca,2015,5749
+Jurel,Corea del Sur,pesca,2016,6430
+Jurel,Corea del Sur,pesca,2017,1235
+Jurel,Corea del Sur,pesca,2018,1200
+Jurel,Corea del Sur,pesca,2019,7444
+Jurel,Corea del Sur,pesca,2020,0
+Jurel,Corea del Sur,pesca,2024,1798
+Jurel,Ecuador,pesca,1995,174393
+Jurel,Ecuador,pesca,1996,56781
+Jurel,Ecuador,pesca,1997,30302
+Jurel,Ecuador,pesca,1998,25900
+Jurel,Ecuador,pesca,1999,19072
+Jurel,Ecuador,pesca,2000,7144
+Jurel,Ecuador,pesca,2001,134011
+Jurel,Ecuador,pesca,2002,604
+Jurel,Ecuador,pesca,2003,0
+Jurel,Ecuador,pesca,2004,0
+Jurel,Ecuador,pesca,2005,0
+Jurel,Ecuador,pesca,2006,0
+Jurel,Ecuador,pesca,2007,927
+Jurel,Ecuador,pesca,2008,0
+Jurel,Ecuador,pesca,2009,19834
+Jurel,Ecuador,pesca,2010,4613
+Jurel,Ecuador,pesca,2011,69373
+Jurel,Ecuador,pesca,2012,77
+Jurel,Ecuador,pesca,2013,3565
+Jurel,Ecuador,pesca,2014,9
+Jurel,Ecuador,pesca,2015,289
+Jurel,Ecuador,pesca,2017,0
+Jurel,Ecuador,pesca,2018,23
+Jurel,Ecuador,pesca,2019,2
+Jurel,Ecuador,pesca,2020,36
+Jurel,Ecuador,pesca,2021,9
+Jurel,Ecuador,pesca,2022,6
+Jurel,Ecuador,pesca,2023,11
+Jurel,Ecuador,pesca,2024,84
+Jurel,MUNDO,pesca,1995,4955186
+Jurel,MUNDO,pesca,1996,4378843
+Jurel,MUNDO,pesca,1997,3597117
+Jurel,MUNDO,pesca,1998,2025758
+Jurel,MUNDO,pesca,1999,1423447
+Jurel,MUNDO,pesca,2000,1542812
+Jurel,MUNDO,pesca,2001,2528924
+Jurel,MUNDO,pesca,2002,1750078
+Jurel,MUNDO,pesca,2003,1797415
+Jurel,MUNDO,pesca,2004,1936200
+Jurel,MUNDO,pesca,2005,1754995
+Jurel,MUNDO,pesca,2006,2021154
+Jurel,MUNDO,pesca,2007,1997166
+Jurel,MUNDO,pesca,2008,1424207
+Jurel,MUNDO,pesca,2009,1269601
+Jurel,MUNDO,pesca,2010,726937
+Jurel,MUNDO,pesca,2011,634800
+Jurel,MUNDO,pesca,2012,454748
+Jurel,MUNDO,pesca,2013,354898
+Jurel,MUNDO,pesca,2014,414454
+Jurel,MUNDO,pesca,2015,398780
+Jurel,MUNDO,pesca,2016,392582
+Jurel,MUNDO,pesca,2017,544803
+Jurel,MUNDO,pesca,2018,542896
+Jurel,MUNDO,pesca,2019,657158
+Jurel,MUNDO,pesca,2020,743611
+Jurel,MUNDO,pesca,2021,828385
+Jurel,MUNDO,pesca,2022,1049140
+Jurel,MUNDO,pesca,2023,1206626
+Jurel,MUNDO,pesca,2024,1376695
+Jurel,Otros,pesca,1995,0
+Jurel,Otros,pesca,1996,0
+Jurel,Otros,pesca,1997,0
+Jurel,Otros,pesca,1998,0
+Jurel,Otros,pesca,1999,7
+Jurel,Otros,pesca,2000,2472
+Jurel,Otros,pesca,2001,1157
+Jurel,Otros,pesca,2002,0
+Jurel,Otros,pesca,2003,61367
+Jurel,Otros,pesca,2004,156985
+Jurel,Otros,pesca,2005,91450
+Jurel,Otros,pesca,2006,192153
+Jurel,Otros,pesca,2007,287309
+Jurel,Otros,pesca,2008,200549
+Jurel,Otros,pesca,2009,194396
+Jurel,Otros,pesca,2010,127288
+Jurel,Otros,pesca,2011,18102
+Jurel,Otros,pesca,2012,16068
+Jurel,Otros,pesca,2013,24910
+Jurel,Otros,pesca,2014,35863
+Jurel,Otros,pesca,2015,49182
+Jurel,Otros,pesca,2016,27526
+Jurel,Otros,pesca,2017,145790
+Jurel,Otros,pesca,2018,9691
+Jurel,Otros,pesca,2019,11870
+Jurel,Otros,pesca,2020,0
+Jurel,Otros,pesca,2021,43167
+Jurel,Otros,pesca,2022,44594
+Jurel,Otros,pesca,2023,49839
+Jurel,Otros,pesca,2024,19106
+Jurel,Perú,pesca,1995,376600
+Jurel,Perú,pesca,1996,438736
+Jurel,Perú,pesca,1997,649751
+Jurel,Perú,pesca,1998,386946
+Jurel,Perú,pesca,1999,184679
+Jurel,Perú,pesca,2000,296579
+Jurel,Perú,pesca,2001,723733
+Jurel,Perú,pesca,2002,154219
+Jurel,Perú,pesca,2003,217734
+Jurel,Perú,pesca,2004,187369
+Jurel,Perú,pesca,2005,80663
+Jurel,Perú,pesca,2006,277568
+Jurel,Perú,pesca,2007,254426
+Jurel,Perú,pesca,2008,169537
+Jurel,Perú,pesca,2009,88020
+Jurel,Perú,pesca,2010,58075
+Jurel,Perú,pesca,2011,257915
+Jurel,Perú,pesca,2012,192638
+Jurel,Perú,pesca,2013,81467
+Jurel,Perú,pesca,2014,81748
+Jurel,Perú,pesca,2015,23036
+Jurel,Perú,pesca,2016,15121
+Jurel,Perú,pesca,2017,10094
+Jurel,Perú,pesca,2018,58356
+Jurel,Perú,pesca,2019,139754
+Jurel,Perú,pesca,2020,158836
+Jurel,Perú,pesca,2021,118096
+Jurel,Perú,pesca,2022,167297
+Jurel,Perú,pesca,2023,240571
+Jurel,Perú,pesca,2024,235117
+Jurel,Rusia,pesca,1995,0
+Jurel,Rusia,pesca,1996,0
+Jurel,Rusia,pesca,1997,0
+Jurel,Rusia,pesca,1998,0
+Jurel,Rusia,pesca,1999,0
+Jurel,Rusia,pesca,2000,0
+Jurel,Rusia,pesca,2001,0
+Jurel,Rusia,pesca,2002,0
+Jurel,Rusia,pesca,2003,132
+Jurel,Rusia,pesca,2004,0
+Jurel,Rusia,pesca,2005,0
+Jurel,Rusia,pesca,2006,0
+Jurel,Rusia,pesca,2007,0
+Jurel,Rusia,pesca,2008,2150
+Jurel,Rusia,pesca,2009,381
+Jurel,Rusia,pesca,2010,0
+Jurel,Rusia,pesca,2011,0
+Jurel,Rusia,pesca,2012,0
+Jurel,Rusia,pesca,2013,0
+Jurel,Rusia,pesca,2014,0
+Jurel,Rusia,pesca,2015,2572
+Jurel,Rusia,pesca,2016,0
+Jurel,Rusia,pesca,2017,3188
+Jurel,Rusia,pesca,2018,4693
+Jurel,Rusia,pesca,2019,9426
+Jurel,Rusia,pesca,2020,5245
+Jurel,Rusia,pesca,2021,12151
+Jurel,Rusia,pesca,2022,29443
+Jurel,Rusia,pesca,2023,43374
+Jurel,Rusia,pesca,2024,11961
+Krill antártico,Argentina,pesca,1995,0
+Krill antártico,Argentina,pesca,1996,0
+Krill antártico,Argentina,pesca,1997,0
+Krill antártico,Argentina,pesca,1998,0
+Krill antártico,Argentina,pesca,1999,6524
+Krill antártico,Argentina,pesca,2000,0
+Krill antártico,Argentina,pesca,2001,0
+Krill antártico,Argentina,pesca,2002,0
+Krill antártico,Argentina,pesca,2003,0
+Krill antártico,Argentina,pesca,2004,0
+Krill antártico,Argentina,pesca,2005,0
+Krill antártico,Argentina,pesca,2006,0
+Krill antártico,Argentina,pesca,2007,0
+Krill antártico,Argentina,pesca,2008,0
+Krill antártico,Argentina,pesca,2009,0
+Krill antártico,Argentina,pesca,2010,0
+Krill antártico,Argentina,pesca,2011,0
+Krill antártico,Argentina,pesca,2012,0
+Krill antártico,Argentina,pesca,2013,0
+Krill antártico,Chile,pesca,1995,0
+Krill antártico,Chile,pesca,1996,0
+Krill antártico,Chile,pesca,1997,0
+Krill antártico,Chile,pesca,1998,0
+Krill antártico,Chile,pesca,1999,0
+Krill antártico,Chile,pesca,2000,0
+Krill antártico,Chile,pesca,2001,0
+Krill antártico,Chile,pesca,2002,0
+Krill antártico,Chile,pesca,2003,0
+Krill antártico,Chile,pesca,2004,0
+Krill antártico,Chile,pesca,2005,0
+Krill antártico,Chile,pesca,2006,0
+Krill antártico,Chile,pesca,2007,0
+Krill antártico,Chile,pesca,2008,2
+Krill antártico,Chile,pesca,2009,0
+Krill antártico,Chile,pesca,2010,0
+Krill antártico,Chile,pesca,2011,2454
+Krill antártico,Chile,pesca,2012,9398
+Krill antártico,Chile,pesca,2013,7259
+Krill antártico,Chile,pesca,2014,9278
+Krill antártico,Chile,pesca,2015,7279
+Krill antártico,Chile,pesca,2016,3708
+Krill antártico,Chile,pesca,2017,204
+Krill antártico,Chile,pesca,2018,14962
+Krill antártico,Chile,pesca,2019,20946
+Krill antártico,Chile,pesca,2020,21217
+Krill antártico,Chile,pesca,2021,21915
+Krill antártico,Chile,pesca,2022,19804
+Krill antártico,Chile,pesca,2023,17750
+Krill antártico,Chile,pesca,2024,21888
+Krill antártico,China,pesca,1995,0
+Krill antártico,China,pesca,1996,0
+Krill antártico,China,pesca,1997,0
+Krill antártico,China,pesca,1998,0
+Krill antártico,China,pesca,1999,0
+Krill antártico,China,pesca,2000,0
+Krill antártico,China,pesca,2001,0
+Krill antártico,China,pesca,2002,0
+Krill antártico,China,pesca,2003,0
+Krill antártico,China,pesca,2004,0
+Krill antártico,China,pesca,2005,0
+Krill antártico,China,pesca,2006,0
+Krill antártico,China,pesca,2007,0
+Krill antártico,China,pesca,2008,0
+Krill antártico,China,pesca,2009,0
+Krill antártico,China,pesca,2010,1956
+Krill antártico,China,pesca,2011,16020
+Krill antártico,China,pesca,2012,4469
+Krill antártico,China,pesca,2013,34811
+Krill antártico,China,pesca,2014,51189
+Krill antártico,China,pesca,2015,35427
+Krill antártico,China,pesca,2016,65018
+Krill antártico,China,pesca,2017,38113
+Krill antártico,China,pesca,2018,40754
+Krill antártico,China,pesca,2019,54618
+Krill antártico,China,pesca,2020,114115
+Krill antártico,China,pesca,2021,47605
+Krill antártico,China,pesca,2022,62780
+Krill antártico,China,pesca,2023,70646
+Krill antártico,China,pesca,2024,116367
+Krill antártico,Corea del Sur,pesca,1995,0
+Krill antártico,Corea del Sur,pesca,1996,0
+Krill antártico,Corea del Sur,pesca,1997,0
+Krill antártico,Corea del Sur,pesca,1998,2851
+Krill antártico,Corea del Sur,pesca,1999,27
+Krill antártico,Corea del Sur,pesca,2000,7233
+Krill antártico,Corea del Sur,pesca,2001,7525
+Krill antártico,Corea del Sur,pesca,2002,14353
+Krill antártico,Corea del Sur,pesca,2003,21276
+Krill antártico,Corea del Sur,pesca,2004,24522
+Krill antártico,Corea del Sur,pesca,2005,28910
+Krill antártico,Corea del Sur,pesca,2006,43031
+Krill antártico,Corea del Sur,pesca,2007,33088
+Krill antártico,Corea del Sur,pesca,2008,38033
+Krill antártico,Corea del Sur,pesca,2009,42827
+Krill antártico,Corea del Sur,pesca,2010,45648
+Krill antártico,Corea del Sur,pesca,2011,30642
+Krill antártico,Corea del Sur,pesca,2012,25694
+Krill antártico,Corea del Sur,pesca,2013,45856
+Krill antártico,Corea del Sur,pesca,2014,53353
+Krill antártico,Corea del Sur,pesca,2015,23342
+Krill antártico,Corea del Sur,pesca,2016,23071
+Krill antártico,Corea del Sur,pesca,2017,34506
+Krill antártico,Corea del Sur,pesca,2018,36005
+Krill antártico,Corea del Sur,pesca,2019,42939
+Krill antártico,Corea del Sur,pesca,2020,44567
+Krill antártico,Corea del Sur,pesca,2021,37984
+Krill antártico,Corea del Sur,pesca,2022,30896
+Krill antártico,Corea del Sur,pesca,2023,35781
+Krill antártico,Corea del Sur,pesca,2024,15091
+Krill antártico,MUNDO,pesca,1995,135685
+Krill antártico,MUNDO,pesca,1996,91150
+Krill antártico,MUNDO,pesca,1997,75653
+Krill antártico,MUNDO,pesca,1998,90354
+Krill antártico,MUNDO,pesca,1999,101957
+Krill antártico,MUNDO,pesca,2000,114426
+Krill antártico,MUNDO,pesca,2001,104182
+Krill antártico,MUNDO,pesca,2002,125987
+Krill antártico,MUNDO,pesca,2003,117728
+Krill antártico,MUNDO,pesca,2004,118165
+Krill antártico,MUNDO,pesca,2005,129026
+Krill antártico,MUNDO,pesca,2006,106591
+Krill antártico,MUNDO,pesca,2007,104586
+Krill antártico,MUNDO,pesca,2008,155220
+Krill antártico,MUNDO,pesca,2009,126499
+Krill antártico,MUNDO,pesca,2010,212016
+Krill antártico,MUNDO,pesca,2011,188874
+Krill antártico,MUNDO,pesca,2012,149914
+Krill antártico,MUNDO,pesca,2013,229486
+Krill antártico,MUNDO,pesca,2014,282648
+Krill antártico,MUNDO,pesca,2015,235869
+Krill antártico,MUNDO,pesca,2016,256972
+Krill antártico,MUNDO,pesca,2017,252348
+Krill antártico,MUNDO,pesca,2018,311775
+Krill antártico,MUNDO,pesca,2019,371082
+Krill antártico,MUNDO,pesca,2020,460432
+Krill antártico,MUNDO,pesca,2021,367932
+Krill antártico,MUNDO,pesca,2022,421405
+Krill antártico,MUNDO,pesca,2023,414205
+Krill antártico,MUNDO,pesca,2024,464632
+Krill antártico,Noruega,pesca,1995,0
+Krill antártico,Noruega,pesca,1996,0
+Krill antártico,Noruega,pesca,1997,0
+Krill antártico,Noruega,pesca,1998,0
+Krill antártico,Noruega,pesca,1999,0
+Krill antártico,Noruega,pesca,2000,0
+Krill antártico,Noruega,pesca,2001,0
+Krill antártico,Noruega,pesca,2002,0
+Krill antártico,Noruega,pesca,2003,0
+Krill antártico,Noruega,pesca,2004,0
+Krill antártico,Noruega,pesca,2005,0
+Krill antártico,Noruega,pesca,2006,9228
+Krill antártico,Noruega,pesca,2007,39783
+Krill antártico,Noruega,pesca,2008,61992
+Krill antártico,Noruega,pesca,2009,44849
+Krill antártico,Noruega,pesca,2010,119433
+Krill antártico,Noruega,pesca,2011,110324
+Krill antártico,Noruega,pesca,2012,94094
+Krill antártico,Noruega,pesca,2013,136912
+Krill antártico,Noruega,pesca,2014,159899
+Krill antártico,Noruega,pesca,2015,157298
+Krill antártico,Noruega,pesca,2016,157762
+Krill antártico,Noruega,pesca,2017,171577
+Krill antártico,Noruega,pesca,2018,204658
+Krill antártico,Noruega,pesca,2019,230468
+Krill antártico,Noruega,pesca,2020,259199
+Krill antártico,Noruega,pesca,2021,238812
+Krill antártico,Noruega,pesca,2022,298919
+Krill antártico,Noruega,pesca,2023,278051
+Krill antártico,Noruega,pesca,2024,285064
+Krill antártico,Otros,pesca,1995,135685
+Krill antártico,Otros,pesca,1996,91150
+Krill antártico,Otros,pesca,1997,75653
+Krill antártico,Otros,pesca,1998,87503
+Krill antártico,Otros,pesca,1999,95406
+Krill antártico,Otros,pesca,2000,107193
+Krill antártico,Otros,pesca,2001,96657
+Krill antártico,Otros,pesca,2002,111634
+Krill antártico,Otros,pesca,2003,96452
+Krill antártico,Otros,pesca,2004,92868
+Krill antártico,Otros,pesca,2005,100116
+Krill antártico,Otros,pesca,2006,54332
+Krill antártico,Otros,pesca,2007,31715
+Krill antártico,Otros,pesca,2008,54971
+Krill antártico,Otros,pesca,2009,29169
+Krill antártico,Otros,pesca,2010,36914
+Krill antártico,Otros,pesca,2011,29434
+Krill antártico,Otros,pesca,2012,16258
+Krill antártico,Otros,pesca,2013,4646
+Krill antártico,Otros,pesca,2014,8928
+Krill antártico,Otros,pesca,2015,12523
+Krill antártico,Otros,pesca,2016,7412
+Krill antártico,Otros,pesca,2017,7949
+Krill antártico,Otros,pesca,2018,15396
+Krill antártico,Otros,pesca,2019,22111
+Krill antártico,Otros,pesca,2020,21334
+Krill antártico,Otros,pesca,2021,21615
+Krill antártico,Otros,pesca,2022,9006
+Krill antártico,Otros,pesca,2023,11977
+Krill antártico,Otros,pesca,2024,19075
+Krill antártico,Rusia,pesca,1995,0
+Krill antártico,Rusia,pesca,1996,0
+Krill antártico,Rusia,pesca,1997,0
+Krill antártico,Rusia,pesca,1998,0
+Krill antártico,Rusia,pesca,1999,0
+Krill antártico,Rusia,pesca,2000,0
+Krill antártico,Rusia,pesca,2001,0
+Krill antártico,Rusia,pesca,2002,0
+Krill antártico,Rusia,pesca,2003,0
+Krill antártico,Rusia,pesca,2004,775
+Krill antártico,Rusia,pesca,2005,0
+Krill antártico,Rusia,pesca,2006,0
+Krill antártico,Rusia,pesca,2007,0
+Krill antártico,Rusia,pesca,2008,222
+Krill antártico,Rusia,pesca,2009,9654
+Krill antártico,Rusia,pesca,2010,8065
+Krill antártico,Rusia,pesca,2011,0
+Krill antártico,Rusia,pesca,2012,0
+Krill antártico,Rusia,pesca,2013,0
+Krill antártico,Rusia,pesca,2014,0
+Krill antártico,Rusia,pesca,2015,0
+Krill antártico,Rusia,pesca,2016,0
+Krill antártico,Rusia,pesca,2017,0
+Krill antártico,Rusia,pesca,2018,0
+Krill antártico,Rusia,pesca,2019,0
+Krill antártico,Rusia,pesca,2024,7146
+Merluza argentina,Argentina,pesca,1995,574317
+Merluza argentina,Argentina,pesca,1996,604208
+Merluza argentina,Argentina,pesca,1997,585679
+Merluza argentina,Argentina,pesca,1998,458569
+Merluza argentina,Argentina,pesca,1999,314073
+Merluza argentina,Argentina,pesca,2000,193700
+Merluza argentina,Argentina,pesca,2001,249443
+Merluza argentina,Argentina,pesca,2002,358819
+Merluza argentina,Argentina,pesca,2003,334098
+Merluza argentina,Argentina,pesca,2004,416739
+Merluza argentina,Argentina,pesca,2005,361971
+Merluza argentina,Argentina,pesca,2006,353109
+Merluza argentina,Argentina,pesca,2007,301691
+Merluza argentina,Argentina,pesca,2008,263323
+Merluza argentina,Argentina,pesca,2009,280679
+Merluza argentina,Argentina,pesca,2010,281757
+Merluza argentina,Argentina,pesca,2011,287780
+Merluza argentina,Argentina,pesca,2012,257983
+Merluza argentina,Argentina,pesca,2013,275059
+Merluza argentina,Argentina,pesca,2014,259202
+Merluza argentina,Argentina,pesca,2015,266274
+Merluza argentina,Argentina,pesca,2016,282874
+Merluza argentina,Argentina,pesca,2017,282175
+Merluza argentina,Argentina,pesca,2018,269611
+Merluza argentina,Argentina,pesca,2019,314326
+Merluza argentina,Argentina,pesca,2020,272465
+Merluza argentina,Argentina,pesca,2021,290928
+Merluza argentina,Argentina,pesca,2022,284682
+Merluza argentina,Argentina,pesca,2023,297345
+Merluza argentina,Argentina,pesca,2024,310997
+Merluza argentina,Corea del Sur,pesca,1998,0
+Merluza argentina,Corea del Sur,pesca,1999,0
+Merluza argentina,Corea del Sur,pesca,2000,0
+Merluza argentina,Corea del Sur,pesca,2001,0
+Merluza argentina,Corea del Sur,pesca,2002,0
+Merluza argentina,Corea del Sur,pesca,2003,0
+Merluza argentina,Corea del Sur,pesca,2004,0
+Merluza argentina,Corea del Sur,pesca,2005,0
+Merluza argentina,Corea del Sur,pesca,2006,0
+Merluza argentina,Corea del Sur,pesca,2007,0
+Merluza argentina,Corea del Sur,pesca,2008,0
+Merluza argentina,Corea del Sur,pesca,2009,0
+Merluza argentina,Corea del Sur,pesca,2010,0
+Merluza argentina,Corea del Sur,pesca,2011,0
+Merluza argentina,Corea del Sur,pesca,2012,0
+Merluza argentina,Corea del Sur,pesca,2013,0
+Merluza argentina,Corea del Sur,pesca,2014,0
+Merluza argentina,Corea del Sur,pesca,2015,0
+Merluza argentina,Corea del Sur,pesca,2016,0
+Merluza argentina,Corea del Sur,pesca,2017,3246
+Merluza argentina,Corea del Sur,pesca,2018,0
+Merluza argentina,Corea del Sur,pesca,2019,11579
+Merluza argentina,Corea del Sur,pesca,2020,5319
+Merluza argentina,Corea del Sur,pesca,2021,7470
+Merluza argentina,Corea del Sur,pesca,2022,3009
+Merluza argentina,Corea del Sur,pesca,2023,6914
+Merluza argentina,Corea del Sur,pesca,2024,9458
+Merluza argentina,MUNDO,pesca,1995,636385
+Merluza argentina,MUNDO,pesca,1996,688650
+Merluza argentina,MUNDO,pesca,1997,652104
+Merluza argentina,MUNDO,pesca,1998,528660
+Merluza argentina,MUNDO,pesca,1999,375995
+Merluza argentina,MUNDO,pesca,2000,246744
+Merluza argentina,MUNDO,pesca,2001,306771
+Merluza argentina,MUNDO,pesca,2002,412068
+Merluza argentina,MUNDO,pesca,2003,380283
+Merluza argentina,MUNDO,pesca,2004,480588
+Merluza argentina,MUNDO,pesca,2005,422715
+Merluza argentina,MUNDO,pesca,2006,406876
+Merluza argentina,MUNDO,pesca,2007,346832
+Merluza argentina,MUNDO,pesca,2008,315516
+Merluza argentina,MUNDO,pesca,2009,331302
+Merluza argentina,MUNDO,pesca,2010,345685
+Merluza argentina,MUNDO,pesca,2011,351989
+Merluza argentina,MUNDO,pesca,2012,316978
+Merluza argentina,MUNDO,pesca,2013,347092
+Merluza argentina,MUNDO,pesca,2014,335131
+Merluza argentina,MUNDO,pesca,2015,335599
+Merluza argentina,MUNDO,pesca,2016,351319
+Merluza argentina,MUNDO,pesca,2017,355134
+Merluza argentina,MUNDO,pesca,2018,367222
+Merluza argentina,MUNDO,pesca,2019,447391
+Merluza argentina,MUNDO,pesca,2020,371744
+Merluza argentina,MUNDO,pesca,2021,414151
+Merluza argentina,MUNDO,pesca,2022,409279
+Merluza argentina,MUNDO,pesca,2023,428857
+Merluza argentina,MUNDO,pesca,2024,470250
+Merluza argentina,Otros,pesca,1995,62068
+Merluza argentina,Otros,pesca,1996,84442
+Merluza argentina,Otros,pesca,1997,66425
+Merluza argentina,Otros,pesca,1998,70091
+Merluza argentina,Otros,pesca,1999,61922
+Merluza argentina,Otros,pesca,2000,53044
+Merluza argentina,Otros,pesca,2001,57131
+Merluza argentina,Otros,pesca,2002,53163
+Merluza argentina,Otros,pesca,2003,45999
+Merluza argentina,Otros,pesca,2004,63815
+Merluza argentina,Otros,pesca,2005,60744
+Merluza argentina,Otros,pesca,2006,53767
+Merluza argentina,Otros,pesca,2007,45141
+Merluza argentina,Otros,pesca,2008,52193
+Merluza argentina,Otros,pesca,2009,50623
+Merluza argentina,Otros,pesca,2010,63928
+Merluza argentina,Otros,pesca,2011,64209
+Merluza argentina,Otros,pesca,2012,58995
+Merluza argentina,Otros,pesca,2013,72033
+Merluza argentina,Otros,pesca,2014,75929
+Merluza argentina,Otros,pesca,2015,69325
+Merluza argentina,Otros,pesca,2016,68445
+Merluza argentina,Otros,pesca,2017,69713
+Merluza argentina,Otros,pesca,2018,97611
+Merluza argentina,Otros,pesca,2019,121486
+Merluza argentina,Otros,pesca,2020,93960
+Merluza argentina,Otros,pesca,2021,115753
+Merluza argentina,Otros,pesca,2022,121589
+Merluza argentina,Otros,pesca,2023,122035
+Merluza argentina,Otros,pesca,2024,147113
+Merluza argentina,Rusia,pesca,1995,0
+Merluza argentina,Rusia,pesca,1996,0
+Merluza argentina,Rusia,pesca,1997,0
+Merluza argentina,Rusia,pesca,1998,0
+Merluza argentina,Rusia,pesca,1999,0
+Merluza argentina,Rusia,pesca,2000,0
+Merluza argentina,Rusia,pesca,2001,197
+Merluza argentina,Rusia,pesca,2002,86
+Merluza argentina,Rusia,pesca,2003,186
+Merluza argentina,Rusia,pesca,2004,34
+Merluza argentina,Rusia,pesca,2005,0
+Merluza argentina,Rusia,pesca,2006,0
+Merluza argentina,Rusia,pesca,2007,0
+Merluza argentina,Rusia,pesca,2008,0
+Merluza argentina,Rusia,pesca,2009,0
+Merluza argentina,Rusia,pesca,2010,0
+Merluza argentina,Rusia,pesca,2011,0
+Merluza argentina,Rusia,pesca,2012,0
+Merluza argentina,Rusia,pesca,2013,0
+Merluza argentina,Rusia,pesca,2014,0
+Merluza argentina,Rusia,pesca,2015,0
+Merluza argentina,Rusia,pesca,2016,0
+Merluza argentina,Rusia,pesca,2017,0
+Merluza argentina,Rusia,pesca,2018,0
+Merluza argentina,Rusia,pesca,2019,0
+Merluza argentina,Rusia,pesca,2023,2563
+Merluza argentina,Rusia,pesca,2024,2681
+Merluza del Pacífico sur,Chile,pesca,1995,75403
+Merluza del Pacífico sur,Chile,pesca,1996,88555
+Merluza del Pacífico sur,Chile,pesca,1997,87620
+Merluza del Pacífico sur,Chile,pesca,1998,80151
+Merluza del Pacífico sur,Chile,pesca,1999,103789
+Merluza del Pacífico sur,Chile,pesca,2000,110143
+Merluza del Pacífico sur,Chile,pesca,2001,121200
+Merluza del Pacífico sur,Chile,pesca,2002,116040
+Merluza del Pacífico sur,Chile,pesca,2003,115343
+Merluza del Pacífico sur,Chile,pesca,2004,73597
+Merluza del Pacífico sur,Chile,pesca,2005,47436
+Merluza del Pacífico sur,Chile,pesca,2006,47958
+Merluza del Pacífico sur,Chile,pesca,2007,45848
+Merluza del Pacífico sur,Chile,pesca,2008,47936
+Merluza del Pacífico sur,Chile,pesca,2009,47144
+Merluza del Pacífico sur,Chile,pesca,2010,49197
+Merluza del Pacífico sur,Chile,pesca,2011,45332
+Merluza del Pacífico sur,Chile,pesca,2012,39721
+Merluza del Pacífico sur,Chile,pesca,2013,36900
+Merluza del Pacífico sur,Chile,pesca,2014,18573
+Merluza del Pacífico sur,Chile,pesca,2015,19387
+Merluza del Pacífico sur,Chile,pesca,2016,20886
+Merluza del Pacífico sur,Chile,pesca,2017,21401
+Merluza del Pacífico sur,Chile,pesca,2018,22108
+Merluza del Pacífico sur,Chile,pesca,2019,25954
+Merluza del Pacífico sur,Chile,pesca,2020,29535
+Merluza del Pacífico sur,Chile,pesca,2021,29823
+Merluza del Pacífico sur,Chile,pesca,2022,32475
+Merluza del Pacífico sur,Chile,pesca,2023,30336
+Merluza del Pacífico sur,Chile,pesca,2024,31389
+Merluza del Pacífico sur,Ecuador,pesca,2006,37
+Merluza del Pacífico sur,Ecuador,pesca,2007,52
+Merluza del Pacífico sur,Ecuador,pesca,2008,391
+Merluza del Pacífico sur,Ecuador,pesca,2012,4
+Merluza del Pacífico sur,Ecuador,pesca,2013,609
+Merluza del Pacífico sur,Ecuador,pesca,2014,13683
+Merluza del Pacífico sur,Ecuador,pesca,2015,1610
+Merluza del Pacífico sur,Ecuador,pesca,2016,5372
+Merluza del Pacífico sur,Ecuador,pesca,2017,14034
+Merluza del Pacífico sur,Ecuador,pesca,2018,3024
+Merluza del Pacífico sur,Ecuador,pesca,2019,6932
+Merluza del Pacífico sur,Ecuador,pesca,2020,10514
+Merluza del Pacífico sur,Ecuador,pesca,2021,10949
+Merluza del Pacífico sur,Ecuador,pesca,2022,9354
+Merluza del Pacífico sur,Ecuador,pesca,2023,5570
+Merluza del Pacífico sur,Ecuador,pesca,2024,12151
+Merluza del Pacífico sur,MUNDO,pesca,1995,256585
+Merluza del Pacífico sur,MUNDO,pesca,1996,323470
+Merluza del Pacífico sur,MUNDO,pesca,1997,265573
+Merluza del Pacífico sur,MUNDO,pesca,1998,162516
+Merluza del Pacífico sur,MUNDO,pesca,1999,140910
+Merluza del Pacífico sur,MUNDO,pesca,2000,193504
+Merluza del Pacífico sur,MUNDO,pesca,2001,246265
+Merluza del Pacífico sur,MUNDO,pesca,2002,162291
+Merluza del Pacífico sur,MUNDO,pesca,2003,123008
+Merluza del Pacífico sur,MUNDO,pesca,2004,112248
+Merluza del Pacífico sur,MUNDO,pesca,2005,78036
+Merluza del Pacífico sur,MUNDO,pesca,2006,77436
+Merluza del Pacífico sur,MUNDO,pesca,2007,77534
+Merluza del Pacífico sur,MUNDO,pesca,2008,83256
+Merluza del Pacífico sur,MUNDO,pesca,2009,94306
+Merluza del Pacífico sur,MUNDO,pesca,2010,90305
+Merluza del Pacífico sur,MUNDO,pesca,2011,82977
+Merluza del Pacífico sur,MUNDO,pesca,2012,72872
+Merluza del Pacífico sur,MUNDO,pesca,2013,92031
+Merluza del Pacífico sur,MUNDO,pesca,2014,96196
+Merluza del Pacífico sur,MUNDO,pesca,2015,77283
+Merluza del Pacífico sur,MUNDO,pesca,2016,98662
+Merluza del Pacífico sur,MUNDO,pesca,2017,115048
+Merluza del Pacífico sur,MUNDO,pesca,2018,101548
+Merluza del Pacífico sur,MUNDO,pesca,2019,87490
+Merluza del Pacífico sur,MUNDO,pesca,2020,71409
+Merluza del Pacífico sur,MUNDO,pesca,2021,87526
+Merluza del Pacífico sur,MUNDO,pesca,2022,78857
+Merluza del Pacífico sur,MUNDO,pesca,2023,45050
+Merluza del Pacífico sur,MUNDO,pesca,2024,73214
+Merluza del Pacífico sur,Otros,pesca,1995,0
+Merluza del Pacífico sur,Otros,pesca,1996,0
+Merluza del Pacífico sur,Otros,pesca,1997,0
+Merluza del Pacífico sur,Otros,pesca,1998,0
+Merluza del Pacífico sur,Otros,pesca,1999,0
+Merluza del Pacífico sur,Otros,pesca,2000,0
+Merluza del Pacífico sur,Otros,pesca,2001,0
+Merluza del Pacífico sur,Otros,pesca,2002,0
+Merluza del Pacífico sur,Otros,pesca,2003,0
+Merluza del Pacífico sur,Otros,pesca,2004,0
+Merluza del Pacífico sur,Otros,pesca,2005,0
+Merluza del Pacífico sur,Otros,pesca,2006,0
+Merluza del Pacífico sur,Otros,pesca,2007,0
+Merluza del Pacífico sur,Otros,pesca,2008,0
+Merluza del Pacífico sur,Otros,pesca,2009,0
+Merluza del Pacífico sur,Otros,pesca,2010,0
+Merluza del Pacífico sur,Otros,pesca,2011,0
+Merluza del Pacífico sur,Otros,pesca,2012,0
+Merluza del Pacífico sur,Otros,pesca,2013,0
+Merluza del Pacífico sur,Otros,pesca,2014,0
+Merluza del Pacífico sur,Otros,pesca,2015,0
+Merluza del Pacífico sur,Otros,pesca,2016,0
+Merluza del Pacífico sur,Otros,pesca,2017,0
+Merluza del Pacífico sur,Otros,pesca,2018,0
+Merluza del Pacífico sur,Otros,pesca,2019,0
+Merluza del Pacífico sur,Otros,pesca,2020,0
+Merluza del Pacífico sur,Otros,pesca,2021,0
+Merluza del Pacífico sur,Otros,pesca,2022,0
+Merluza del Pacífico sur,Perú,pesca,1995,181182
+Merluza del Pacífico sur,Perú,pesca,1996,234915
+Merluza del Pacífico sur,Perú,pesca,1997,177953
+Merluza del Pacífico sur,Perú,pesca,1998,82365
+Merluza del Pacífico sur,Perú,pesca,1999,37121
+Merluza del Pacífico sur,Perú,pesca,2000,83361
+Merluza del Pacífico sur,Perú,pesca,2001,125065
+Merluza del Pacífico sur,Perú,pesca,2002,46251
+Merluza del Pacífico sur,Perú,pesca,2003,7665
+Merluza del Pacífico sur,Perú,pesca,2004,38651
+Merluza del Pacífico sur,Perú,pesca,2005,30600
+Merluza del Pacífico sur,Perú,pesca,2006,29441
+Merluza del Pacífico sur,Perú,pesca,2007,31634
+Merluza del Pacífico sur,Perú,pesca,2008,34929
+Merluza del Pacífico sur,Perú,pesca,2009,47162
+Merluza del Pacífico sur,Perú,pesca,2010,41108
+Merluza del Pacífico sur,Perú,pesca,2011,37645
+Merluza del Pacífico sur,Perú,pesca,2012,33147
+Merluza del Pacífico sur,Perú,pesca,2013,54522
+Merluza del Pacífico sur,Perú,pesca,2014,63940
+Merluza del Pacífico sur,Perú,pesca,2015,56286
+Merluza del Pacífico sur,Perú,pesca,2016,72404
+Merluza del Pacífico sur,Perú,pesca,2017,79613
+Merluza del Pacífico sur,Perú,pesca,2018,76416
+Merluza del Pacífico sur,Perú,pesca,2019,54604
+Merluza del Pacífico sur,Perú,pesca,2020,31360
+Merluza del Pacífico sur,Perú,pesca,2021,46753
+Merluza del Pacífico sur,Perú,pesca,2022,37028
+Merluza del Pacífico sur,Perú,pesca,2023,9144
+Merluza del Pacífico sur,Perú,pesca,2024,29674
+Merluza del Pacífico sur,Rusia,pesca,1995,0
+Merluza del Pacífico sur,Rusia,pesca,1996,0
+Merluza del Pacífico sur,Rusia,pesca,1997,0
+Merluza del Pacífico sur,Rusia,pesca,1998,0
+Merluza del Pacífico sur,Rusia,pesca,1999,0
+Merluza del Pacífico sur,Rusia,pesca,2000,0
+Merluza del Pacífico sur,Rusia,pesca,2001,0
+Merluza del Pacífico sur,Rusia,pesca,2002,0
+Merluza del Pacífico sur,Rusia,pesca,2003,0
+Merluza del Pacífico sur,Rusia,pesca,2004,0
+Merluza del Pacífico sur,Rusia,pesca,2005,0
+Merluza del Pacífico sur,Rusia,pesca,2006,0
+Merluza del Pacífico sur,Rusia,pesca,2007,0
+Merluza del Pacífico sur,Rusia,pesca,2008,0
+Merluza del Pacífico sur,Rusia,pesca,2009,0
+Merluza del Pacífico sur,Rusia,pesca,2010,0
+Merluza del Pacífico sur,Rusia,pesca,2011,0
+Merluza del Pacífico sur,Rusia,pesca,2012,0
+Merluza del Pacífico sur,Rusia,pesca,2013,0
+Merluza del Pacífico sur,Rusia,pesca,2014,0
+Merluza del Pacífico sur,Rusia,pesca,2015,0
+Merluza del Pacífico sur,Rusia,pesca,2016,0
+Merluza del Pacífico sur,Rusia,pesca,2017,0
+Merluza del Pacífico sur,Rusia,pesca,2018,0
+Merluza del Pacífico sur,Rusia,pesca,2019,0
+Pota (jibia),Chile,pesca,1995,0
+Pota (jibia),Chile,pesca,1996,2
+Pota (jibia),Chile,pesca,1997,0
+Pota (jibia),Chile,pesca,1998,5
+Pota (jibia),Chile,pesca,1999,6
+Pota (jibia),Chile,pesca,2000,9
+Pota (jibia),Chile,pesca,2001,3476
+Pota (jibia),Chile,pesca,2002,5589
+Pota (jibia),Chile,pesca,2003,15191
+Pota (jibia),Chile,pesca,2004,175134
+Pota (jibia),Chile,pesca,2005,296954
+Pota (jibia),Chile,pesca,2006,250989
+Pota (jibia),Chile,pesca,2007,124389
+Pota (jibia),Chile,pesca,2008,145667
+Pota (jibia),Chile,pesca,2009,56337
+Pota (jibia),Chile,pesca,2010,200428
+Pota (jibia),Chile,pesca,2011,163495
+Pota (jibia),Chile,pesca,2012,144965
+Pota (jibia),Chile,pesca,2013,106271
+Pota (jibia),Chile,pesca,2014,176602
+Pota (jibia),Chile,pesca,2015,143684
+Pota (jibia),Chile,pesca,2016,180914
+Pota (jibia),Chile,pesca,2017,152537
+Pota (jibia),Chile,pesca,2018,144646
+Pota (jibia),Chile,pesca,2019,58071
+Pota (jibia),Chile,pesca,2020,55006
+Pota (jibia),Chile,pesca,2021,53569
+Pota (jibia),Chile,pesca,2022,97687
+Pota (jibia),Chile,pesca,2023,105197
+Pota (jibia),Chile,pesca,2024,136127
+Pota (jibia),China,pesca,1995,0
+Pota (jibia),China,pesca,1996,0
+Pota (jibia),China,pesca,1997,0
+Pota (jibia),China,pesca,1998,0
+Pota (jibia),China,pesca,1999,0
+Pota (jibia),China,pesca,2000,0
+Pota (jibia),China,pesca,2001,17770
+Pota (jibia),China,pesca,2002,50483
+Pota (jibia),China,pesca,2003,81000
+Pota (jibia),China,pesca,2004,205600
+Pota (jibia),China,pesca,2005,86000
+Pota (jibia),China,pesca,2006,62000
+Pota (jibia),China,pesca,2007,46400
+Pota (jibia),China,pesca,2008,79064
+Pota (jibia),China,pesca,2009,70000
+Pota (jibia),China,pesca,2010,142000
+Pota (jibia),China,pesca,2011,250000
+Pota (jibia),China,pesca,2012,261000
+Pota (jibia),China,pesca,2013,264000
+Pota (jibia),China,pesca,2014,332523
+Pota (jibia),China,pesca,2015,323636
+Pota (jibia),China,pesca,2016,223300
+Pota (jibia),China,pesca,2017,296100
+Pota (jibia),China,pesca,2018,346200
+Pota (jibia),China,pesca,2019,305670
+Pota (jibia),China,pesca,2020,350000
+Pota (jibia),China,pesca,2021,421971
+Pota (jibia),China,pesca,2022,514512
+Pota (jibia),China,pesca,2023,494000
+Pota (jibia),China,pesca,2024,273900
+Pota (jibia),Corea del Sur,pesca,1995,34440
+Pota (jibia),Corea del Sur,pesca,1996,11784
+Pota (jibia),Corea del Sur,pesca,1997,2384
+Pota (jibia),Corea del Sur,pesca,1998,201
+Pota (jibia),Corea del Sur,pesca,1999,18813
+Pota (jibia),Corea del Sur,pesca,2000,15625
+Pota (jibia),Corea del Sur,pesca,2001,5797
+Pota (jibia),Corea del Sur,pesca,2002,21759
+Pota (jibia),Corea del Sur,pesca,2003,4722
+Pota (jibia),Corea del Sur,pesca,2004,10787
+Pota (jibia),Corea del Sur,pesca,2005,2519
+Pota (jibia),Corea del Sur,pesca,2006,2485
+Pota (jibia),Corea del Sur,pesca,2007,0
+Pota (jibia),Corea del Sur,pesca,2008,6775
+Pota (jibia),Corea del Sur,pesca,2009,7221
+Pota (jibia),Corea del Sur,pesca,2010,14506
+Pota (jibia),Corea del Sur,pesca,2011,7843
+Pota (jibia),Corea del Sur,pesca,2012,8310
+Pota (jibia),Corea del Sur,pesca,2013,7067
+Pota (jibia),Corea del Sur,pesca,2014,7203
+Pota (jibia),Corea del Sur,pesca,2015,4263
+Pota (jibia),Corea del Sur,pesca,2016,4388
+Pota (jibia),Corea del Sur,pesca,2017,3456
+Pota (jibia),Corea del Sur,pesca,2018,3500
+Pota (jibia),Corea del Sur,pesca,2019,5514
+Pota (jibia),Corea del Sur,pesca,2020,1025
+Pota (jibia),Corea del Sur,pesca,2024,117
+Pota (jibia),Ecuador,pesca,2006,212
+Pota (jibia),Ecuador,pesca,2007,121
+Pota (jibia),Ecuador,pesca,2008,668
+Pota (jibia),Ecuador,pesca,2012,91
+Pota (jibia),Ecuador,pesca,2013,2
+Pota (jibia),Ecuador,pesca,2014,18146
+Pota (jibia),Ecuador,pesca,2015,1279
+Pota (jibia),Ecuador,pesca,2016,485
+Pota (jibia),Ecuador,pesca,2017,4853
+Pota (jibia),Ecuador,pesca,2018,30204
+Pota (jibia),Ecuador,pesca,2019,7782
+Pota (jibia),Ecuador,pesca,2020,4546
+Pota (jibia),Ecuador,pesca,2021,2458
+Pota (jibia),Ecuador,pesca,2022,6001
+Pota (jibia),Ecuador,pesca,2023,3028
+Pota (jibia),Ecuador,pesca,2024,9089
+Pota (jibia),MUNDO,pesca,1995,136288
+Pota (jibia),MUNDO,pesca,1996,142188
+Pota (jibia),MUNDO,pesca,1997,152543
+Pota (jibia),MUNDO,pesca,1998,27364
+Pota (jibia),MUNDO,pesca,1999,131850
+Pota (jibia),MUNDO,pesca,2000,210063
+Pota (jibia),MUNDO,pesca,2001,244955
+Pota (jibia),MUNDO,pesca,2002,412428
+Pota (jibia),MUNDO,pesca,2003,402042
+Pota (jibia),MUNDO,pesca,2004,834754
+Pota (jibia),MUNDO,pesca,2005,779678
+Pota (jibia),MUNDO,pesca,2006,871335
+Pota (jibia),MUNDO,pesca,2007,684786
+Pota (jibia),MUNDO,pesca,2008,895329
+Pota (jibia),MUNDO,pesca,2009,642847
+Pota (jibia),MUNDO,pesca,2010,815968
+Pota (jibia),MUNDO,pesca,2011,906307
+Pota (jibia),MUNDO,pesca,2012,950610
+Pota (jibia),MUNDO,pesca,2013,847292
+Pota (jibia),MUNDO,pesca,2014,1161690
+Pota (jibia),MUNDO,pesca,2015,1003774
+Pota (jibia),MUNDO,pesca,2016,747010
+Pota (jibia),MUNDO,pesca,2017,763440
+Pota (jibia),MUNDO,pesca,2018,892419
+Pota (jibia),MUNDO,pesca,2019,906692
+Pota (jibia),MUNDO,pesca,2020,905381
+Pota (jibia),MUNDO,pesca,2021,997021
+Pota (jibia),MUNDO,pesca,2022,1076428
+Pota (jibia),MUNDO,pesca,2023,1225798
+Pota (jibia),MUNDO,pesca,2024,609506
+Pota (jibia),Otros,pesca,1995,76172
+Pota (jibia),Otros,pesca,1996,122264
+Pota (jibia),Otros,pesca,1997,134098
+Pota (jibia),Otros,pesca,1998,26611
+Pota (jibia),Otros,pesca,1999,58379
+Pota (jibia),Otros,pesca,2000,140634
+Pota (jibia),Otros,pesca,2001,146078
+Pota (jibia),Otros,pesca,2002,188207
+Pota (jibia),Otros,pesca,2003,147402
+Pota (jibia),Otros,pesca,2004,172865
+Pota (jibia),Otros,pesca,2005,103065
+Pota (jibia),Otros,pesca,2006,121388
+Pota (jibia),Otros,pesca,2007,86285
+Pota (jibia),Otros,pesca,2008,129741
+Pota (jibia),Otros,pesca,2009,97484
+Pota (jibia),Otros,pesca,2010,89212
+Pota (jibia),Otros,pesca,2011,80239
+Pota (jibia),Otros,pesca,2012,38782
+Pota (jibia),Otros,pesca,2013,18891
+Pota (jibia),Otros,pesca,2014,14772
+Pota (jibia),Otros,pesca,2015,12938
+Pota (jibia),Otros,pesca,2016,14586
+Pota (jibia),Otros,pesca,2017,10519
+Pota (jibia),Otros,pesca,2018,5637
+Pota (jibia),Otros,pesca,2019,2753
+Pota (jibia),Otros,pesca,2020,2442
+Pota (jibia),Otros,pesca,2021,1313
+Pota (jibia),Otros,pesca,2022,865
+Pota (jibia),Otros,pesca,2023,1648
+Pota (jibia),Otros,pesca,2024,1928
+Pota (jibia),Perú,pesca,1995,25676
+Pota (jibia),Perú,pesca,1996,8138
+Pota (jibia),Perú,pesca,1997,16061
+Pota (jibia),Perú,pesca,1998,547
+Pota (jibia),Perú,pesca,1999,54652
+Pota (jibia),Perú,pesca,2000,53795
+Pota (jibia),Perú,pesca,2001,71834
+Pota (jibia),Perú,pesca,2002,146390
+Pota (jibia),Perú,pesca,2003,153727
+Pota (jibia),Perú,pesca,2004,270368
+Pota (jibia),Perú,pesca,2005,291140
+Pota (jibia),Perú,pesca,2006,434261
+Pota (jibia),Perú,pesca,2007,427591
+Pota (jibia),Perú,pesca,2008,533414
+Pota (jibia),Perú,pesca,2009,411805
+Pota (jibia),Perú,pesca,2010,369822
+Pota (jibia),Perú,pesca,2011,404730
+Pota (jibia),Perú,pesca,2012,497462
+Pota (jibia),Perú,pesca,2013,451061
+Pota (jibia),Perú,pesca,2014,612444
+Pota (jibia),Perú,pesca,2015,517974
+Pota (jibia),Perú,pesca,2016,323337
+Pota (jibia),Perú,pesca,2017,295975
+Pota (jibia),Perú,pesca,2018,362232
+Pota (jibia),Perú,pesca,2019,526902
+Pota (jibia),Perú,pesca,2020,492362
+Pota (jibia),Perú,pesca,2021,517710
+Pota (jibia),Perú,pesca,2022,457364
+Pota (jibia),Perú,pesca,2023,621925
+Pota (jibia),Perú,pesca,2024,188345
+Sardina,Chile,pesca,1995,161557
+Sardina,Chile,pesca,1996,81043
+Sardina,Chile,pesca,1997,40473
+Sardina,Chile,pesca,1998,27966
+Sardina,Chile,pesca,1999,246045
+Sardina,Chile,pesca,2000,60189
+Sardina,Chile,pesca,2001,33271
+Sardina,Chile,pesca,2002,18561
+Sardina,Chile,pesca,2003,10679
+Sardina,Chile,pesca,2004,4813
+Sardina,Chile,pesca,2005,3665
+Sardina,Chile,pesca,2006,1170
+Sardina,Chile,pesca,2007,979
+Sardina,Chile,pesca,2008,395
+Sardina,Chile,pesca,2009,179
+Sardina,Chile,pesca,2010,88
+Sardina,Chile,pesca,2011,72
+Sardina,Chile,pesca,2012,238
+Sardina,Chile,pesca,2013,67
+Sardina,Chile,pesca,2014,148
+Sardina,Chile,pesca,2015,395
+Sardina,Chile,pesca,2016,89
+Sardina,Chile,pesca,2017,513
+Sardina,Chile,pesca,2018,1672
+Sardina,Chile,pesca,2019,1537
+Sardina,Chile,pesca,2020,3547
+Sardina,Chile,pesca,2021,1310
+Sardina,Chile,pesca,2022,2678
+Sardina,Chile,pesca,2023,4195
+Sardina,Chile,pesca,2024,9723
+Sardina,China,pesca,1995,58434
+Sardina,China,pesca,1996,92918
+Sardina,China,pesca,1997,115381
+Sardina,China,pesca,1998,107349
+Sardina,China,pesca,1999,127610
+Sardina,China,pesca,2000,132066
+Sardina,China,pesca,2001,137207
+Sardina,China,pesca,2002,158484
+Sardina,China,pesca,2003,139287
+Sardina,China,pesca,2004,153122
+Sardina,China,pesca,2005,157517
+Sardina,China,pesca,2006,203432
+Sardina,China,pesca,2007,169127
+Sardina,China,pesca,2008,157074
+Sardina,China,pesca,2009,134377
+Sardina,China,pesca,2010,135011
+Sardina,China,pesca,2011,140189
+Sardina,China,pesca,2012,131963
+Sardina,China,pesca,2013,141558
+Sardina,China,pesca,2014,151047
+Sardina,China,pesca,2015,146232
+Sardina,China,pesca,2016,139441
+Sardina,China,pesca,2017,119275
+Sardina,China,pesca,2018,105700
+Sardina,China,pesca,2019,98760
+Sardina,China,pesca,2020,95306
+Sardina,China,pesca,2021,92737
+Sardina,China,pesca,2022,83190
+Sardina,China,pesca,2023,84588
+Sardina,China,pesca,2024,88045
+Sardina,Corea del Sur,pesca,1995,13539
+Sardina,Corea del Sur,pesca,1996,18560
+Sardina,Corea del Sur,pesca,1997,9041
+Sardina,Corea del Sur,pesca,1998,7595
+Sardina,Corea del Sur,pesca,1999,17142
+Sardina,Corea del Sur,pesca,2000,2207
+Sardina,Corea del Sur,pesca,2001,129
+Sardina,Corea del Sur,pesca,2002,8
+Sardina,Corea del Sur,pesca,2003,18
+Sardina,Corea del Sur,pesca,2004,215
+Sardina,Corea del Sur,pesca,2005,46
+Sardina,Corea del Sur,pesca,2006,0
+Sardina,Corea del Sur,pesca,2007,106
+Sardina,Corea del Sur,pesca,2008,108
+Sardina,Corea del Sur,pesca,2009,47
+Sardina,Corea del Sur,pesca,2010,61
+Sardina,Corea del Sur,pesca,2011,2477
+Sardina,Corea del Sur,pesca,2012,918
+Sardina,Corea del Sur,pesca,2013,3565
+Sardina,Corea del Sur,pesca,2014,335
+Sardina,Corea del Sur,pesca,2015,2911
+Sardina,Corea del Sur,pesca,2016,5208
+Sardina,Corea del Sur,pesca,2017,8187
+Sardina,Corea del Sur,pesca,2018,7271
+Sardina,Corea del Sur,pesca,2019,2218
+Sardina,Corea del Sur,pesca,2020,1140
+Sardina,Corea del Sur,pesca,2021,90
+Sardina,Corea del Sur,pesca,2022,12030
+Sardina,Corea del Sur,pesca,2023,44498
+Sardina,Corea del Sur,pesca,2024,38264
+Sardina,Ecuador,pesca,1995,75916
+Sardina,Ecuador,pesca,1996,356480
+Sardina,Ecuador,pesca,1997,57191
+Sardina,Ecuador,pesca,1998,1012
+Sardina,Ecuador,pesca,1999,8821
+Sardina,Ecuador,pesca,2000,51648
+Sardina,Ecuador,pesca,2001,42143
+Sardina,Ecuador,pesca,2002,1924
+Sardina,Ecuador,pesca,2003,632
+Sardina,Ecuador,pesca,2004,544
+Sardina,Ecuador,pesca,2005,4
+Sardina,Ecuador,pesca,2006,9
+Sardina,Ecuador,pesca,2007,0
+Sardina,Ecuador,pesca,2008,0
+Sardina,Ecuador,pesca,2009,0
+Sardina,Ecuador,pesca,2010,0
+Sardina,Ecuador,pesca,2011,0
+Sardina,Ecuador,pesca,2012,0
+Sardina,Ecuador,pesca,2013,0
+Sardina,Ecuador,pesca,2014,0
+Sardina,Ecuador,pesca,2015,2
+Sardina,Ecuador,pesca,2016,0
+Sardina,Ecuador,pesca,2017,0
+Sardina,Ecuador,pesca,2020,3
+Sardina,Ecuador,pesca,2021,16
+Sardina,Ecuador,pesca,2022,31
+Sardina,MUNDO,pesca,1995,2756024
+Sardina,MUNDO,pesca,1996,2481969
+Sardina,MUNDO,pesca,1997,1775476
+Sardina,MUNDO,pesca,1998,1799016
+Sardina,MUNDO,pesca,1999,1521548
+Sardina,MUNDO,pesca,2000,1330894
+Sardina,MUNDO,pesca,2001,1338471
+Sardina,MUNDO,pesca,2002,1223707
+Sardina,MUNDO,pesca,2003,1158407
+Sardina,MUNDO,pesca,2004,1179422
+Sardina,MUNDO,pesca,2005,803963
+Sardina,MUNDO,pesca,2006,831826
+Sardina,MUNDO,pesca,2007,985453
+Sardina,MUNDO,pesca,2008,1048962
+Sardina,MUNDO,pesca,2009,1058990
+Sardina,MUNDO,pesca,2010,1040281
+Sardina,MUNDO,pesca,2011,1091539
+Sardina,MUNDO,pesca,2012,779492
+Sardina,MUNDO,pesca,2013,745248
+Sardina,MUNDO,pesca,2014,686170
+Sardina,MUNDO,pesca,2015,642018
+Sardina,MUNDO,pesca,2016,730727
+Sardina,MUNDO,pesca,2017,751976
+Sardina,MUNDO,pesca,2018,860729
+Sardina,MUNDO,pesca,2019,1107633
+Sardina,MUNDO,pesca,2020,1624908
+Sardina,MUNDO,pesca,2021,1412080
+Sardina,MUNDO,pesca,2022,1405898
+Sardina,MUNDO,pesca,2023,1730224
+Sardina,MUNDO,pesca,2024,1810060
+Sardina,Otros,pesca,1995,1180920
+Sardina,Otros,pesca,1996,876555
+Sardina,Otros,pesca,1997,928247
+Sardina,Otros,pesca,1998,746803
+Sardina,Otros,pesca,1999,934003
+Sardina,Otros,pesca,2000,858490
+Sardina,Otros,pesca,2001,1065423
+Sardina,Otros,pesca,2002,1037877
+Sardina,Otros,pesca,2003,999065
+Sardina,Otros,pesca,2004,1019187
+Sardina,Otros,pesca,2005,641893
+Sardina,Otros,pesca,2006,627126
+Sardina,Otros,pesca,2007,815185
+Sardina,Otros,pesca,2008,891380
+Sardina,Otros,pesca,2009,924361
+Sardina,Otros,pesca,2010,905104
+Sardina,Otros,pesca,2011,948738
+Sardina,Otros,pesca,2012,645707
+Sardina,Otros,pesca,2013,600029
+Sardina,Otros,pesca,2014,533842
+Sardina,Otros,pesca,2015,491631
+Sardina,Otros,pesca,2016,578564
+Sardina,Otros,pesca,2017,607404
+Sardina,Otros,pesca,2018,684067
+Sardina,Otros,pesca,2019,874010
+Sardina,Otros,pesca,2020,1209471
+Sardina,Otros,pesca,2021,1062134
+Sardina,Otros,pesca,2022,1019469
+Sardina,Otros,pesca,2023,1052860
+Sardina,Otros,pesca,2024,1081481
+Sardina,Perú,pesca,1995,1265658
+Sardina,Perú,pesca,1996,1056413
+Sardina,Perú,pesca,1997,625143
+Sardina,Perú,pesca,1998,908291
+Sardina,Perú,pesca,1999,187924
+Sardina,Perú,pesca,2000,226294
+Sardina,Perú,pesca,2001,60298
+Sardina,Perú,pesca,2002,6853
+Sardina,Perú,pesca,2003,8726
+Sardina,Perú,pesca,2004,1541
+Sardina,Perú,pesca,2005,838
+Sardina,Perú,pesca,2006,89
+Sardina,Perú,pesca,2007,56
+Sardina,Perú,pesca,2008,5
+Sardina,Perú,pesca,2009,26
+Sardina,Perú,pesca,2010,17
+Sardina,Perú,pesca,2011,63
+Sardina,Perú,pesca,2012,161
+Sardina,Perú,pesca,2013,29
+Sardina,Perú,pesca,2014,788
+Sardina,Perú,pesca,2015,815
+Sardina,Perú,pesca,2016,739
+Sardina,Perú,pesca,2017,35
+Sardina,Perú,pesca,2018,22
+Sardina,Perú,pesca,2019,20
+Sardina,Perú,pesca,2020,7
+Sardina,Perú,pesca,2021,65
+Sardina,Perú,pesca,2022,16
+Sardina,Perú,pesca,2023,0
+Sardina,Perú,pesca,2024,14
+Sardina,Rusia,pesca,1995,0
+Sardina,Rusia,pesca,1996,0
+Sardina,Rusia,pesca,1997,0
+Sardina,Rusia,pesca,1998,0
+Sardina,Rusia,pesca,1999,3
+Sardina,Rusia,pesca,2000,0
+Sardina,Rusia,pesca,2001,0
+Sardina,Rusia,pesca,2002,0
+Sardina,Rusia,pesca,2003,0
+Sardina,Rusia,pesca,2004,0
+Sardina,Rusia,pesca,2005,0
+Sardina,Rusia,pesca,2006,0
+Sardina,Rusia,pesca,2007,0
+Sardina,Rusia,pesca,2008,0
+Sardina,Rusia,pesca,2009,0
+Sardina,Rusia,pesca,2010,0
+Sardina,Rusia,pesca,2011,0
+Sardina,Rusia,pesca,2012,505
+Sardina,Rusia,pesca,2013,0
+Sardina,Rusia,pesca,2014,10
+Sardina,Rusia,pesca,2015,32
+Sardina,Rusia,pesca,2016,6686
+Sardina,Rusia,pesca,2017,16562
+Sardina,Rusia,pesca,2018,61997
+Sardina,Rusia,pesca,2019,131088
+Sardina,Rusia,pesca,2020,315434
+Sardina,Rusia,pesca,2021,255727
+Sardina,Rusia,pesca,2022,288484
+Sardina,Rusia,pesca,2023,544083
+Sardina,Rusia,pesca,2024,592534
+Sardina araucana,Chile,pesca,1995,126715
+Sardina araucana,Chile,pesca,1996,446669
+Sardina araucana,Chile,pesca,1997,441154
+Sardina araucana,Chile,pesca,1998,317564
+Sardina araucana,Chile,pesca,1999,782142
+Sardina araucana,Chile,pesca,2000,722522
+Sardina araucana,Chile,pesca,2001,324617
+Sardina araucana,Chile,pesca,2002,347368
+Sardina araucana,Chile,pesca,2003,304048
+Sardina araucana,Chile,pesca,2004,356090
+Sardina araucana,Chile,pesca,2005,289534
+Sardina araucana,Chile,pesca,2006,440109
+Sardina araucana,Chile,pesca,2007,281382
+Sardina araucana,Chile,pesca,2008,795139
+Sardina araucana,Chile,pesca,2009,855262
+Sardina araucana,Chile,pesca,2010,750750
+Sardina araucana,Chile,pesca,2011,887272
+Sardina araucana,Chile,pesca,2012,848466
+Sardina araucana,Chile,pesca,2013,236968
+Sardina araucana,Chile,pesca,2014,543278
+Sardina araucana,Chile,pesca,2015,435863
+Sardina araucana,Chile,pesca,2016,280421
+Sardina araucana,Chile,pesca,2017,344262
+Sardina araucana,Chile,pesca,2018,345422
+Sardina araucana,Chile,pesca,2019,320147
+Sardina araucana,Chile,pesca,2020,263853
+Sardina araucana,Chile,pesca,2021,344115
+Sardina araucana,Chile,pesca,2022,223935
+Sardina araucana,Chile,pesca,2023,410376
+Sardina araucana,Chile,pesca,2024,129620
+Sardina araucana,MUNDO,pesca,1995,126715
+Sardina araucana,MUNDO,pesca,1996,446669
+Sardina araucana,MUNDO,pesca,1997,441154
+Sardina araucana,MUNDO,pesca,1998,317564
+Sardina araucana,MUNDO,pesca,1999,782142
+Sardina araucana,MUNDO,pesca,2000,722522
+Sardina araucana,MUNDO,pesca,2001,324617
+Sardina araucana,MUNDO,pesca,2002,347368
+Sardina araucana,MUNDO,pesca,2003,304048
+Sardina araucana,MUNDO,pesca,2004,356090
+Sardina araucana,MUNDO,pesca,2005,289534
+Sardina araucana,MUNDO,pesca,2006,440109
+Sardina araucana,MUNDO,pesca,2007,281382
+Sardina araucana,MUNDO,pesca,2008,795139
+Sardina araucana,MUNDO,pesca,2009,855262
+Sardina araucana,MUNDO,pesca,2010,750750
+Sardina araucana,MUNDO,pesca,2011,887272
+Sardina araucana,MUNDO,pesca,2012,848466
+Sardina araucana,MUNDO,pesca,2013,236968
+Sardina araucana,MUNDO,pesca,2014,543278
+Sardina araucana,MUNDO,pesca,2015,435863
+Sardina araucana,MUNDO,pesca,2016,280421
+Sardina araucana,MUNDO,pesca,2017,344262
+Sardina araucana,MUNDO,pesca,2018,345422
+Sardina araucana,MUNDO,pesca,2019,320147
+Sardina araucana,MUNDO,pesca,2020,263853
+Sardina araucana,MUNDO,pesca,2021,344115
+Sardina araucana,MUNDO,pesca,2022,223935
+Sardina araucana,MUNDO,pesca,2023,410376
+Sardina araucana,MUNDO,pesca,2024,129620
+Sardina araucana,Otros,pesca,1995,0
+Sardina araucana,Otros,pesca,1996,0
+Sardina araucana,Otros,pesca,1997,0
+Sardina araucana,Otros,pesca,1998,0
+Sardina araucana,Otros,pesca,1999,0
+Sardina araucana,Otros,pesca,2000,0
+Sardina araucana,Otros,pesca,2001,0
+Sardina araucana,Otros,pesca,2002,0
+Sardina araucana,Otros,pesca,2003,0
+Sardina araucana,Otros,pesca,2004,0
+Sardina araucana,Otros,pesca,2005,0
+Sardina araucana,Otros,pesca,2006,0
+Sardina araucana,Otros,pesca,2007,0
+Sardina araucana,Otros,pesca,2008,0
+Sardina araucana,Otros,pesca,2009,0
+Sardina araucana,Otros,pesca,2010,0
+Sardina araucana,Otros,pesca,2011,0
+Sardina araucana,Otros,pesca,2012,0
+Sardina araucana,Otros,pesca,2013,0
+Sardina araucana,Otros,pesca,2014,0
+Sardina araucana,Otros,pesca,2015,0
+Sardina araucana,Otros,pesca,2016,0
+Sardina araucana,Otros,pesca,2017,0
+Sardina araucana,Otros,pesca,2018,0

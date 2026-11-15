@@ -60,4 +60,4 @@ Nota de corrección (14/11/2026): una versión anterior de esta tabla traía val
 5. **Años excluidos.** El criterio (1998, 2016, 2023) es una elección y no se probó otro conjunto.
 
 ## Reproducir
-Las rutas de entrada del script son absolutas (`D:/hackathon/NASA/...`); hay que ajustar la variable `R` al inicio. Requiere `numpy`, `pandas`, `scipy`, `xarray` y `netCDF4`. Ejecutar con `PYTHONIOENCODING=utf-8`.
+Las rutas de entrada del script son absolutas (`data/inputs/...`); hay que ajustar la variable `R` al inicio. Requiere `numpy`, `pandas`, `scipy`, `xarray` y `netCDF4`. Ejecutar con `PYTHONIOENCODING=utf-8`.

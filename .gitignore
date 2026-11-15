@@ -33,3 +33,8 @@ analysis_r/data/processed/
 
 .env
 graphify-out/memory/
+
+# Reproduction outputs and separately acquired large input
+data/reproducciones/
+data/web_export/
+data/inputs/datos/tendencias_largas/*.nc

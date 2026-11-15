@@ -30,4 +30,4 @@ No hay evidencia sólida de que la Antártida afecte las capturas de Chile y Arg
 - Las capturas no son abundancia.
 
 ## Reproducir
-Las rutas de entrada del script son absolutas (`D:/hackathon/NASA/...`); ajustar la variable `R`. Requiere `numpy`, `pandas` y `scipy`; ejecutar con `PYTHONIOENCODING=utf-8`.
+Las rutas de entrada del script son absolutas (`data/inputs/...`); ajustar la variable `R`. Requiere `numpy`, `pandas` y `scipy`; ejecutar con `PYTHONIOENCODING=utf-8`.

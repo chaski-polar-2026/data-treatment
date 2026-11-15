@@ -1,3 +1,4 @@
+from config_datos import DATA, OUTPUT, TABLES, require
 """Tendencias (el núcleo del reto "Be an Earth System Trend Detective"): Mann-Kendall anual, Mann-Kendall estacional
 (Hirsch), pendiente de Sen, regresión mensual con n efectivo, por estación, sensibilidad al año de inicio y series largas
 (CRW 1985-2025 y ERSST v5 1950-2025). Solo datos locales."""
@@ -8,8 +9,8 @@ import pandas as pd
 import xarray as xr
 from scipy import stats
 
-RAIZ = Path(r"D:\hackathon\NASA")
-SALIDA = RAIZ / "pruebas" / "fitoplancton" / "tablas"
+RAIZ = DATA
+SALIDA = TABLES
 ZONAS = {"paita": (-6.5, -4.5, -82.0, -80.5), "chimbote": (-10.0, -8.0, -80.0, -78.0), "callao": (-13.0, -11.0, -78.5, -76.8),
          "pisco": (-14.5, -13.0, -77.0, -76.0), "ilo": (-18.0, -16.5, -72.5, -71.0),
          "rey_jorge": (-63.0, -61.5, -60.5, -56.5), "peninsula_antartica": (-68.0, -60.0, -70.0, -55.0)}
@@ -74,7 +75,7 @@ def serie_crw(z):
     return pd.Series(d.valor.astype(float).to_numpy(), index=pd.to_datetime(d.mes + "-01")).sort_index()
 
 
-er = xr.open_dataset(RAIZ / "datos" / "tendencias_largas" / "ersstv5_sst_mnmean.nc")
+er = xr.open_dataset(require("datos/tendencias_largas/ersstv5_sst_mnmean.nc"))
 
 
 def serie_ersst(z):

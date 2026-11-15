@@ -1,0 +1,236 @@
+[
+  {
+    "path": "drive_aaron/connectivity_panel_monthly.csv",
+    "bytes": 3066314,
+    "sha256": "ad7ac9119d2cd326595fa32758a3e5a88044c9c600bc476b2920221cd4b705a9",
+    "origin": "Local connectivity panel from Copernicus Marine products",
+    "producer": "scripts/11_build_connectivity_panel.py",
+    "download_date": "por verificar",
+    "copied_date": "2026-11-15"
+  },
+  {
+    "path": "pruebas/json_pagina/monitor_data.json",
+    "bytes": 773213,
+    "sha256": "ca2a888e326a0f87cae10c94ae37f0fd75835d4a43aed95f3712efc102d248c5",
+    "origin": "Committed src/nasahackaton/monitor_data.json; byte-identical to the external analysis copy",
+    "producer": "scripts/web_export/construir_monitor_json.py",
+    "download_date": "por verificar",
+    "copied_date": "2026-11-15"
+  },
+  {
+    "path": "datos/pesquerias/fao_series.csv",
+    "bytes": 86347,
+    "sha256": "740c88938fca9f9df644cdb802f2da30bc8a9effa0a8464063530a0bd43181f2",
+    "origin": "Local processed data; upstream provenance see source catalogue",
+    "producer": "por verificar",
+    "download_date": "por verificar",
+    "copied_date": "2026-11-15"
+  },
+  {
+    "path": "datos/pesquerias/hielo_antartico_nsidc/S_01.csv",
+    "bytes": 2352,
+    "sha256": "ab782f15f3fb878f5c668e29095f200790ca5fa73805508b4ee78a273e3a0a86",
+    "origin": "Local processed data; upstream provenance see source catalogue",
+    "producer": "por verificar",
+    "download_date": "por verificar",
+    "copied_date": "2026-11-15"
+  },
+  {
+    "path": "datos/pesquerias/hielo_antartico_nsidc/S_02.csv",
+    "bytes": 2352,
+    "sha256": "ee9717d02fbc7f5ad66fb6982d3a5cb746c02a011311f2419f1483384ce9f8b3",
+    "origin": "Local processed data; upstream provenance see source catalogue",
+    "producer": "por verificar",
+    "download_date": "por verificar",
+    "copied_date": "2026-11-15"
+  },
+  {
+    "path": "datos/pesquerias/hielo_antartico_nsidc/S_03.csv",
+    "bytes": 2352,
+    "sha256": "569eb0d2eeb49ffb195d623476998aab9d5b0d3f4b9657a34bef7a818556c92f",
+    "origin": "Local processed data; upstream provenance see source catalogue",
+    "producer": "por verificar",
+    "download_date": "por verificar",
+    "copied_date": "2026-11-15"
+  },
+  {
+    "path": "datos/pesquerias/hielo_antartico_nsidc/S_04.csv",
+    "bytes": 2352,
+    "sha256": "0970d41942ff99a4bc15cfba95d7e4ed944db774e9fd79ecbc0af4e7a98d2139",
+    "origin": "Local processed data; upstream provenance see source catalogue",
+    "producer": "por verificar",
+    "download_date": "por verificar",
+    "copied_date": "2026-11-15"
+  },
+  {
+    "path": "datos/pesquerias/hielo_antartico_nsidc/S_05.csv",
+    "bytes": 2361,
+    "sha256": "65bee706e7aabae72e1fc9c8bc37ad21009d1415ff7a49002dab469e2c9b3555",
+    "origin": "Local processed data; upstream provenance see source catalogue",
+    "producer": "por verificar",
+    "download_date": "por verificar",
+    "copied_date": "2026-11-15"
+  },
+  {
+    "path": "datos/pesquerias/hielo_antartico_nsidc/S_06.csv",
+    "bytes": 2352,
+    "sha256": "ccbe22a3b01f37d48405a6f7898fc63fde30e740f45d29d775f526b5ce875b1e",
+    "origin": "Local processed data; upstream provenance see source catalogue",
+    "producer": "por verificar",
+    "download_date": "por verificar",
+    "copied_date": "2026-11-15"
+  },
+  {
+    "path": "datos/pesquerias/hielo_antartico_nsidc/S_07.csv",
+    "bytes": 2352,
+    "sha256": "eabbacf263faf23a01b8db13252a798485a8a5ef4294a6fbdae5aa0c9af9b527",
+    "origin": "Local processed data; upstream provenance see source catalogue",
+    "producer": "por verificar",
+    "download_date": "por verificar",
+    "copied_date": "2026-11-15"
+  },
+  {
+    "path": "datos/pesquerias/hielo_antartico_nsidc/S_08.csv",
+    "bytes": 2352,
+    "sha256": "64c76142efc35e76f8e593d90e958621cee9ca0a104d3b337494deb3dbcdc2e8",
+    "origin": "Local processed data; upstream provenance see source catalogue",
+    "producer": "por verificar",
+    "download_date": "por verificar",
+    "copied_date": "2026-11-15"
+  },
+  {
+    "path": "datos/pesquerias/hielo_antartico_nsidc/S_09.csv",
+    "bytes": 2352,
+    "sha256": "32e94df4721daf475d675490ce81d49d5e99f47e43cad2660c064ab56ba4f01a",
+    "origin": "Local processed data; upstream provenance see source catalogue",
+    "producer": "por verificar",
+    "download_date": "por verificar",
+    "copied_date": "2026-11-15"
+  },
+  {
+    "path": "datos/pesquerias/hielo_antartico_nsidc/S_10.csv",
+    "bytes": 2304,
+    "sha256": "c2c343b117cb1e04c8f08821ee9982c124312d3cce59c86e90f0a75b6ee8af4e",
+    "origin": "Local processed data; upstream provenance see source catalogue",
+    "producer": "por verificar",
+    "download_date": "por verificar",
+    "copied_date": "2026-11-15"
+  },
+  {
+    "path": "datos/pesquerias/hielo_antartico_nsidc/S_11.csv",
+    "bytes": 2352,
+    "sha256": "1ad02149c0e754021fb136324550bcb171390805e34ea0501b8136874f1f4e5a",
+    "origin": "Local processed data; upstream provenance see source catalogue",
+    "producer": "por verificar",
+    "download_date": "por verificar",
+    "copied_date": "2026-11-15"
+  },
+  {
+    "path": "datos/pesquerias/hielo_antartico_nsidc/S_12.csv",
+    "bytes": 2352,
+    "sha256": "dafcb0df80ac1fb828ae66bb40f28b10539ace084b0a9fb2e19cef145abe1dc2",
+    "origin": "Local processed data; upstream provenance see source catalogue",
+    "producer": "por verificar",
+    "download_date": "por verificar",
+    "copied_date": "2026-11-15"
+  },
+  {
+    "path": "datos/peru/variables_mensuales.csv",
+    "bytes": 964759,
+    "sha256": "81057fe62437168452f88f59f6f9284e16e28dab391f1e8232c5bc09b9808860",
+    "origin": "Local processed data; upstream provenance see source catalogue",
+    "producer": "por verificar",
+    "download_date": "por verificar",
+    "copied_date": "2026-11-15"
+  },
+  {
+    "path": "datos/oni.txt",
+    "bytes": 23025,
+    "sha256": "5d6fa3a2f857d916550d39c2c686e94cb942430195c82518e6a5d0f5ffbd0665",
+    "origin": "Local processed data; upstream provenance see source catalogue",
+    "producer": "por verificar",
+    "download_date": "por verificar",
+    "copied_date": "2026-11-15"
+  },
+  {
+    "path": "datos/aao.data",
+    "bytes": 3990,
+    "sha256": "4b2b62b0b8460f693d1960b237622f3e4100aa476f141f857272dee315cf78a4",
+    "origin": "Local processed data; upstream provenance see source catalogue",
+    "producer": "por verificar",
+    "download_date": "por verificar",
+    "copied_date": "2026-11-15"
+  },
+  {
+    "path": "repo/data/nino12.long.anom.csv",
+    "bytes": 41530,
+    "sha256": "98f68edaa8bcea8560823c6fe491c8abcdbc83c5d5f1eaeda453aff2bb12b8b0",
+    "origin": "Repository committed input",
+    "producer": "por verificar",
+    "download_date": "por verificar",
+    "copied_date": "2026-11-15"
+  },
+  {
+    "path": "repo/data/raw/nsidc/S_seaice_extent_daily_v4.0.csv",
+    "bytes": 1852523,
+    "sha256": "d0b5148e45a83698ba3223574f4f1d20304ee5896a3e7f7d66b96ecc534dc2a2",
+    "origin": "Repository committed input",
+    "producer": "scripts/01_download_data.py",
+    "download_date": "por verificar",
+    "copied_date": "2026-11-15"
+  },
+  {
+    "path": "repo/data/punto1_anchoveta/1a_desembarques_mensuales_bcrp/desembarques_anchoveta_mensual_2003_2026.csv",
+    "bytes": 19095,
+    "sha256": "0af0020951051068ff139177fd4879ea7204f5d9deb27c59c02a8fbdb8075191",
+    "origin": "Repository committed input",
+    "producer": "por verificar",
+    "download_date": "por verificar",
+    "copied_date": "2026-11-15"
+  },
+  {
+    "path": "pruebas/fitoplancton/tablas/h1d_eventos_pct.csv",
+    "bytes": 479,
+    "sha256": "c9ce303a8a6c91b259cb33e671b16b6ae59f7fb8c7f557440aa26a788ae2bba4",
+    "origin": "Existing local analysis table",
+    "producer": "por verificar; historical analysis scripts",
+    "download_date": "por verificar",
+    "copied_date": "2026-11-15"
+  },
+  {
+    "path": "pruebas/fitoplancton/tablas/dif_asimetria_temperatura_local.csv",
+    "bytes": 501,
+    "sha256": "919b9fea7321880be9bf40139289ddd246760b4605698bbb7906545ce5705838",
+    "origin": "Existing local analysis table",
+    "producer": "por verificar; historical analysis scripts",
+    "download_date": "por verificar",
+    "copied_date": "2026-11-15"
+  },
+  {
+    "path": "web/el-nino-chain.json",
+    "bytes": 61115,
+    "sha256": "38a242506e338d130e68a182a5cd2cf84ed984a9a775a5dbc1f47a3ffbe25f36",
+    "origin": "Web physical-chain data",
+    "producer": "por verificar",
+    "download_date": "por verificar",
+    "copied_date": "2026-11-15"
+  },
+  {
+    "path": "web/monitor-data-base.js",
+    "bytes": 680297,
+    "sha256": "1901b6505a4672fdd870a829d54c0fce55e032ff874437b870298a4cacc3620b",
+    "origin": "Previous monitor read by original constructor",
+    "producer": "por verificar",
+    "download_date": "por verificar",
+    "copied_date": "2026-11-15"
+  },
+  {
+    "path": "datos/tendencias_largas/ersstv5_sst_mnmean.nc",
+    "bytes": 162376295,
+    "sha256": "952fad739abab3e3c33c955b168f298b9884d2fe48ab259ebf19ac531d8d8386",
+    "origin": "NOAA PSL ERSST v5; https://downloads.psl.noaa.gov/Datasets/noaa.ersst.v5/sst.mnmean.nc",
+    "producer": "external download; exact retrieval script/date por verificar",
+    "download_date": "por verificar",
+    "included": false
+  }
+]

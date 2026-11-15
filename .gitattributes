@@ -1,0 +1,3 @@
+
+# Preserve scientific input snapshots byte for byte, including SHA256 checks.
+data/inputs/** -text

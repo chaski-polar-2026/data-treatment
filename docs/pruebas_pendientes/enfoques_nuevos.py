@@ -1,3 +1,4 @@
+from config_datos import DATA, OUTPUT, TABLES, require
 """Enfoques nuevos (14/11): E1 tendencia de eventos extremos, E2 tendencia y control de la fenología (amplitud y fecha del pico),
 E3 estudio de eventos de El Niño (dosis-respuesta y recuperación). Solo datos locales."""
 import json
@@ -6,8 +7,8 @@ import numpy as np
 import pandas as pd
 from scipy import stats
 
-RAIZ = Path(r"D:\hackathon\NASA")
-SALIDA = RAIZ / "pruebas" / "fitoplancton" / "tablas"
+RAIZ = DATA
+SALIDA = TABLES
 ZONAS = ["paita", "chimbote", "callao", "pisco", "ilo", "rey_jorge", "peninsula_antartica"]
 PERU = ZONAS[:5]
 CLAVE = {"paita": "peru_norte_paita_sechura", "chimbote": "peru_centro_norte_chimbote", "callao": "peru_centro_callao", "pisco": "peru_sur_pisco",
