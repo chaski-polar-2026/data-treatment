@@ -1,6 +1,6 @@
 # data-treatment
 
-Data download, preparation and statistical analysis behind **Chaski Polar**, our entry for the NASA Space Apps Challenge 2026 ("Be An Earth System Trend Detective!"). It studies associations between Southern Ocean variables, the Humboldt Current system and the Peruvian anchoveta (*Engraulis ringens*), 1998–2025.
+This repository is exclusively for data download, preparation, treatment and statistical analysis behind **Chaski Polar**, our entry for the NASA Space Apps Challenge 2026 ("Be An Earth System Trend Detective!"). It studies associations between Southern Ocean variables, the Humboldt Current system and the Peruvian anchoveta (*Engraulis ringens*), 1998–2025. It is not a backend or application service; the website and games consume the generated analysis outputs.
 
 - **Website and games (consumer of this analysis):** https://github.com/chaski-polar-2026/chaski-polar-webpage
 - **Live site:** https://chaski-polar-2026-webpage.vercel.app
