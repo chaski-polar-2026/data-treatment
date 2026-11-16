@@ -94,5 +94,5 @@ Scope of the variables:
 ## Team and license
 
 - S. Nikol A. Solaligue Limache, Ariana Cardenas Huaman, Aroon A. Delgado Huaychani and Denis Quispe Condori (roles are listed on the website's About page).
-- **Code:** [MIT License](LICENSE). Texts, tables and processed datasets: CC BY 4.0 (credit the Chaski Polar team). Source datasets keep their agencies' terms.
+- **Code:** [MIT License](LICENSE). Texts, tables and processed datasets: CC BY 4.0 (credit the Chaski Polar team; see [LICENSE-DATOS.md](LICENSE-DATOS.md)). Source datasets keep their agencies' terms.
 - AI assistants (OpenAI Codex, Anthropic Claude Code) supported code refactoring, verification scripts and drafting. No AI or machine-learning model is part of the results.
